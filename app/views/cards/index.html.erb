@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Все карты</h1>
+    <table class="table table-striped">
+      <tbody>
+      <% @cards.each do |card| %>
+          <thead>
+          <tr>
+            <th><%= card.card_id %></th>
+            <th><%= card.name %></th>
+            <th><%= card.clan %></th>
+            <th><%= card.rarity %></th>
+            <th><%= card.star %></th>
+            <th><%= card.power %></th>
+            <th><%= card.damage %></th>
+            <th><%= card.ability %></th>
+            <th><%= card.bonus %></th>
+          </tr>
+          </thead>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
