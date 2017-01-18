@@ -1892,6 +1892,17 @@
     "bonus": "2 яда, до 1"
   },
   {
+    "card_id": "715",
+    "name": "ЛЕОН",
+    "clan": "Mafia",
+    "rarity": "common",
+    "star": false,
+    "power": "5",
+    "damage": "4",
+    "ability": "-2 урона, до 1",
+    "bonus": "2 яда, до 1"
+  },
+  {
     "card_id": "493",
     "name": "СКИНК",
     "clan": "Mafia",
@@ -1922,17 +1933,6 @@
     "power": "8",
     "damage": "1",
     "ability": "+4 жзн за урон",
-    "bonus": "2 яда, до 1"
-  },
-  {
-    "card_id": "715",
-    "name": "ЛЕОН",
-    "clan": "Mafia",
-    "rarity": "common",
-    "star": false,
-    "power": "5",
-    "damage": "4",
-    "ability": "-2 урона, до 1",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2211,17 +2211,6 @@
     "bonus": "2 яда, до 1"
   },
   {
-    "card_id": "685",
-    "name": "ХВАТ ★",
-    "clan": "Mafia",
-    "rarity": "uniq",
-    "star": true,
-    "power": "8",
-    "damage": "3",
-    "ability": "благо 2",
-    "bonus": "2 яда, до 1"
-  },
-  {
     "card_id": "287",
     "name": "ЧИ ЛУН",
     "clan": "Mafia",
@@ -2274,6 +2263,17 @@
     "power": "7",
     "damage": "4",
     "ability": "-8 атаки, до 3",
+    "bonus": "2 яда, до 1"
+  },
+  {
+    "card_id": "753",
+    "name": "ЛАКИ",
+    "clan": "Mafia",
+    "rarity": "rare",
+    "star": false,
+    "power": "7",
+    "damage": "5",
+    "ability": "эхо: -1 жзн, до 1",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2332,14 +2332,14 @@
     "bonus": "2 яда, до 1"
   },
   {
-    "card_id": "753",
-    "name": "ЛАКИ",
+    "card_id": "685",
+    "name": "ХВАТ ★",
     "clan": "Mafia",
-    "rarity": "rare",
-    "star": false,
-    "power": "7",
-    "damage": "5",
-    "ability": "эхо: -1 жзн, до 1",
+    "rarity": "uniq",
+    "star": true,
+    "power": "8",
+    "damage": "3",
+    "ability": "благо 2",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2365,14 +2365,14 @@
     "bonus": "2 яда, до 1"
   },
   {
-    "card_id": "540",
-    "name": "МИН",
+    "card_id": "1764",
+    "name": "ЛУТЕР",
     "clan": "Mafia",
-    "rarity": "uniq",
+    "rarity": "legend",
     "star": false,
-    "power": "7",
-    "damage": "7",
-    "ability": "−бонус",
+    "power": "8",
+    "damage": "6",
+    "ability": "+6 атаки клану",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2398,47 +2398,14 @@
     "bonus": "2 яда, до 1"
   },
   {
-    "card_id": "254",
-    "name": "МАРИУШ",
-    "clan": "Mafia",
-    "rarity": "common",
-    "star": false,
-    "power": "4",
-    "damage": "6",
-    "ability": "гнев: +3 силы",
-    "bonus": "2 яда, до 1"
-  },
-  {
-    "card_id": "529",
-    "name": "ТАУПУ",
+    "card_id": "540",
+    "name": "МИН",
     "clan": "Mafia",
     "rarity": "uniq",
     "star": false,
-    "power": "8",
-    "damage": "3",
-    "ability": "+3 урона",
-    "bonus": "2 яда, до 1"
-  },
-  {
-    "card_id": "557",
-    "name": "ПЕРХАН",
-    "clan": "Mafia",
-    "rarity": "rare",
-    "star": false,
-    "power": "5",
-    "damage": "4",
-    "ability": "+4 силы",
-    "bonus": "2 яда, до 1"
-  },
-  {
-    "card_id": "166",
-    "name": "БОНИ ★",
-    "clan": "Mafia",
-    "rarity": "rare",
-    "star": true,
-    "power": "5",
-    "damage": "8",
-    "ability": "+1 жзн за урон",
+    "power": "7",
+    "damage": "7",
+    "ability": "−бонус",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2453,25 +2420,25 @@
     "bonus": "2 яда, до 1"
   },
   {
-    "card_id": "817",
-    "name": "СЕРЖ",
+    "card_id": "254",
+    "name": "МАРИУШ",
     "clan": "Mafia",
-    "rarity": "rare",
+    "rarity": "common",
     "star": false,
-    "power": "7",
-    "damage": "4",
-    "ability": "гнев: -4 энергии НБ",
+    "power": "4",
+    "damage": "6",
+    "ability": "гнев: +3 силы",
     "bonus": "2 яда, до 1"
   },
   {
-    "card_id": "1764",
-    "name": "ЛУТЕР",
+    "card_id": "166",
+    "name": "БОНИ ★",
     "clan": "Mafia",
-    "rarity": "legend",
-    "star": false,
-    "power": "8",
-    "damage": "6",
-    "ability": "+6 атаки клану",
+    "rarity": "rare",
+    "star": true,
+    "power": "5",
+    "damage": "8",
+    "ability": "+1 жзн за урон",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2483,6 +2450,39 @@
     "power": "7",
     "damage": "6",
     "ability": "гнев: +9 жзн соп.",
+    "bonus": "2 яда, до 1"
+  },
+  {
+    "card_id": "557",
+    "name": "ПЕРХАН",
+    "clan": "Mafia",
+    "rarity": "rare",
+    "star": false,
+    "power": "5",
+    "damage": "4",
+    "ability": "+4 силы",
+    "bonus": "2 яда, до 1"
+  },
+  {
+    "card_id": "817",
+    "name": "СЕРЖ",
+    "clan": "Mafia",
+    "rarity": "rare",
+    "star": false,
+    "power": "7",
+    "damage": "4",
+    "ability": "гнев: -4 энергии НБ",
+    "bonus": "2 яда, до 1"
+  },
+  {
+    "card_id": "529",
+    "name": "ТАУПУ",
+    "clan": "Mafia",
+    "rarity": "uniq",
+    "star": false,
+    "power": "8",
+    "damage": "3",
+    "ability": "+3 урона",
     "bonus": "2 яда, до 1"
   },
   {
@@ -4807,17 +4807,6 @@
     "bonus": "+8 атаки"
   },
   {
-    "card_id": "1656",
-    "name": "МАКФЛАЙ",
-    "clan": "Deviants",
-    "rarity": "common",
-    "star": false,
-    "power": "7",
-    "damage": "2",
-    "ability": "эхо: -1 жзн, до 1",
-    "bonus": "-2 силы, до 1"
-  },
-  {
     "card_id": "1714",
     "name": "ФРЭНК",
     "clan": "Deviants",
@@ -4851,6 +4840,28 @@
     "bonus": "-2 силы, до 1"
   },
   {
+    "card_id": "1656",
+    "name": "МАКФЛАЙ",
+    "clan": "Deviants",
+    "rarity": "common",
+    "star": false,
+    "power": "7",
+    "damage": "2",
+    "ability": "эхо: -1 жзн, до 1",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "142",
+    "name": "ГЛОРИЯ",
+    "clan": "Deviants",
+    "rarity": "common",
+    "star": false,
+    "power": "7",
+    "damage": "2",
+    "ability": "+1 урона",
+    "bonus": "-2 силы, до 1"
+  },
+  {
     "card_id": "1248",
     "name": "ЭКОЛОГИЯ",
     "clan": "Deviants",
@@ -4862,25 +4873,25 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "479",
-    "name": "КОШАК",
+    "card_id": "1548",
+    "name": "АН",
     "clan": "Deviants",
     "rarity": "common",
     "star": false,
-    "power": "7",
+    "power": "6",
     "damage": "2",
-    "ability": "1 яда, до 1",
+    "ability": "сила = силе соп.",
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "915",
-    "name": "НИНА",
+    "card_id": "143",
+    "name": "ТЕОДОР ★",
     "clan": "Deviants",
     "rarity": "common",
-    "star": false,
-    "power": "7",
-    "damage": "1",
-    "ability": "3 яда, до 7",
+    "star": true,
+    "power": "3",
+    "damage": "7",
+    "ability": "+2 силы",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -4928,17 +4939,6 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "142",
-    "name": "ГЛОРИЯ",
-    "clan": "Deviants",
-    "rarity": "common",
-    "star": false,
-    "power": "7",
-    "damage": "2",
-    "ability": "+1 урона",
-    "bonus": "-2 силы, до 1"
-  },
-  {
     "card_id": "527",
     "name": "ДЖОННИ",
     "clan": "Deviants",
@@ -4947,6 +4947,17 @@
     "power": "7",
     "damage": "4",
     "ability": "урон = урону соп.",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "479",
+    "name": "КОШАК",
+    "clan": "Deviants",
+    "rarity": "common",
+    "star": false,
+    "power": "7",
+    "damage": "2",
+    "ability": "1 яда, до 1",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -4961,25 +4972,14 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "143",
-    "name": "ТЕОДОР ★",
-    "clan": "Deviants",
-    "rarity": "common",
-    "star": true,
-    "power": "3",
-    "damage": "7",
-    "ability": "+2 силы",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "1548",
-    "name": "АН",
+    "card_id": "915",
+    "name": "НИНА",
     "clan": "Deviants",
     "rarity": "common",
     "star": false,
-    "power": "6",
-    "damage": "2",
-    "ability": "сила = силе соп.",
+    "power": "7",
+    "damage": "1",
+    "ability": "3 яда, до 7",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5005,14 +5005,14 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "267",
-    "name": "БОРИС",
+    "card_id": "894",
+    "name": "РЭЙФ",
     "clan": "Deviants",
     "rarity": "common",
     "star": false,
-    "power": "7",
+    "power": "6",
     "damage": "1",
-    "ability": "благо 2",
+    "ability": "+4 жизни",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5071,17 +5071,6 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "894",
-    "name": "РЭЙФ",
-    "clan": "Deviants",
-    "rarity": "common",
-    "star": false,
-    "power": "6",
-    "damage": "1",
-    "ability": "+4 жизни",
-    "bonus": "-2 силы, до 1"
-  },
-  {
     "card_id": "138",
     "name": "ФОРЕС",
     "clan": "Deviants",
@@ -5112,6 +5101,17 @@
     "power": "6",
     "damage": "5",
     "ability": "+1 силы соп.",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "267",
+    "name": "БОРИС",
+    "clan": "Deviants",
+    "rarity": "common",
+    "star": false,
+    "power": "7",
+    "damage": "1",
+    "ability": "благо 2",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5159,36 +5159,14 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "906",
-    "name": "ДЕСМОНД",
+    "card_id": "1552",
+    "name": "СИД",
     "clan": "Deviants",
-    "rarity": "rare",
-    "star": false,
-    "power": "5",
-    "damage": "5",
-    "ability": "-2 силы, до 1 НБ",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "653",
-    "name": "БЕЗУМИЕ",
-    "clan": "Deviants",
-    "rarity": "common",
-    "star": false,
-    "power": "8",
-    "damage": "2",
-    "ability": "эхо: -1 эн",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "134",
-    "name": "ДЕЙВ",
-    "clan": "Deviants",
-    "rarity": "common",
+    "rarity": "uniq",
     "star": false,
     "power": "7",
-    "damage": "3",
-    "ability": "+2 жизни",
+    "damage": "5",
+    "ability": "гнев: +1 жзн за урон",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5211,6 +5189,72 @@
     "power": "6",
     "damage": "6",
     "ability": "гнев: +5 атаки",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "144",
+    "name": "МОРОЗКО ★",
+    "clan": "Deviants",
+    "rarity": "uniq",
+    "star": true,
+    "power": "7",
+    "damage": "4",
+    "ability": "-3 урона, до 1",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "1634",
+    "name": "ВИРДЖИ +",
+    "clan": "Deviants",
+    "rarity": "uniq",
+    "star": false,
+    "power": "6",
+    "damage": "5",
+    "ability": "-3 силы, до 2",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "1259",
+    "name": "ВИГГЕР",
+    "clan": "Deviants",
+    "rarity": "rare",
+    "star": false,
+    "power": "7",
+    "damage": "4",
+    "ability": "+2 энергии",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "906",
+    "name": "ДЕСМОНД",
+    "clan": "Deviants",
+    "rarity": "rare",
+    "star": false,
+    "power": "5",
+    "damage": "5",
+    "ability": "-2 силы, до 1 НБ",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "653",
+    "name": "БЕЗУМИЕ",
+    "clan": "Deviants",
+    "rarity": "common",
+    "star": false,
+    "power": "8",
+    "damage": "2",
+    "ability": "эхо: -1 эн",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "135",
+    "name": "ГАРРИ",
+    "clan": "Deviants",
+    "rarity": "common",
+    "star": false,
+    "power": "5",
+    "damage": "6",
+    "ability": "+2 урона",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5247,36 +5291,14 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "1552",
-    "name": "СИД",
-    "clan": "Deviants",
-    "rarity": "uniq",
-    "star": false,
-    "power": "7",
-    "damage": "5",
-    "ability": "гнев: +1 жзн за урон",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "144",
-    "name": "МОРОЗКО ★",
-    "clan": "Deviants",
-    "rarity": "uniq",
-    "star": true,
-    "power": "7",
-    "damage": "4",
-    "ability": "-3 урона, до 1",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "135",
-    "name": "ГАРРИ",
+    "card_id": "134",
+    "name": "ДЕЙВ",
     "clan": "Deviants",
     "rarity": "common",
     "star": false,
-    "power": "5",
-    "damage": "6",
-    "ability": "+2 урона",
+    "power": "7",
+    "damage": "3",
+    "ability": "+2 жизни",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5291,17 +5313,6 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "1634",
-    "name": "ВИРДЖИ +",
-    "clan": "Deviants",
-    "rarity": "uniq",
-    "star": false,
-    "power": "6",
-    "damage": "5",
-    "ability": "-3 силы, до 2",
-    "bonus": "-2 силы, до 1"
-  },
-  {
     "card_id": "561",
     "name": "КУРТ",
     "clan": "Deviants",
@@ -5310,94 +5321,6 @@
     "power": "7",
     "damage": "5",
     "ability": "-2 жизни",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "1259",
-    "name": "ВИГГЕР",
-    "clan": "Deviants",
-    "rarity": "rare",
-    "star": false,
-    "power": "7",
-    "damage": "4",
-    "ability": "+2 энергии",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "266",
-    "name": "РАМОНА",
-    "clan": "Deviants",
-    "rarity": "legend",
-    "star": false,
-    "power": "7",
-    "damage": "7",
-    "ability": "-2 энергии",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "680",
-    "name": "НАДЕЖДА",
-    "clan": "Deviants",
-    "rarity": "rare",
-    "star": false,
-    "power": "6",
-    "damage": "6",
-    "ability": "сила = силе соп.",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "1080",
-    "name": "СЛИКЕР",
-    "clan": "Deviants",
-    "rarity": "rare",
-    "star": false,
-    "power": "7",
-    "damage": "3",
-    "ability": "+1 жзн за урон НБ",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "705",
-    "name": "КОЛИН",
-    "clan": "Deviants",
-    "rarity": "rare",
-    "star": false,
-    "power": "5",
-    "damage": "7",
-    "ability": "крах: -2 эн",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "759",
-    "name": "АРАМ",
-    "clan": "Deviants",
-    "rarity": "uniq",
-    "star": false,
-    "power": "8",
-    "damage": "3",
-    "ability": "+1 эн за урон",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "133",
-    "name": "ЗАХАР",
-    "clan": "Deviants",
-    "rarity": "rare",
-    "star": false,
-    "power": "8",
-    "damage": "5",
-    "ability": "-1 атаки, до 1",
-    "bonus": "-2 силы, до 1"
-  },
-  {
-    "card_id": "1459",
-    "name": "ГРИН",
-    "clan": "Deviants",
-    "rarity": "rare",
-    "star": false,
-    "power": "8",
-    "damage": "1",
-    "ability": "-1 жизни; +3 эн",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5412,25 +5335,69 @@
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "177",
-    "name": "ДЕ САД",
+    "card_id": "680",
+    "name": "НАДЕЖДА",
     "clan": "Deviants",
-    "rarity": "uniq",
+    "rarity": "rare",
     "star": false,
-    "power": "7",
+    "power": "6",
     "damage": "6",
-    "ability": "-6 атаки, до 3",
+    "ability": "сила = силе соп.",
     "bonus": "-2 силы, до 1"
   },
   {
-    "card_id": "1108",
-    "name": "ЧЕЗАРЕ",
+    "card_id": "759",
+    "name": "АРАМ",
     "clan": "Deviants",
     "rarity": "uniq",
     "star": false,
+    "power": "8",
+    "damage": "3",
+    "ability": "+1 эн за урон",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "1459",
+    "name": "ГРИН",
+    "clan": "Deviants",
+    "rarity": "rare",
+    "star": false,
+    "power": "8",
+    "damage": "1",
+    "ability": "-1 жизни; +3 эн",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "266",
+    "name": "РАМОНА",
+    "clan": "Deviants",
+    "rarity": "legend",
+    "star": false,
     "power": "7",
+    "damage": "7",
+    "ability": "-2 энергии",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "133",
+    "name": "ЗАХАР",
+    "clan": "Deviants",
+    "rarity": "rare",
+    "star": false,
+    "power": "8",
     "damage": "5",
-    "ability": "−бонус НБ",
+    "ability": "-1 атаки, до 1",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "1080",
+    "name": "СЛИКЕР",
+    "clan": "Deviants",
+    "rarity": "rare",
+    "star": false,
+    "power": "7",
+    "damage": "3",
+    "ability": "+1 жзн за урон НБ",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5442,6 +5409,39 @@
     "power": "7",
     "damage": "5",
     "ability": "+2 силы",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "177",
+    "name": "ДЕ САД",
+    "clan": "Deviants",
+    "rarity": "uniq",
+    "star": false,
+    "power": "7",
+    "damage": "6",
+    "ability": "-6 атаки, до 3",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "705",
+    "name": "КОЛИН",
+    "clan": "Deviants",
+    "rarity": "rare",
+    "star": false,
+    "power": "5",
+    "damage": "7",
+    "ability": "крах: -2 эн",
+    "bonus": "-2 силы, до 1"
+  },
+  {
+    "card_id": "1108",
+    "name": "ЧЕЗАРЕ",
+    "clan": "Deviants",
+    "rarity": "uniq",
+    "star": false,
+    "power": "7",
+    "damage": "5",
+    "ability": "−бонус НБ",
     "bonus": "-2 силы, до 1"
   },
   {

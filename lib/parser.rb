@@ -4,29 +4,30 @@ require 'json'
 require 'open-uri'
 
   def clan_name(clan_id)
-    case clan_id
-      when 1 then return 'Micron'
-      when 2 then return 'Aliens'
-      when 3 then return 'Street'
-      when 4 then return 'Mafia'
-      when 5 then return 'Circus'
-      when 6 then return '[Da:Hack]'
-      when 7 then return 'Alpha'
-      when 8 then return 'Fury'
-      when 9 then return 'Deviants'
-      when 10 then return 'Damned'
-      when 11 then return 'Saints'
-      when 13 then return 'Metropolis'
-      when 15 then return 'Workers'
-      when 16 then return 'PSI'
-      when 17 then return 'Kingpin'
-      when 18 then return 'Chasers'
-      when 19 then return 'Халифат'
-      when 20 then return 'C.O.R.R'
-      when 21 then return 'Toyz'
-      when 26 then return 'Nemos'
-      when 27 then return 'SymBio'
-    end
+    clans = {
+     1 => 'Micron',
+     2 => 'Aliens',
+     3 => 'Street',
+     4 => 'Mafia',
+     5 => 'Circus',
+     6 => '[Da:Hack]',
+     7 => 'Alpha',
+     8 => 'Fury',
+     9 => 'Deviants',
+     10 => 'Damned',
+     11 => 'Saints',
+     13 => 'Metropolis',
+     15 => 'Workers',
+     16 => 'PSI',
+     17 => 'Kingpin',
+     18 => 'Chasers',
+     19 => 'Халифат',
+     20 => 'C.O.R.R',
+     21 => 'Toyz',
+     26 => 'Nemos',
+     27 => 'SymBio'
+    }
+    clans.invert.key(clan_id)
   end
 
 # 12 - enigma, 14 - gamblers, 22-25 - no clans
@@ -64,7 +65,7 @@ urls.each_with_index { |clan_page, index|
              ability: ability,
              bonus: bonus
     )
-    # puts JSON.pretty_generate(cards)
+    puts JSON.pretty_generate(cards)
   end
 }
 
