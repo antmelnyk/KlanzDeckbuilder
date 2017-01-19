@@ -1,1 +1,69 @@
+@import "bootstrap-sprockets"
 @import "bootstrap"
+
+.card
+  float: left
+  margin: 5px
+  width: 160px
+  height: 232px
+  font-size: 12px
+  text-align: center
+  color: white
+  font-family: Helvetica, sans-serif
+  font-weight: bold
+  text-shadow: 0 1px 2px black
+  box-shadow: 0 1px 2px black
+  border: 4px solid white
+  border-radius: 20px
+
+.art
+  img
+    width: 152px
+    height: 120px
+    border-radius: 15px 15px 0 0
+
+.legend
+  background-image: image-url('back_legend.png')
+.uniq
+  background-image: image-url('back_uniq.png')
+.rare
+  background-image: image-url('back_rare.png')
+.common
+  background-image: image-url('back_common.png')
+
+.main-line
+  height: 28px
+  width: 152px
+  padding-top: 5px
+  box-shadow: 0 2px 6px 1px black
+  border-radius: 5px
+  position: absolute
+
+.power-bg, .damage-bg
+  position: absolute
+  height: 37px
+  width: 49px
+  bottom: 8px
+
+.power-bg
+  left: -25px
+
+.damage-bg
+  right: -22px
+
+.power, .damage
+  position: absolute
+  font-size: 20px
+
+.power
+  bottom: -8px
+  right: 20px
+
+.damage
+  bottom: -10px
+  right: 20px
+
+.stats
+  margin-top: 45px
+  font-size: 14px
+  clear: both

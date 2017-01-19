@@ -4,6 +4,7 @@ class CardsController < ApplicationController
   end
 
   def show
-    @card = Card.find(params[:card_id])
+    @card = Card.find_by(number: params[:number])
   end
+
 end

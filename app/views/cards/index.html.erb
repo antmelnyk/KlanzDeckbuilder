@@ -4,19 +4,7 @@
     <table class="table table-striped">
       <tbody>
       <% @cards.each do |card| %>
-          <thead>
-          <tr>
-            <th><%= card.card_id %></th>
-            <th><%= card.name %></th>
-            <th><%= card.clan %></th>
-            <th><%= card.rarity %></th>
-            <th><%= card.star %></th>
-            <th><%= card.power %></th>
-            <th><%= card.damage %></th>
-            <th><%= card.ability %></th>
-            <th><%= card.bonus %></th>
-          </tr>
-          </thead>
+          <%= render partial: 'layouts/card', locals: { card: card } %>
       <% end %>
       </tbody>
     </table>

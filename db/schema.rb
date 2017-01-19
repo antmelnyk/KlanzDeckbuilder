@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170111221243) do
   enable_extension "plpgsql"
 
   create_table "cards", force: :cascade do |t|
-    t.integer  "card_id"
+    t.integer  "number"
     t.string   "name"
     t.string   "clan"
     t.string   "rarity"
