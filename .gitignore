@@ -20,7 +20,5 @@
 # Ignore application configuration
 /config/application.yml
 
-#Ignore cards images and card json-list
+#Ignore cards images
 /lib/arts
-/lib/cards.json
-/app/assets/images
