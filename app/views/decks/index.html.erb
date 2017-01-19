@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="main-h1">Созданные игроками деки</h1>
+  <h2>Здесь вы можете увидеть список самых популярных и оценить их лайками</h2>
+  <table class="table table-striped">
+    <tbody>
+      <% @deck.each do |deck| %>
+          <%= render partial: 'layouts/_deck', locals: { deck: deck } %>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate @deck %>
+</div>
