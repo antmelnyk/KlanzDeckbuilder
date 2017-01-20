@@ -9,7 +9,7 @@
         <%= card.power %>
       </div>
     </div>
-    <div class="name">
+    <div <% if card.name.length < 10 %> class="name" <% else %> class="long-name" <% end %>>
       <%= card.name %>
     </div>
     <div class="damage-bg">
@@ -19,8 +19,8 @@
       </div>
     </div>
   </div>
-  <div class="stats">
-    <div class="ability">
+  <div class="stats clan-<%= clan_id card.clan %>">
+    <div <% if card.ability.length < 20 %> class="ability" <% else %> class="long-ability" <% end %>>
       <%= card.ability %>
     </div>
     <div class="bonus">

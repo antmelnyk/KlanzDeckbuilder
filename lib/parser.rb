@@ -3,6 +3,34 @@ require 'action_controller'
 require 'json'
 require 'open-uri'
 
+# Downloads all arts in .jpg, however there are some .png cards and even .gif one
+# Can be really improved
+def download_art(art_link, id)
+  sleep(0.3)
+  art = open "http://www.klanz.ru#{art_link}"
+
+  bytes_expected = art.meta['content-length'].to_i
+  bytes_copied = IO.copy_stream art, "arts/#{id}.jpg" #png starts with 0x89 0x50
+
+  if bytes_expected == bytes_copied
+    puts "Art #{id} downloaded! Yay!"
+  else
+    puts 'Megatron joke or connection problem?..'
+    raise 'ERROR'
+  end
+
+  rescue
+    retry
+
+end
+
+# Downloads all clans background logo for clans
+def download_clan_background_logo(id)
+  logo = open "http://klanz.ru/images/clans/#{id}/background_logo.png"
+  IO.copy_stream logo, "logos/#{id}.png"
+  puts "Logo #{id} downloaded, yay!"
+end
+
 def clan_name(clan_id)
   clans = {
       1 => 'Micron',
@@ -27,25 +55,7 @@ def clan_name(clan_id)
       26 => 'Nemos',
       27 => 'SymBio'
   }
-  clans.invert.key(clan_id)
-end
-
-def download_art(art_link, id)
-  sleep(0.3)
-  art = open "http://www.klanz.ru#{art_link}"
-
-  bytes_expected = art.meta['content-length'].to_i
-  bytes_copied = IO.copy_stream art, "arts/#{id}.jpg" #png starts with 0x89 0x50
-
-  if bytes_expected == bytes_copied
-    puts "Art #{id} downloaded! Yay!"
-  else
-    raise "Megatron joke or connection problem ERROR"
-  end
-
-  rescue
-    retry
-
+  clans.invert.key(clan_id) # Whatever
 end
 
 # 12 - enigma, 14 - gamblers, 22-25 - no clans
@@ -53,7 +63,13 @@ clan_id = [*1..11, 13, *15..21, 26, 27]
 urls = []
 cards = []
 
-clan_id.each_with_index { |digit, index| urls[index] = "http://www.klanz.ru/clans/#{digit}/original_cards" }
+# For every clan visit page, take all cards data and push to cards array,
+# then write array in JSON format into cards.json
+
+clan_id.each_with_index do |digit, index|
+  urls[index] = "http://www.klanz.ru/clans/#{digit}/original_cards"
+  download_clan_background_logo(digit)
+end
 
 urls.each_with_index do |clan_page, index|
   clan_page = open urls[index]

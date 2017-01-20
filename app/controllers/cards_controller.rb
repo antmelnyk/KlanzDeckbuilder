@@ -1,9 +1,6 @@
 class CardsController < ApplicationController
   def index
-    if current_page?(:controller => 'cards', :action => 'index')
       @cards = Card.all.page(params[:page]).per(15)
-      else
-    end
   end
 
   def show

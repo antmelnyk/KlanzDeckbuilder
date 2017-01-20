@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
+$card-width: 160px
+$card-height: 232px
+
 body
   background-image: image_url('city.jpg')
 
@@ -12,13 +15,12 @@ h1
   color: white
   text-shadow: 0 1px 2px black
 
-
 .card
   display: block
   float: left
-  margin: 10px
-  width: 160px
-  height: 232px
+  margin: 12px
+  width: $card-width
+  height: $card-height
   font-size: 12px
   text-align: center
   color: white
@@ -29,11 +31,22 @@ h1
   text-shadow: 0 1px 2px black
   border-radius: 22px
 
+.long-ability
+  font-size: 12px
+
+.long-name
+  font-size: 10px
+  padding-top: 4px
+
 .art
   img
     width: 152px
     height: 120px
     border-radius: 15px 15px 0 0
+
+@for $i from 1 through 27
+  .clan-#{$i}
+    background-image: image-url('background_clans/#{$i}.png')
 
 .legend
   background-image: image-url('back_legend.png')
@@ -77,6 +90,18 @@ h1
   right: 20px
 
 .stats
+  display: block
+  height: 58px
   margin-top: 45px
   font-size: 14px
   clear: both
+  background-position: 70px 0px
+  background-repeat: no-repeat
+  background-size: 60%
+
+.bonus
+  display: block
+  border-radius: 12px
+  margin-top: 12px
+  padding: 4px
+  background-color: rgba(white, .1)

@@ -11,7 +11,7 @@
           </tbody>
         </table>
         <div id="paginator">
-          <%= paginate @cards, :remote => true %>
+          <%= paginate @cards, remote: true, window: 1 %>
         </div>
       </div>
     </div>
