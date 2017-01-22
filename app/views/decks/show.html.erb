@@ -1,9 +1,12 @@
 <div class="deck">
-  <%= deck.author %>
-  <%= deck.likes %>
-  <%= deck.dislikes %>
-  <% this_deck = get_cards(deck) %>
-  <%= this_deck.each do |card|
-    render partial: 'layouts/card', locals: { card: card }
-  end %>
+  <div class="info">
+    <%= @deck.author %>
+    <%= @deck.likes %>
+    <%= @deck.dislikes %>
+  </div>
+  <div class="deck-cards">
+    <% get_cards(@deck).each do |card| %>
+      <%= render card, card: card %>
+    <% end %>
+  </div>
 </div>
