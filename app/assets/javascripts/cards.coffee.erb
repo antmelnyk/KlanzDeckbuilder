@@ -1,5 +1,5 @@
+# Simple class for controlling cards in deck
 class Deck
-
   constructor: ->
     @head = -1
     @cards = []
@@ -20,6 +20,10 @@ class Deck
 $(document).ready ->
   deck = new Deck()
   deck_input = ''
+
+  # When clicked on outdeck-card: add card id to the hidden input in form_for,
+  # then toggle classes inside card divs into dockholdered classes,
+  # detach card and append to the deckholder. Next function vice versa.
   $(document).on "click", ".outdeck-card", ->
     card = $(this).attr('id')
     deckable = deck.add_card card
@@ -40,14 +44,23 @@ $(document).ready ->
     $(this).detach().fadeIn('slow');
     $('#cards').append($(this))
 
+  # "Clearing" deck by reloading page, rofl
   $('#clear-all').click ->
     location.reload()
 
   $('.btn-primary').click ->
     if deck.head < 14
-      alert('В деке должно быть минимум 15 карт, сладенький!')
+      alert('В деке должно быть минимум 15 карт!')
 
+  # Helper functions (to toggle classes vice versa)
   toggle_to_deckholder = (card) ->
+    # Append power/damage to card name for deckholder cards
+    power = card.find($('.power')).text()
+    damage = card.find($('.damage')).text()
+    card.find($('.name')).append(' : ' + power + '/' + damage)
+    card.find($('.long-name')).append(' : ' + power + '/' + damage)
+
+    # Toggling deckholder classes
     card.find($('.art')).toggleClass('deckholder-art art')
     card.find($('.main-line')).toggleClass('deckholder-main-line main-line')
     card.find($('.power-bg')).toggleClass('deckholder-power-bg power-bg')
@@ -61,6 +74,18 @@ $(document).ready ->
     card.find($('.bonus')).toggleClass('deckholder-bonus bonus')
 
   toggle_to_list = (card) ->
+    # Getting back card name without power-damage text
+    namestats = card.find($('.name')).text().replace(/\s/g, '')
+    namestats_long = card.find($('.long-name')).text().replace(/\s/g, '')
+    name = namestats.slice(0, -4)
+    name_long = namestats_long.slice(0, -4)
+    card.find($('.name')).filter ->
+      $(this).html() == name
+    card.find($('.long-name')).filter ->
+      $(this).html() == name
+
+    # Toggling deckholder classes
+    card.find($('.name')).empty().append(name);
     card.find($('.deckholder-art')).toggleClass('art deckholder-art')
     card.find($('.deckholder-main-line')).toggleClass('main-line deckholder-main-line')
     card.find($('.deckholder-power-bg')).toggleClass('power-bg deckholder-power-bg')
@@ -73,3 +98,14 @@ $(document).ready ->
     card.find($('.deckholder-long-name')).toggleClass('long-name deckholder-long-name')
     card.find($('.deckholder-bonus')).toggleClass('bonus deckholder-bonus')
 
+  # Show 'loading cards' indicator
+  $('#loading').hide()
+  $(document).ajaxStart(->
+      $('#loading').show()
+      return
+      ).ajaxStop ->
+        $('#loading').hide()
+        return
+
+  # Organising form_for to be submittable only if there is 15 cards in deck
+  $("#submit-button").prop('disabled', true)

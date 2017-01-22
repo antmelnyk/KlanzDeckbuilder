@@ -15,17 +15,19 @@ body
   background-image: image_url('city.jpg')
   background-attachment: fixed
 
+.alert
+  visibility: visible
+  opacity: 1
+  transition: opacity 2s linear
+
 .container
   background-color: $background-classic
   box-shadow: 0 1px 5px black
-  margin-bottom: 100px
+  margin-bottom: 165px
 
 h1
   color: white
   text-shadow: 0 1px 2px black
-
-.table
-  margin-bottom: 0
 
 /* Card design */
 
@@ -133,17 +135,21 @@ h1
   box-shadow: 0 1px 2px black
   position: fixed
   bottom: 0
-  z-index: 500
+  z-index: 100
 
-#clear-all
+#clear-all, #login
   position: fixed
   bottom: 125px
   right: 2px
 
+#login
+  right: 140px
+
 #submit-form
   position: fixed
   bottom: 125px
-  right: 160px
+  right: 130px
+  z-index: 200
 
 .deckholder-roof
   display: block
@@ -151,6 +157,7 @@ h1
   height: 45px
   overflow: hidden
   bottom: 120px
+  right: 0
   position: fixed
   background-color: $background-classic
   box-shadow: 0 1px 2px black
@@ -217,6 +224,7 @@ h1
   margin-top: 18px
   font-size: 8px
   clear: both
+  background-image: none
 
 .deckholder-bonus
   display: block
@@ -225,8 +233,14 @@ h1
   padding: 2px
   background-color: rgba(white, .1)
 
-/* Deck design *?
+/* Deck design */
 
 .deck
   clear: both
+
+/* Paginator design */
+
+
+
+
 

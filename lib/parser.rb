@@ -68,7 +68,7 @@ cards = []
 
 clan_id.each_with_index do |digit, index|
   urls[index] = "http://www.klanz.ru/clans/#{digit}/original_cards"
-  download_clan_background_logo(digit)
+  # download_clan_background_logo(digit)
 end
 
 urls.each_with_index do |clan_page, index|
