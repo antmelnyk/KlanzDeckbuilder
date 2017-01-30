@@ -1,8 +1,8 @@
 <div class="deck">
   <div class="info">
-    <%= deck.author %>
-    <%= deck.likes %>
-    <%= deck.dislikes %>
+    <h2><%= deck.name %> | <%= deck.likes %> / <%= deck.dislikes %></h2>
+    <h3><%= deck.info %></h3>
+    <h4>Автор деки: <%= deck.user.username %></h4>
   </div>
   <div class="deck-cards">
     <% get_cards(deck).each do |card| %>

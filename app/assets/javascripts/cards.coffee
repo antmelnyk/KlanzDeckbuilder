@@ -11,13 +11,19 @@ class Deck
     else
       @cards.push card
       @head++
+      if @head > 13
+        $(':input[type="submit"]').prop('disabled', false)
       return true
 
   remove_card: (bad_card) =>
     @cards = @cards.filter (card) -> card isnt bad_card
     @head--
+    if @head < 14
+      $(':input[type="submit"]').prop('disabled', true)
+
 
 $(document).ready ->
+  $('#create-deck').prop('disabled', true)
   deck = new Deck()
   deck_input = ''
 
@@ -51,12 +57,8 @@ $(document).ready ->
     $('#cards').append($(this))
 
   # "Clearing" deck by reloading page, rofl
-  $('#clear-all').click ->
+  $(document).on "click", "#clear-all", ->
     location.reload()
-
-  $('.btn-primary').click ->
-    if deck.head < 14
-      alert('В деке должно быть минимум 15 карт!')
 
   # Helper functions (to toggle classes vice versa)
   toggle_to_deckholder = (card) ->
@@ -103,6 +105,9 @@ $(document).ready ->
     card.find($('.deckholder-name')).toggleClass('name deckholder-name')
     card.find($('.deckholder-bonus')).toggleClass('bonus deckholder-bonus')
 
+  $(document).on "click", "#deck-info-label", ->
+    $('#deck_info').slideToggle('slow')
+
   # Show 'loading cards' indicator
   $('#loading').hide()
   $(document).ajaxStart(->
@@ -112,5 +117,4 @@ $(document).ready ->
         $('#loading').hide()
         return
 
-  # Organising form_for to be submittable only if there is 15 cards in deck
-  $("#submit-button").prop('disabled', true)
+

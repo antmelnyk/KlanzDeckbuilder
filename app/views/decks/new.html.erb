@@ -13,9 +13,10 @@
   <div class="deckholder-roof">
     <button type="button" id="clear-all" class="btn btn-danger">Очистить деку</button>
       <%= form_for @deck, url: {action: 'create'}, html: {id: 'submit-form'} do |f| %>
+        <span id="deck-name-label">Имя деки:</span><%= f.text_field :name %>
+        <span id="deck-info-label">Описание деки</span><%= f.text_area :info %>
         <%= f.hidden_field(:deck, :value => '') %>
-        <%= f.submit 'Создать деку', :class => 'btn btn-primary' %>
+        <%= f.submit 'Создать деку', :class => 'btn btn-primary', :id => 'create-deck' %>
     <% end %>
-    <!-- <button type="button" id="login" class="btn btn-primary">Войдите, чтобы сохранить деку</button> -->
   </div>
 </div>

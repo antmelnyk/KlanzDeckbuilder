@@ -4,7 +4,7 @@ class DecksController < ApplicationController
   end
 
   def user_index
-    @decks = current_user.decks
+    @decks = Deck.where user_id: current_user.id
   end
 
   def show
@@ -12,20 +12,21 @@ class DecksController < ApplicationController
   end
 
   def new
-    @deck = Deck.new(params[:deck])
+    @deck = Deck.new
     @cards = Card.all.page(params[:page])
   end
 
   def create
-    @deck.user = current_user
+    @user = current_user
+    @deck = @user.decks.build(deck_params)
     if @deck.save
       redirect_to @deck
-    else
-      render 'index'
     end
   end
 
   private
 
-
+  def deck_params
+    params.require(:deck).permit(:name, :info, :deck)
+  end
 end

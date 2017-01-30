@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20170123205027) do
 
   create_table "decks", force: :cascade do |t|
     t.string  "deck"
+    t.string  "name"
     t.text    "info"
     t.integer "likes"
     t.integer "dislikes"

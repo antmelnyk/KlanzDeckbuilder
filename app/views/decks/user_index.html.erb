@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="main-h1">Мои деки</h1>
+  <h2>Здесь вы можете увидеть список созданных вами дек!</h2>
+  <table class="table table-striped">
+    <tbody>
+    <% @decks.each do |deck| %>
+        <%= render deck, deck: deck %>
+    <% end %>
+    </tbody>
+  </table>
+</div>
