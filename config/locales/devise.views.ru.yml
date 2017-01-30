@@ -4,6 +4,7 @@ ru:
       user:
         current_password: "Текущий пароль"
         email: Email
+        login: "Логин"
         password: "Пароль"
         password_confirmation: "Подтверждение пароля"
         remember_me: "Запомнить меня"
@@ -21,10 +22,10 @@ ru:
     failure:
       already_authenticated: "Вы уже вошли в систему."
       inactive: "Ваша учетная запись еще не активирована."
-      invalid: "Неверный адрес эл. почты или пароль."
+      invalid: "Неккоректно введенные данные, попробуйте еще раз!"
       last_attempt: "У вас осталась последняя попытка ввода пароля до блокировки учетной записи."
       locked: "Ваша учетная запись заблокирована."
-      not_found_in_database: "Неверный адрес эл. почты или пароль."
+      not_found_in_database: "Такой комбинации логина и пароля не найдено!"
       timeout: "Ваш сеанс закончился. Пожалуйста, войдите в систему снова."
       unauthenticated: "Вам необходимо войти в систему или зарегистрироваться."
       unconfirmed: "Вы должны подтвердить вашу учетную запись."
@@ -76,7 +77,7 @@ ru:
         currently_waiting_confirmation_for_email: "Ожидается подтверждение адреса E-mail: %{email}"
         leave_blank_if_you_don_t_want_to_change_it: "оставьте поле пустым, если не хотите его менять"
         title: "Редактировать %{resource}"
-        unhappy: "Разочарованы"
+        unhappy: "Разочарованы?"
         update: "Обновить"
         we_need_your_current_password_to_confirm_your_changes: "введите текущий пароль для подтверждения изменений"
       new:

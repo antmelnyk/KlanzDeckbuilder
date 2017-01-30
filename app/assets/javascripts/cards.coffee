@@ -32,16 +32,22 @@ $(document).ready ->
       $(this).removeClass('outdeck-card')
       $(this).addClass('deck-card')
       toggle_to_deckholder($(this))
-      $(this).detach().fadeIn('slow');
+      $(this).detach().fadeIn('fast')
       $('.deckholder').append($(this))
 
   $(document).on "click", ".deck-card", ->
+    deck_input = $('input[name="deck[deck]"]')[0].value
+    id_to_remove = $(this).attr('id') + '_'
+    deck_input = deck_input.replace id_to_remove, ''
+    $('input[name="deck[deck]"]').val(deck_input)
+    deck_input = ''
+
     chosen = $(this).attr('id')
     deck.remove_card(chosen)
     $(this).removeClass('deck-card')
     $(this).addClass('outdeck-card')
     toggle_to_list($(this))
-    $(this).detach().fadeIn('slow');
+    $(this).detach().fadeIn('fast')
     $('#cards').append($(this))
 
   # "Clearing" deck by reloading page, rofl
@@ -70,22 +76,20 @@ $(document).ready ->
     card.find($('.stats')).toggleClass('deckholder-stats stats')
     card.find($('.ability')).toggleClass('deckholder-ability ability')
     card.find($('.long-ability')).toggleClass('deckholder-long-ability long-ability')
+    card.find($('.name')).toggleClass('deckholder-name name')
     card.find($('.long-name')).toggleClass('deckholder-long-name long-name')
     card.find($('.bonus')).toggleClass('deckholder-bonus bonus')
 
   toggle_to_list = (card) ->
     # Getting back card name without power-damage text
-    namestats = card.find($('.name')).text().replace(/\s/g, '')
-    namestats_long = card.find($('.long-name')).text().replace(/\s/g, '')
-    name = namestats.slice(0, -4)
-    name_long = namestats_long.slice(0, -4)
-    card.find($('.name')).filter ->
-      $(this).html() == name
-    card.find($('.long-name')).filter ->
-      $(this).html() == name
+    namestats = card.find($('.deckholder-name')).text().replace(/\s/g, '')
+    namestats_long = card.find($('.deckholder-long-name')).text().replace(/\s/g, '')
+    name = namestats.slice(0, -4).replace('★', ' ★')
+    name_long = namestats_long.slice(0, -4).replace('★', ' ★')
+    card.find($('.deckholder-name')).empty().append(name)
+    card.find($('.deckholder-long-name')).empty().append(name_long)
 
     # Toggling deckholder classes
-    card.find($('.name')).empty().append(name);
     card.find($('.deckholder-art')).toggleClass('art deckholder-art')
     card.find($('.deckholder-main-line')).toggleClass('main-line deckholder-main-line')
     card.find($('.deckholder-power-bg')).toggleClass('power-bg deckholder-power-bg')
@@ -96,6 +100,7 @@ $(document).ready ->
     card.find($('.deckholder-ability')).toggleClass('ability deckholder-ability')
     card.find($('.deckholder-long-ability')).toggleClass('long-ability deckholder-long-ability')
     card.find($('.deckholder-long-name')).toggleClass('long-name deckholder-long-name')
+    card.find($('.deckholder-name')).toggleClass('name deckholder-name')
     card.find($('.deckholder-bonus')).toggleClass('bonus deckholder-bonus')
 
   # Show 'loading cards' indicator

@@ -9,27 +9,32 @@ $background-deckholder: #403F48
 $deck-card-width: 80px
 $deck-card-height: 110px
 
+$legend-color: #ffe700
+$uniq-color: #0081ff
+$rare-color: #00c02f
+$common-color: #a5a5a5
+
 /* General design */
 
 body
   background-image: image_url('city.jpg')
   background-attachment: fixed
 
-.alert
-  visibility: visible
-  opacity: 1
-  transition: opacity 2s linear
-
 .container
   background-color: $background-classic
-  box-shadow: 0 1px 5px black
   margin-bottom: 165px
 
 h1
   color: white
   text-shadow: 0 1px 2px black
 
+#email
+  text-align: center
+
 /* Card design */
+
+@mixin rarity($color)
+  box-shadow: 0px 0px 50px $color
 
 .card
   display: block
@@ -46,8 +51,10 @@ h1
   box-shadow: 0 1px 2px black
   text-shadow: 0 1px 2px black
   border-radius: 22px
+  transition: 0.4s
   &:hover
     cursor: pointer
+    transition: 0.4s
 
 .long-ability
   font-size: 12px
@@ -68,12 +75,23 @@ h1
 
 .legend
   background-image: image-url('back_legend.png')
+  &:hover
+    @include rarity($legend-color)
+
 .uniq
   background-image: image-url('back_uniq.png')
+  &:hover
+    @include rarity($uniq-color)
+
 .rare
   background-image: image-url('back_rare.png')
+  &:hover
+    @include rarity($rare-color)
+
 .common
   background-image: image-url('back_common.png')
+  &:hover
+    @include rarity($common-color)
 
 .main-line
   height: 28px
