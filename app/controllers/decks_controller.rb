@@ -13,7 +13,7 @@ class DecksController < ApplicationController
 
   def new
     @deck = Deck.new
-    @cards = Card.all.page(params[:page])
+    @cards = Card.all.page(params[:page]).per(20)
   end
 
   def create
@@ -29,4 +29,5 @@ class DecksController < ApplicationController
   def deck_params
     params.require(:deck).permit(:name, :info, :deck)
   end
+
 end

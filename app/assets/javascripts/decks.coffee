@@ -23,6 +23,7 @@ class Deck
 
 
 $(document).ready ->
+  $('#cards').fadeIn(1000)
   $('#create-deck').prop('disabled', true)
   deck = new Deck()
   deck_input = ''
@@ -108,12 +109,13 @@ $(document).ready ->
     $('#deck_info').slideToggle('slow')
 
   # Show 'loading cards' indicator
-  $('#loading').hide()
+  $('#loader').hide()
   $(document).ajaxStart(->
-    $('#loading').show()
+    $('#loader').fadeIn()
     return
   ).ajaxStop ->
-    $('#loading').hide()
-    return
+      $('#cards').hide().fadeIn(1000)
+      $('#loader').fadeOut()
+      return
 
 

@@ -46,4 +46,35 @@ module ApplicationHelper
     clans.key(clan_name)
   end
 
+  def clan_name(clan_id)
+    clans = {
+        1 => 'Micron',
+        2 => 'Aliens',
+        3 => 'Street',
+        4 => 'Mafia',
+        5 => 'Circus',
+        6 => '[Da:Hack]',
+        7 => 'Alpha',
+        8 => 'Fury',
+        9 => 'Deviants',
+        10 => 'Damned',
+        11 => 'Saints',
+        13 => 'Metropolis',
+        15 => 'Workers',
+        16 => 'PSI',
+        17 => 'Kingpin',
+        18 => 'Chasers',
+        19 => 'Халифат',
+        20 => 'C.O.R.R',
+        21 => 'Toyz',
+        26 => 'Nemos',
+        27 => 'SymBio'
+    }
+    clans.invert.key(clan_id)
+  end
+
+  def clan_id_range
+    [*1..11, 13, *15..21, 26, 27]
+  end
+
 end

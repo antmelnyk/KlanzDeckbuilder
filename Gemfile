@@ -24,6 +24,7 @@ gem 'figaro'
 gem 'kaminari'
 gem 'devise'
 gem 'devise-i18n'
+gem 'has_scope'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

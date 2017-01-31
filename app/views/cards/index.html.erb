@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row filter-container">
+    <div class="col-md-3">
+      Редкость:
+      <%= link_to image_tag("back_common.png"), cards_path(:rarity => 'common'), class: "rarity-filter", :remote => true %>
+      <%= link_to image_tag("back_rare.png"), cards_path(:rarity => 'rare'), class: "rarity-filter", :remote => true %>
+      <%= link_to image_tag("back_uniq.png"), cards_path(:rarity => 'uniq'), class: "rarity-filter", :remote => true %>
+      <%= link_to image_tag("back_legend.png"), cards_path(:rarity => 'legend'), class: "rarity-filter", :remote => true %>
+      <%= link_to '★', cards_path(:star => true), class: "star-filter", :remote => true %>
+    </div>
+    <div class="col-md-7">
+      <% for clan_id in clan_id_range do %>
+          <%= link_to image_tag("filter_icons/#{clan_id}.png"),
+                      cards_path(:clan => clan_name(clan_id)), class: "clan-filter", :remote => true %>
+      <% end %>
+    </div>
+    <div class="col-md-2">
+      <span class="power-filter">Сила:
+      <%= link_to '8', cards_path(:power => '8'), class: "power-filter", :remote => true %>
+      <%= link_to '7', cards_path(:power => '7'), class: "power-filter", :remote => true %>
+      <%= link_to '6', cards_path(:power => '6'), class: "power-filter", :remote => true %>
+      </span>
+      <span class="damage-filter">Урон:
+        <%= link_to '4', cards_path(:damage => '4'), class: "damage-filter", :remote => true %>
+      </span>
+    </div>
+  </div>
+  <div class="row cards-container">
+    <div class="paginator">
+      <%= paginate @cards, remote: true %>
+    </div>
+    <div id="cards">
+      <%= render @cards %>
+    </div>
+    <div class="bottom-line">
+      <div class="paginator">
+        <%= paginate @cards, remote: true %>
+      </div>
+    </div>
+    <div id="loader"></div>
+  </div>
+</div>
+<div class="deckholder">
+  <div class="deckholder-roof">
+    <button type="button" id="clear-all" class="btn btn-danger">Очистить деку</button>
+    <%= form_for @deck, url: {controller: 'decks', action: 'create'}, html: {id: 'submit-form'} do |f| %>
+        <span id="deck-name-label">Имя деки:</span><%= f.text_field :name %>
+        <span id="deck-info-label">Описание деки</span><%= f.text_area :info %>
+        <%= f.hidden_field(:deck, :value => '') %>
+        <%= f.submit 'Создать деку', :class => 'btn btn-primary', :id => 'create-deck' %>
+    <% end %>
+  </div>
+</div>
