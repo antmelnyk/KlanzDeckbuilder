@@ -1,12 +1,13 @@
 <div class="container">
-  <h1 class="main-h1">Созданные игроками деки</h1>
-  <h2>Здесь вы можете увидеть список самых популярных дек, оценить их лайками и поделиться с другими игроками!</h2>
-  <table class="table table-striped">
-    <tbody>
-      <% @decks.each do |deck| %>
-          <%= render deck, deck: deck %>
-      <% end %>
-    </tbody>
+  <h3>Созданные игроками деки</h3>
+  <h4>Здесь вы можете увидеть список самых популярных дек, оценить их лайками и поделиться с другими игроками.
+  Кликните на деку для более подробного просмотра.</h4>
+  <table class="table table-inverse decks-table">
+    <%= render 'deck_table' %>
   </table>
-  <%= paginate @decks %>
+  <div class="bottom-line">
+    <div class="paginator">
+      <%= paginate @decks, remote: true %>
+    </div>
+  </div>
 </div>

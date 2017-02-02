@@ -3,8 +3,6 @@ module ApplicationHelper
   def card_path(id)
     return "cards_jpg/#{id}.jpg" if File.file? (Rails.root +
         "app/assets/images/cards_jpg/#{id}.jpg")
-    return "cards_jpg/#{id}.jpg" if File.file? (Rails.root +
-        "app/assets/images/cards_jpg/#{id}") # should be no extension jpg
     return "cards_png/#{id}.png" if File.file? (Rails.root +
         "app/assets/images/cards_png/#{id}.png")
     "#{id}.gif"
@@ -19,8 +17,14 @@ module ApplicationHelper
     result
   end
 
-  def filter_query
-
+  def get_clans(deck)
+    result = []
+    get_cards(deck).each do |card|
+      unless result.include? card.clan
+        result << card.clan
+      end
+    end
+    result
   end
 
   def clan_id(clan_name)

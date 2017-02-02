@@ -1,0 +1,28 @@
+<thead>
+<tr>
+  <th>Имя деки</th>
+  <th>Кланы</th>
+  <th>Карты</th>
+  <th>Рейтинг</th>
+  <th>Автор</th>
+</tr>
+</thead>
+<tbody>
+<% @decks.each do |deck| %>
+    <tr class="deck-row" data-link="<%= decks_path(id: deck.id) %>">
+      <td><%= deck.name %></td>
+      <td>
+        <% get_clans(deck).each do |clan| %>
+            <%= image_tag "filter_icons/#{clan_id(clan)}.png" %>
+        <% end %>
+      </td>
+      <td>
+        <% cards = [] %>
+        <% get_cards(deck).each { |card| cards << card.name.downcase.mb_chars.titleize.to_s } %>
+        <%= cards.join(', ') %>
+      </td>
+      <td><%= image_tag "heart.png", class: 'like-heart' %><%= deck.likes - deck.dislikes %></td>
+      <td><%= deck.user.username %></td>
+    </tr>
+    </tbody>
+<% end %>

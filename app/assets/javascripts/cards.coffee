@@ -11,4 +11,6 @@ $(document).ready ->
     $('#loader').fadeOut()
     $('#cards').show()
     $('.bottom-line').show()
+    if $('#cards').find('.card').length == 0
+      $('#cards').append("<span>Нет карт соответствующих заданному фильтру!</span>").hide().fadeIn()
     return

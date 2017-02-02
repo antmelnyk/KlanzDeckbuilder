@@ -16,8 +16,4 @@ class CardsController < ApplicationController
 
   private
 
-  def cards_params
-    params.require(:card).permit(:rarity, :clan, :power, :damage)
-  end
-
-end
+ end
