@@ -15,7 +15,6 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bh', '~> 1.2'
 
 gem 'jquery-rails'
-gem 'turbolinks', '~> 5'
 gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'

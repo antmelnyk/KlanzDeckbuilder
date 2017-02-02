@@ -1,0 +1,28 @@
+.filter-container
+  cursor: default
+  padding: 12px
+  background-color: $bgHighlight
+  border-radius: 15px 15px 0 0
+  a
+    color: darkgoldenrod
+    &:hover, &:focus
+      text-decoration: none
+      color: gold
+
+.rarity-filter, .star-filter, .clan-filter
+  img
+    padding: 4px
+    transition: 0.2s
+    &:hover, &:focus
+      transition: 0.2s
+      box-shadow: 1px 1px 4px black
+
+
+.rarity-filter, .star-filter
+  img
+    width: 25px
+    height: 25px
+
+.rarity-active, .clan-active, .star-active
+  img
+    box-shadow: 1px 1px 4px black

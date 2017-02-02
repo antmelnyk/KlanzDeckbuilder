@@ -1,4 +1,4 @@
-# Simple class for controlling cards in deck
+# Simple class for controlling cards in creating deck
 class Deck
   constructor: ->
     @head = -1
@@ -23,13 +23,12 @@ class Deck
 
 
 $(document).ready ->
-  $('#cards').fadeIn(1000)
   $('#create-deck').prop('disabled', true)
   deck = new Deck()
   deck_input = ''
 
   # When clicked on outdeck-card: add card id to the hidden input in form_for,
-  # then toggle classes inside card divs into dockholdered classes,
+  # then toggle classes inside card divs into deckholdered classes,
   # detach card and append to the deckholder. Next function vice versa.
   $(document).on "click", ".outdeck-card", ->
     card = $(this).attr('id')
@@ -62,7 +61,7 @@ $(document).ready ->
 
   # Helper functions (to toggle classes vice versa)
   toggle_to_deckholder = (card) ->
-# Append power/damage to card name for deckholder cards
+    # Append power/damage to card name for deckholder cards
     power = card.find($('.power')).text()
     damage = card.find($('.damage')).text()
     card.find($('.name')).append(' : ' + power + '/' + damage)
@@ -83,7 +82,7 @@ $(document).ready ->
     card.find($('.bonus')).toggleClass('deckholder-bonus bonus')
 
   toggle_to_list = (card) ->
-# Getting back card name without power-damage text
+    # Getting back card name without power-damage text
     namestats = card.find($('.deckholder-name')).text().replace(/\s/g, '')
     namestats_long = card.find($('.deckholder-long-name')).text().replace(/\s/g, '')
     name = namestats.slice(0, -4).replace('★', ' ★')
@@ -107,15 +106,3 @@ $(document).ready ->
 
   $(document).on "click", "#deck-info-label", ->
     $('#deck_info').slideToggle('slow')
-
-  # Show 'loading cards' indicator
-  $('#loader').hide()
-  $(document).ajaxStart(->
-    $('#loader').fadeIn()
-    return
-  ).ajaxStop ->
-      $('#cards').hide().fadeIn(1000)
-      $('#loader').fadeOut()
-      return
-
-

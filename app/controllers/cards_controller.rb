@@ -6,12 +6,18 @@ class CardsController < ApplicationController
   has_scope :damage
 
   def index
-    @cards = apply_scopes(Card).all.page(params[:page]).per(20)
+    @cards = apply_scopes(Card).all.order(number: :desc).page(params[:page]).per(20)
     @deck = Deck.new
   end
 
   def show
     @card = Card.find_by(number: params[:number])
+  end
+
+  private
+
+  def cards_params
+    params.require(:card).permit(:rarity, :clan, :power, :damage)
   end
 
 end

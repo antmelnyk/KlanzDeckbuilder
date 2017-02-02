@@ -19,6 +19,10 @@ module ApplicationHelper
     result
   end
 
+  def filter_query
+
+  end
+
   def clan_id(clan_name)
     clans = {
         1 => 'Micron',
@@ -75,6 +79,15 @@ module ApplicationHelper
 
   def clan_id_range
     [*1..11, 13, *15..21, 26, 27]
+  end
+
+  def rarities
+    %w[common rare uniq legend]
+  end
+
+  protected
+  def safe_params
+    params.except(:host, :port, :protocol).permit!
   end
 
 end

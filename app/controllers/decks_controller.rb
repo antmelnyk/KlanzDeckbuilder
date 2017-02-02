@@ -1,4 +1,5 @@
 class DecksController < ApplicationController
+
   def index
     @decks = Deck.all.page(params[:page]).per(20)
   end
@@ -9,11 +10,6 @@ class DecksController < ApplicationController
 
   def show
     @deck = Deck.find(params[:id])
-  end
-
-  def new
-    @deck = Deck.new
-    @cards = Card.all.page(params[:page]).per(20)
   end
 
   def create

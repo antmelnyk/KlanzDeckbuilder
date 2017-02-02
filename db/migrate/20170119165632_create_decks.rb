@@ -6,8 +6,8 @@ class CreateDecks < ActiveRecord::Migration[5.0]
                      # cards in deck aren't connected to Card model, its just a string with cards ids
       t.string :name
       t.text :info
-      t.integer :likes
-      t.integer :dislikes
+      t.integer :likes, :default => 0
+      t.integer :dislikes, :default => 0
       t.belongs_to :user, index: true
     end
   end

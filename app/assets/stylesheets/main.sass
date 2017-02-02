@@ -3,8 +3,6 @@
 
 $card-width: 160px
 $card-height: 232px
-$background-classic: #27262D
-$background-deckholder: #403F48
 
 $deck-card-width: 80px
 $deck-card-height: 110px
@@ -14,35 +12,49 @@ $uniq-color: #0081ff
 $rare-color: #00c02f
 $common-color: #a5a5a5
 
-/* General design */
+$bgDefault      : #403f48
+$bgHighlight    : #27262d
+$bgDefaultDark  : #131313
+$colDefault     : #b2bbbd
+$colHighlight   : #ffffff
+$dropDown       : true
+
+@import 'navbar'
+@import 'filter'
+@import 'card'
+@import 'pagination'
+@import 'deckholder'
+@import 'deck'
+@import 'loader'
 
 body
   background-image: image_url('city.jpg')
   background-attachment: fixed
-  font-family: 'Russo One', sans-serif
+  font-family: 'Roboto', sans-serif
   font-size: 16px
 
-.navbar
-  border-radius: 10px
-
 .container
-  background-color: $background-classic
+  color: whitesmoke
+  background-color: $bgDefault
   margin-bottom: 165px
-  color: white
-  box-shadow: 0px 2px 5px black
+  min-height: 350px
+  border-radius: 15px
 
-.filter-container
-  border-radius: 10px
-  box-shadow: 0px 2px 5px black
+#cards-box
 
-.container
-  border-radius: 10px 10px 0 0
-
-.navbar
-  box-shadow: 0 1px 2px black
+#cards
+  padding-top: 20px
+  display: none
 
 h1
   text-shadow: 0 1px 2px black
+
+a
+  transition: 0.2s
+  &:focus
+    outline: 0
+  &:hover
+    transition: 0.2s
 
 #username
   text-align: center
@@ -54,347 +66,3 @@ h1
 
 .cards-container
   text-align: center
-
-a
-  &:focus
-    outline: 0
-
-/* Pagination design */
-
-#loader
-  position: fixed
-  bottom: 126px
-  left: 5px
-  z-index: 500
-  border: 6px solid darkgoldenrod
-  border-top: 6px solid $background-deckholder
-  border-bottom: 6px solid $background-deckholder
-  border-radius: 50%
-  width: 30px
-  height: 30px
-  animation: spin 2s linear infinite
-
-@keyframes spin
-  0%
-    transform: rotate(0deg)
-  100%
-    transform: rotate(360deg)
-
-.bottom-line
-  clear: both
-
-.paginator
-  display: inline-block
-  .active
-    a
-      background-color: $background-classic
-      border-color: gold
-      color: gold
-      &:hover
-        background-color: $background-classic
-        border-color: gold
-        color: gold
-  li
-    a
-      background-color: $background-deckholder
-      border-color: goldenrod
-      color: goldenrod
-      &:hover
-        background-color: $background-classic
-        border-color: gold
-        color: gold
-      &:focus
-        background-color: $background-classic
-        border-color: gold
-        color: gold
-
-  .disabled
-    a
-      background-color: $background-deckholder
-      border-color: goldenrod
-      color: goldenrod
-      &:hover
-        background-color: $background-deckholder
-        border-color: goldenrod
-        color: goldenrod
-
-
-/* Card design */
-
-@mixin rarity($color)
-  box-shadow: 0px 0px 50px $color
-
-.card
-  display: block
-  float: left
-  margin: 12px
-  width: $card-width
-  height: $card-height
-  font-size: 12px
-  text-align: center
-  color: white
-  font-family: 'Ubuntu', sans-serif
-  font-weight: bold
-  border: 4px solid white
-  box-shadow: 0 1px 2px black
-  text-shadow: 0 1px 2px black
-  border-radius: 22px
-  transition: 0.4s
-  &:hover
-    cursor: pointer
-    transition: 0.4s
-
-.long-ability
-  font-size: 12px
-
-.long-name
-  font-size: 11px
-  padding-top: 2px
-
-.art
-  img
-    width: 152px
-    height: 120px
-    border-radius: 15px 15px 0 0
-
-@for $i from 1 through 27
-  .clan-#{$i}
-    background-image: image-url('background_clans/#{$i}.png')
-
-.legend
-  background-image: image-url('back_legend.png')
-  &:hover
-    @include rarity($legend-color)
-
-.uniq
-  background-image: image-url('back_uniq.png')
-  &:hover
-    @include rarity($uniq-color)
-
-.rare
-  background-image: image-url('back_rare.png')
-  &:hover
-    @include rarity($rare-color)
-
-.common
-  background-image: image-url('back_common.png')
-  &:hover
-    @include rarity($common-color)
-
-.main-line
-  height: 28px
-  width: 152px
-  padding-top: 5px
-  box-shadow: 0 2px 6px 1px black
-  border-radius: 5px
-  position: absolute
-
-.power-bg, .damage-bg
-  position: absolute
-  height: 37px
-  width: 49px
-  bottom: 8px
-
-.power-bg
-  left: -25px
-
-.damage-bg
-  right: -22px
-
-.power, .damage
-  position: absolute
-  font-size: 20px
-
-.power
-  bottom: -8px
-  right: 20px
-
-.damage
-  bottom: -10px
-  right: 20px
-
-.stats
-  display: block
-  height: 58px
-  margin-top: 45px
-  font-size: 14px
-  clear: both
-  background-position: 70px 0px
-  background-repeat: no-repeat
-  background-size: 60%
-
-.bonus
-  display: block
-  border-radius: 12px
-  margin-top: 12px
-  padding: 4px
-  background-color: rgba(white, .1)
-
-/* Deckholder design */
-
-.deckholder
-  width: 100%
-  padding: 2px 2px 0 2px
-  overflow: auto
-  height: 122px
-  background-color: $background-deckholder
-  box-shadow: 0 1px 2px black
-  position: fixed
-  bottom: 0
-  z-index: 100
-
-#clear-all
-  margin-right: 5px
-  position: fixed
-  bottom: 125px
-  right: 6px
-
-#deck-name-label, #deck-info-label
-  color: white
-  border-bottom: 1px dashed white
-  padding-bottom: 2px
-  cursor: pointer
-  margin: 0 10px 0 8px
-
-#deck-name-label
-  cursor: default
-
-#deck_info
-  display: none
-  margin-left: auto
-  margin-right: auto
-  width: 444px
-  height: 100px
-  resize: none
-
-#submit-form
-  position: fixed
-  bottom: 125px
-  right: 155px
-  z-index: 200
-
-.deckholder-roof
-  display: block
-  width: 100%
-  height: 45px
-  overflow: hidden
-  bottom: 120px
-  right: 0
-  position: fixed
-  background-color: $background-classic
-  box-shadow: 0 1px 2px black
-
-/* Deckhodler card design */
-
-.deck-card
-  display: block
-  float: left
-  margin: 1px
-  width: $deck-card-width
-  height: $deck-card-height
-  font-size: 8px
-  text-align: center
-  color: white
-  font-family: Helvetica, sans-serif
-  font-weight: bold
-  border: 2px solid white
-  box-shadow: 0 1px 2px black
-  text-shadow: 0 1px 2px black
-  border-radius: 3px
-  &:hover
-    cursor: pointer
-
-.deckholder-long-ability
-  font-size: 6px
-
-.deckholder-long-name
-  font-size: 6px
-  padding-top: 1px
-
-.deckholder-art
-  img
-    width: $deck-card-width - 4px
-    height: 60px
-    border-radius: 2px 2px 0 0
-
-.deckholder-main-line
-  height: 12px
-  width: $deck-card-width - 3px
-  padding-top: 2px
-  box-shadow: 0 2px 2px 1px black
-  border-radius: 2px
-  position: absolute
-
-.deckholder-power-bg, .deckholder-damage-bg
-  display: none
-
-.deckholder-power, .deckholder-damage
-  position: absolute
-  font-size: 8px
-
-.deckholder-power
-  bottom: -20px
-  right: -10px
-
-.deckholder-damage
-  bottom: -10px
-  right: 20px
-
-.deckholder-stats
-  display: block
-  height: 30px
-  margin-top: 18px
-  font-size: 8px
-  clear: both
-  background-image: none
-
-.deckholder-bonus
-  display: block
-  border-radius: 4px
-  margin-top: 4px
-  padding: 2px
-  background-color: rgba(white, .1)
-
-/* Deck design */
-
-.deck
-  clear: both
-
-/* Paginator design */
-
-
-/* Filter design */
-
-.filter-container
-  padding: 10px
-  background-color: $background-deckholder
-  a
-    color: white
-
-.clan-filter
-  padding: 4px
-  transition: 0.4s
-  border-radius: 6px
-  cursor: pointer
-  &:hover
-    transition: 0.4s
-    box-shadow: 0 1px 8px #ff9700
-
-.rarity-filter
-  margin: 2px
-  img
-    border: 2px
-    border-radius: 6px
-    width: 25px
-    height: 25px
-    &:hover
-      transition: 0.4s
-      border: 2px
-      border-color: white
-
-.power-filter, .damage-filter
-  margin-right: 4px
-
-
-
-

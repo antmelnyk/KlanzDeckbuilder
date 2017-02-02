@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 20170123205027) do
     t.string  "deck"
     t.string  "name"
     t.text    "info"
-    t.integer "likes"
-    t.integer "dislikes"
+    t.integer "likes",    default: 0
+    t.integer "dislikes", default: 0
     t.integer "user_id"
     t.index ["user_id"], name: "index_decks_on_user_id", using: :btree
   end

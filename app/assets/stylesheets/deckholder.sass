@@ -1,0 +1,122 @@
+.deckholder
+  width: 100%
+  padding: 2px 2px 0 2px
+  overflow: auto
+  height: 122px
+  background-color: $bgHighlight
+  box-shadow: 0 1px 2px black
+  position: fixed
+  bottom: 0
+  z-index: 100
+
+#clear-all
+  margin-right: 5px
+  position: fixed
+  bottom: 125px
+  right: 6px
+
+#deck-name-label, #deck-info-label
+  color: white
+  border-bottom: 1px dashed white
+  padding-bottom: 2px
+  cursor: pointer
+  margin: 0 10px 0 8px
+
+#deck-name-label
+  cursor: default
+
+#deck_info
+  display: none
+  margin-left: auto
+  margin-right: auto
+  width: 444px
+  height: 100px
+  resize: none
+
+#submit-form
+  position: fixed
+  bottom: 125px
+  right: 155px
+  z-index: 200
+
+.deckholder-roof
+  display: block
+  width: 100%
+  height: 45px
+  overflow: hidden
+  bottom: 120px
+  right: 0
+  position: fixed
+  background-color: $bgDefault
+  box-shadow: 0 1px 2px black
+
+/* Deckhodler card design */
+
+.deck-card
+  display: block
+  float: left
+  margin: 1px
+  width: $deck-card-width
+  height: $deck-card-height
+  font-size: 8px
+  text-align: center
+  color: white
+  font-family: Helvetica, sans-serif
+  font-weight: bold
+  border: 2px solid white
+  box-shadow: 0 1px 2px black
+  text-shadow: 0 1px 2px black
+  border-radius: 3px
+  &:hover
+    cursor: pointer
+
+.deckholder-long-ability
+  font-size: 6px
+
+.deckholder-long-name
+  font-size: 6px
+  padding-top: 1px
+
+.deckholder-art
+  img
+    width: $deck-card-width - 4px
+    height: 60px
+    border-radius: 2px 2px 0 0
+
+.deckholder-main-line
+  height: 12px
+  width: $deck-card-width - 3px
+  padding-top: 2px
+  box-shadow: 0 2px 2px 1px black
+  border-radius: 2px
+  position: absolute
+
+.deckholder-power-bg, .deckholder-damage-bg
+  display: none
+
+.deckholder-power, .deckholder-damage
+  position: absolute
+  font-size: 8px
+
+.deckholder-power
+  bottom: -20px
+  right: -10px
+
+.deckholder-damage
+  bottom: -10px
+  right: 20px
+
+.deckholder-stats
+  display: block
+  height: 30px
+  margin-top: 18px
+  font-size: 8px
+  clear: both
+  background-image: none
+
+.deckholder-bonus
+  display: block
+  border-radius: 4px
+  margin-top: 4px
+  padding: 2px
+  background-color: rgba(white, .1)

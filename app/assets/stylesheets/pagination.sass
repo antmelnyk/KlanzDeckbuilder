@@ -1,0 +1,37 @@
+.bottom-line
+  clear: both
+
+.paginator
+  display: inline-block
+  .active
+    a
+      background-color: $bgDefaultDark
+      border-color: transparent
+      color: gold
+      &:hover
+        background-color: $bgDefaultDark
+        border-color: transparent
+        color: gold
+  li
+    a
+      background-color: $bgHighlight
+      border-color: transparent
+      color: goldenrod
+      &:hover
+        background-color: $bgDefaultDark
+        border-color: transparent
+        color: gold
+      &:focus
+        background-color: $bgDefaultDark
+        border-color: transparent
+        color: gold
+
+  .disabled
+    a
+      background-color: $bgHighlight
+      border-color: transparent
+      color: goldenrod
+      &:hover
+        background-color: $bgHighlight
+        border-color: transparent
+        color: goldenrod

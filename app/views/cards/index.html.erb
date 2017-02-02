@@ -1,43 +1,19 @@
 <div class="container">
   <div class="row filter-container">
-    <div class="col-md-3">
-      Редкость:
-      <%= link_to image_tag("back_common.png"), cards_path(:rarity => 'common'), class: "rarity-filter", :remote => true %>
-      <%= link_to image_tag("back_rare.png"), cards_path(:rarity => 'rare'), class: "rarity-filter", :remote => true %>
-      <%= link_to image_tag("back_uniq.png"), cards_path(:rarity => 'uniq'), class: "rarity-filter", :remote => true %>
-      <%= link_to image_tag("back_legend.png"), cards_path(:rarity => 'legend'), class: "rarity-filter", :remote => true %>
-      <%= link_to '★', cards_path(:star => true), class: "star-filter", :remote => true %>
-    </div>
-    <div class="col-md-7">
-      <% for clan_id in clan_id_range do %>
-          <%= link_to image_tag("filter_icons/#{clan_id}.png"),
-                      cards_path(:clan => clan_name(clan_id)), class: "clan-filter", :remote => true %>
-      <% end %>
-    </div>
-    <div class="col-md-2">
-      <span class="power-filter">Сила:
-      <%= link_to '8', cards_path(:power => '8'), class: "power-filter", :remote => true %>
-      <%= link_to '7', cards_path(:power => '7'), class: "power-filter", :remote => true %>
-      <%= link_to '6', cards_path(:power => '6'), class: "power-filter", :remote => true %>
-      </span>
-      <span class="damage-filter">Урон:
-        <%= link_to '4', cards_path(:damage => '4'), class: "damage-filter", :remote => true %>
-      </span>
-    </div>
+    <%= render 'filter' %>
   </div>
   <div class="row cards-container">
-    <div class="paginator">
-      <%= paginate @cards, remote: true %>
-    </div>
-    <div id="cards">
-      <%= render @cards %>
+    <div id="cards-box">
+      <div id="loader"></div>
+      <div id="cards">
+        <%= render @cards %>
+      </div>
     </div>
     <div class="bottom-line">
       <div class="paginator">
         <%= paginate @cards, remote: true %>
       </div>
     </div>
-    <div id="loader"></div>
   </div>
 </div>
 <div class="deckholder">

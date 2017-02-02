@@ -1,0 +1,34 @@
+<div class="col-md-3">
+  Редкость:
+  <% rarities.each do |rarity| %>
+      <% if request.query_parameters[:rarity] == rarity %>
+          <%= link_to image_tag("back_#{rarity}.png"), cards_path(request.query_parameters.merge(rarity: '')),
+                      class: "rarity-filter rarity-active", id: "#{rarity}", :remote => true %>
+      <% else %>
+          <%= link_to image_tag("back_#{rarity}.png"), cards_path(request.query_parameters.merge(rarity: rarity)),
+                      class: "rarity-filter", id: "#{rarity}", :remote => true %>
+      <% end %>
+  <% end %>
+  <% if request.query_parameters[:star] == 'true' %>
+      <%= link_to image_tag("back_star.png"), cards_path(request.query_parameters.merge(star: false)),
+                  class: "star-filter star-active", id: "star", :remote => true %>
+  <% else %>
+      <%= link_to image_tag("back_star.png"), cards_path(request.query_parameters.merge(star: true)),
+                  class: "star-filter", id: "star", :remote => true %>
+  <% end %>
+</div>
+<div class="col-md-8">
+  Кланы:
+  <% for clan_id in clan_id_range do %>
+      <% if request.query_parameters[:clan] == clan_name(clan_id) %>
+          <%= link_to image_tag("filter_icons/#{clan_id}.png"),
+                      safe_params.merge(clan: ''), class: "clan-filter clan-active", id: "#{clan_name(clan_id)}", :remote => true %>
+      <% else %>
+          <%= link_to image_tag("filter_icons/#{clan_id}.png"),
+                      safe_params.merge(clan: clan_name(clan_id)), class: "clan-filter", id: "#{clan_name(clan_id)}", :remote => true %>
+      <% end %>
+  <% end %>
+</div>
+<div class="col-md-1">
+  <%= link_to 'Сбросить', cards_path, class: "clear-filter", id: "#{clan_name(clan_id)}", :remote => true %>
+</div>
