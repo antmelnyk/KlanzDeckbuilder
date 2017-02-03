@@ -2,7 +2,7 @@
   <div class="art">
     <%= image_tag card_path(card.number) %>
   </div>
-  <div class="main-line">
+  <div class="main-line main-line-<%= card.rarity %>">
     <div class="power-bg">
       <%= image_tag image_url('power.png') %>
       <div class="power">

@@ -15,8 +15,8 @@ $common-color: #a5a5a5
 $bgDefault      : #403f48
 $bgHighlight    : #27262d
 $bgDefaultDark  : #131313
-$colDefault     : #b2bbbd
-$colHighlight   : #ffffff
+$colDefault     : white
+$colHighlight   : gold
 $dropDown       : true
 
 @import 'navbar'
@@ -28,11 +28,18 @@ $dropDown       : true
 @import 'loader'
 @import 'deck_list'
 
+@font-face
+  font-family: 'Neuron-DemiBold'
+  src: font-url('Neuron-DemiBold.otf')
+  src: font-url('Neuron-DemiBold.woff') format('woff'), font-url('Neuron-DemiBold.svg') format('svg'), font-url('Neuron-DemiBold.ttf') format('ttf'), font-url('Neuron-DemiBold.eot') format('eot')
+  font-weight: normal
+  font-style: normal
+
 body
   background-image: image_url('city.jpg')
   background-attachment: fixed
-  font-family: 'Roboto', sans-serif
-  font-size: 16px
+  font-family: 'Neuron-DemiBold', sans-serif
+  font-size: 20px
 
 .container
   color: whitesmoke
