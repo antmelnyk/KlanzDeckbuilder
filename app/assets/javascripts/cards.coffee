@@ -9,7 +9,7 @@ $(document).ready ->
     return
   ).ajaxStop ->
     $('#loader').fadeOut()
-    $('#cards').show()
+    $('#cards').fadeIn(1000)
     $('.bottom-line').show()
     if $('#cards').find('.card').length == 0
       $('#cards').append("<span>Нет карт соответствующих заданному фильтру!</span>").hide().fadeIn()

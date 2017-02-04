@@ -18,6 +18,7 @@
 </div>
 <div class="deckholder">
   <div class="deckholder-roof">
+    <div id="cards-counter-container"></div>
     <button type="button" id="clear-all" class="btn btn-danger">Очистить деку</button>
     <%= form_for @deck, url: {controller: 'decks', action: 'create'}, html: {id: 'submit-form'} do |f| %>
         <span id="deck-name-label">Имя деки:</span><%= f.text_field :name %>

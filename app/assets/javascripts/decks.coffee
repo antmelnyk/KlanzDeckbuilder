@@ -11,6 +11,7 @@ class Deck
     else
       @cards.push card
       @head++
+
       if @head > 13
         $(':input[type="submit"]').prop('disabled', false)
       return true
@@ -21,18 +22,18 @@ class Deck
     if @head < 14
       $(':input[type="submit"]').prop('disabled', true)
 
-
 $(document).ready ->
-  $('#create-deck').prop('disabled', true)
+  $('#create-deck').prop('disabled', true) # Can't create deck with less then 15 cards
   deck = new Deck()
-  deck_input = ''
+  clan_counter = Array.apply(null, Array(30)).map(-> 0 ) # For #cards-counter
 
   # When clicked on outdeck-card: add card id to the hidden input in form_for,
   # then toggle classes inside card divs into deckholdered classes,
   # detach card and append to the deckholder. Next function vice versa.
   $(document).on "click", ".outdeck-card", ->
     card = $(this).attr('id')
-    deckable = deck.add_card card
+    deckable = deck.add_card(card)
+
     if deckable
       deck_input = $('input[name="deck[deck]"]')[0].value = deck_input + card + '_'
       $(this).removeClass('outdeck-card')
@@ -81,6 +82,17 @@ $(document).ready ->
     card.find($('.long-name')).toggleClass('deckholder-long-name long-name')
     card.find($('.bonus')).toggleClass('deckholder-bonus bonus')
 
+    # Update #cards-counter
+    clan = parseInt(card.find($('.deckholder-stats')).attr('class').split(/\s+/)[0].replace('clan-', ''), 10)
+    clan_counter[clan]++
+
+    if clan_counter[clan] == 1
+      $('#cards-counter-container').append("<div class='clan-counter clan-counter-#{clan}'></div>")
+      $(".clan-counter-#{clan}").append($("##{clan}").clone())
+      $(".clan-counter-#{clan}").append("<div id='#{clan}-cards-counter' class='cards-amount'>")
+
+    $("##{clan}-cards-counter").empty().append(clan_counter[clan])
+
   toggle_to_list = (card) ->
     # Getting back card name without power-damage text
     namestats = card.find($('.deckholder-name')).text().replace(/\s/g, '')
@@ -89,6 +101,15 @@ $(document).ready ->
     name_long = namestats_long.slice(0, -4).replace('★', ' ★')
     card.find($('.deckholder-name')).empty().append(name)
     card.find($('.deckholder-long-name')).empty().append(name_long)
+
+    # Update #cards-counter
+    clan = parseInt(card.find($('.deckholder-stats')).attr('class').split(/\s+/)[0].replace('clan-', ''), 10)
+    clan_counter[clan]--
+
+    if clan_counter[clan] == 0
+      $(".clan-counter-#{clan}").remove()
+
+    $("##{clan}-cards-counter").empty().append(clan_counter[clan])
 
     # Toggling deckholder classes
     card.find($('.deckholder-art')).toggleClass('art deckholder-art')
