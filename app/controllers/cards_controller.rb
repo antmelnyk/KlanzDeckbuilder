@@ -14,6 +14,4 @@ class CardsController < ApplicationController
     @card = Card.find_by(number: params[:number])
   end
 
-  private
-
  end

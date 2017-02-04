@@ -25,6 +25,7 @@ class Deck
 $(document).ready ->
   $('#create-deck').prop('disabled', true) # Can't create deck with less then 15 cards
   deck = new Deck()
+  deck_input = ''
   clan_counter = Array.apply(null, Array(30)).map(-> 0 ) # For #cards-counter
 
   # When clicked on outdeck-card: add card id to the hidden input in form_for,
@@ -32,7 +33,7 @@ $(document).ready ->
   # detach card and append to the deckholder. Next function vice versa.
   $(document).on "click", ".outdeck-card", ->
     card = $(this).attr('id')
-    deckable = deck.add_card(card)
+    deckable = deck.add_card card
 
     if deckable
       deck_input = $('input[name="deck[deck]"]')[0].value = deck_input + card + '_'
