@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
+         :confirmable,
          :authentication_keys => [:login]
 
   validates_uniqueness_of :username

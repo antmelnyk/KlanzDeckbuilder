@@ -1,4 +1,5 @@
 class DecksController < ApplicationController
+  skip_before_action :authenticate_user!, :only => [:show]
 
   def index
     @decks = Deck.all.page(params[:page]).per(20)
