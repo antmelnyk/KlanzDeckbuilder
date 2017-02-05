@@ -25,6 +25,7 @@
         <ul class="nav navbar-nav">
           <li class=<%= "active" if current_page?(decks_path)%>><%= link_to 'Деки', decks_path, :class => 'navbar-link'  %></li>
           <li class=<%= "active" if current_page?(cards_path)%>><%= link_to 'Расписание коллекционок ★', cards_path, :class => 'navbar-link' %></li>
+          <li class=<%= "active" if current_page?(about_path)%>><%= link_to 'О проекте', about_path, :class => 'navbar-link' %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Новенький? <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -36,7 +37,9 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to 'Мои деки', my_decks_path, :class => 'navbar-link'  %></li>
+          <% if user_signed_in? %>
+              <li><%= link_to 'Мои деки', my_decks_path, :class => 'navbar-link'  %></li>
+          <% end %>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Аккаунт <span class="caret"></span></a>
             <ul class="dropdown-menu">
