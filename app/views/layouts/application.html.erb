@@ -3,7 +3,7 @@
   <head>
     <title>KlanzDeckbuilder</title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Alice" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
@@ -25,7 +25,6 @@
         <ul class="nav navbar-nav">
           <li class=<%= "active" if current_page?(decks_path)%>><%= link_to 'Деки', decks_path, :class => 'navbar-link'  %></li>
           <li class=<%= "active" if current_page?(cards_path)%>><%= link_to 'Расписание коллекционок ★', cards_path, :class => 'navbar-link' %></li>
-          <li class=<%= "active" if current_page?(about_path)%>><%= link_to 'О проекте', about_path, :class => 'navbar-link' %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Новенький? <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -67,5 +66,6 @@
       <p class="alert alert-danger"><%= alert %></p>
   <% end %>
   <%= yield %>
+  <%= render 'layouts/footer' %>
   </body>
 </html>

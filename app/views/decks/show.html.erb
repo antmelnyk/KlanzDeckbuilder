@@ -1,12 +1,35 @@
-<div class="deck">
-  <div class="info">
-    <%= @deck.user %>
-    <%= @deck.likes %>
-    <%= @deck.dislikes %>
-  </div>
-  <div class="deck-cards">
-    <% get_cards(@deck).each do |card| %>
-      <%= render card, card: card %>
-    <% end %>
+<div class="container">
+  <div class="deck">
+    <div class="row info">
+      <div class="col-md-3 deck-clans">
+        <% get_clans(@deck).each do |clan| %>
+            <%= image_tag "filter_icons/#{clan_id(clan)}.png" %>
+        <% end %>
+      </div>
+      <div class="col-md-6 deck-name">
+        <%= @deck.name %><br/>
+        <div class="deck-author"><%= @deck.user.username %></div>
+      </div>
+      <div class="col-md-3 deck-rating">
+        <%= image_tag "heart.png", class: 'like-heart' %><%= @deck.likes - @deck.dislikes %>
+      </div>
+    </div>
+    <div class="row cards-container deck-container">
+      <div id="cards-box">
+        <div id="cards">
+          <% get_cards(@deck).each do |card| %>
+            <%= render card, card: card %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="deck-additional-info">
+      <div class="row deck-titles">
+        <% cards = [] %>
+        <% get_cards(@deck).each { |card| cards << card.name.downcase.mb_chars.titleize.to_s } %>
+        <%= cards.join(', ') %>
+      </div>
+      <% if @deck.info.length > 0 %> <div class="row deck-info"><%= @deck.info %></div> <% end %>
+    </div>
   </div>
 </div>

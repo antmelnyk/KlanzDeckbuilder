@@ -1,0 +1,39 @@
+footer
+  font-size: 14px
+  position: absolute
+  bottom: 0
+  width: 100%
+  height: 60px
+  background-color: $bgHighlight
+
+.footer-container
+  background-color: $bgHighlight
+  padding-top: 12px
+
+.github
+  float: right
+  a
+    background: image_url('github.png') no-repeat
+    background-position: 0 0
+    height: 40px
+    width: 40px
+    display: inline-block
+    transform-style: preserve-3d
+    transition: all 600ms ease
+    &:hover
+      background-position: 0 -40px
+      transition: all 600ms ease
+      transform: rotate(-90deg)
+
+.footer-text
+  cursor: default
+  margin: 10px 0 0 5px
+  > .footer-link
+    text-decoration: none
+    &:hover
+      color: gold
+
+.right
+  float: right
+.left
+  float: left
