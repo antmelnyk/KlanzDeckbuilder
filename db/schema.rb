@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20170123205027) do
     t.string   "rarity"
     t.boolean  "star"
     t.boolean  "marketable", default: true
-    t.datetime "startime"
     t.integer  "power"
     t.integer  "damage"
     t.string   "ability"

@@ -9,7 +9,7 @@
 </thead>
 <tbody>
 <% @decks.each do |deck| %>
-    <tr class="deck-row" data-link="<%= decks_path(id: deck.id) %>">
+    <tr class="deck-row" data-link="<%= deck_path(deck.id) %>">
       <td><%= deck.name %></td>
       <td>
         <% get_clans(deck).each do |clan| %>
