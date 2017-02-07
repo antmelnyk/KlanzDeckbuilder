@@ -11,7 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.turbolinks
+//= require materialize
 //= require bootstrap
 //= require jquery_ujs
+//= require jquery.countdown
+//= require jquery.countdown-ru
 //= require_tree .

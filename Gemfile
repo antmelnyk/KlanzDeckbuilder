@@ -7,8 +7,9 @@ end
 source 'https://rubygems.org'
 
 gem 'rails', '~> 5.0.1'
-gem 'puma', '~> 3.0'
+gem 'puma'
 gem 'sass-rails', '~> 5.0'
+gem 'materialize-sass'
 gem 'bootstrap-sass', '3.3.6'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -16,6 +17,7 @@ gem 'bh', '~> 1.2'
 
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+gem 'jquery-countdown-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 

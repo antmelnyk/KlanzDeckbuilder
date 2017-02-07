@@ -7,4 +7,9 @@ class StaticPagesController < ApplicationController
   def about
   end
 
+  def stars
+    @cards = Card.where(marketable: false).order(number: :asc)
+    @current_star = Card.where(number: '1781')
+  end
+
 end

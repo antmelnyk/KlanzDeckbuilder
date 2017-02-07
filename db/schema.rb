@@ -21,12 +21,14 @@ ActiveRecord::Schema.define(version: 20170123205027) do
     t.string   "clan"
     t.string   "rarity"
     t.boolean  "star"
+    t.boolean  "marketable", default: true
+    t.datetime "startime"
     t.integer  "power"
     t.integer  "damage"
     t.string   "ability"
     t.string   "bonus"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "decks", force: :cascade do |t|
@@ -53,6 +55,7 @@ ActiveRecord::Schema.define(version: 20170123205027) do
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "username"

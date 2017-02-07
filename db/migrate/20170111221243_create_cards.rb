@@ -6,6 +6,7 @@ class CreateCards < ActiveRecord::Migration[5.0]
       t.string :clan
       t.string :rarity
       t.boolean :star
+      t.boolean :marketable, :default => true
       t.integer :power
       t.integer :damage
       t.string :ability
