@@ -8,8 +8,8 @@
         <% end %>
       </div>
       <div class="col-md-6 deck-name">
-        <%= @deck.name %><br/>
-        <div class="deck-author"><%= @deck.user.username %></div>
+        <h3><%= @deck.name %></h3>
+        <h4><%= @deck.user.username %></h4>
       </div>
       <div class="col-md-3 deck-rating">
         <%= image_tag "heart.png", class: 'like-heart' %><%= @deck.likes - @deck.dislikes %>

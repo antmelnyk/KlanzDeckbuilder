@@ -1876,8 +1876,8 @@
     "rarity": "uniq",
     "star": true,
     "power": "8",
-    "damage": "4",
-    "ability": "+3 силы",
+    "damage": "5",
+    "ability": "+9 атаки",
     "bonus": "2 яда, до 1"
   },
   {
