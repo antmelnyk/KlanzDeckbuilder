@@ -2,8 +2,6 @@ require 'test_helper'
 
 class DeckInteractionsTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
-  fixtures :users, :decks
-
   setup do
     @user = users(:test)
     sign_in @user

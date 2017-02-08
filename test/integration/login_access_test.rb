@@ -2,8 +2,6 @@ require 'test_helper'
 
 class LoginAccessTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
-  fixtures :users
-
   test "user have to login to see certain pages" do
     get root_path
     assert_response :success
