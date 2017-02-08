@@ -1,6 +1,19 @@
-language: ruby
 rvm:
-  - 2.4
-
-addons:
-  postgresql: "9.5"
+- 2.4.0
+services:
+- postgresql
+script:
+- bundle exec rake db:migrate RAILS_ENV=test
+- bundle exec rake db:seed RAILS_ENV=test
+- rails test
+before_script:
+- psql -c 'create database klanz_parser_test;' -U postgres
+- psql -c "CREATE USER klanz_parser_test WITH PASSWORD 'klanz_parser_test';" -U postgres
+test:
+  adapter: postgresql
+  database: travis_ci_test
+bundler_args: "--binstubs=./bundler_stubs"
+env:
+  global:
+  - secure: Dt0slU0Z2V6a0S+RavuzpE5hDSejtYsq/1ji9Fvnki8dvEY/sSeP1nBCRc9fj0nI/EmskVf72HodQ54SzToWmTLfCOrsm1RKfBlwnEl8csDCB4pYusrD9ebPRmdsMyiNkm8XDPo3T6+SGuR7munFxKpSWRgO3V1xdpAQWe7jzdh5FP6axVUBgFNzG+ZJuvgi5QHLteuTphg129A/fs74RBe7u/7oKvLKdhuwuZE6MSnvNN2uoZDv9+cIH5gz7hK1p0Huci6/1Oz3lil+d2YnsXHPLKKrxXnL3bilhEupRWcYZkulcMI0HAkkite3rJ4duAnmnA+6YnuVtWNoiRaZHI9VEqurTBYCvzeVE3cE/tOeV97a4KevndLcZipV1YE3YeinijTem0NVVbCRCgZAtk+FoJRb9WcPfIpAG07VeICkba+KKXc67aENRRk1HiawunmG9tWHE4a2LV4FOKhd5O5UoOoA3AebuHLguv0JBJNLE3Oo71X1zYxFtFTg9qMmNAv9AvB11J9iRFxMJcqxvjgZRwgNPS9dxYiCwJwAnSCQxF78inb1Qo7l6iv0bjAfiaRxMJTQrdnqa5Gi6SxQSDQcm3/Mus8NofAH/fgchiLh0s2/cTv1+3EUnRMBPf3kx5RAKWuVyjA6tuMTMH49dmLSke6fWXz12vPs3JTW23o=
+  - secure: TbiDCY8aveIOCDP5125ZxqX2+zxd6E20OjcYBDlAU0b/bo8qfyspUVXDamdn44ej5V/A3hA4gc0KvfBnF9c1P5Bj8RexylzqeNFiEJ2ORk1vslef/Bj9Ymt2Dc7axzmArqSUPPGpdniVqMlRZQVvlkPlYIuu3hFyVUvkRGsv6WHguqhVhszDRJHDLdsNCNSjnOQutmq+ksJ3CXeXzzh8vBymE9skhHyjMheo7Y8yuUjW8YV0upaCDElIng+MvgGHQuoT6WenmUzWwqxgZOdD+wFkuUtf0dx4CrHj4R2CHkvM2iabBi0iCitYxwqkKr3QyYc45eQIyWUQ8w7mV2lX78iIHCHLf3M9FTfKGOWvzqkOjNT4gptRKOwm3LlenStLWgtbTknbWmlXF/ecTB5RBcB7ph85XYdGl0vNZX9pPWfMLpstFMSdAh6V95qYJH7Okbi6Bbm/5HD+u8WeChq5q6KWWCqvmoBWEStPha4YPDAHhuz0xfAjco1qap/75irgS9BMx1i3gM4zICVpL56lcXDJV62SdpQo4XDyHoeZ+pNRjUMcuuT6xoKUerHBQcr2pjpfa0SMrFadgAfFcdpc48yeUcdFRMYeJIkit7gJotsM7ZoGPv7jPPd4oAZ5SmDvzwL0xIwAOcgTfKdOyYMMCHmtsl6FEvdMqvZBk6clPhQ=
