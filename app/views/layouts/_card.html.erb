@@ -1,4 +1,8 @@
-<div class="card outdeck-card <%= card.rarity %>" id="<%= card.number %>">
+<div class="card
+  <% if params[:controller] == 'cards' && params[:action] == 'index' %> outdeck-card
+  <% else %> simple-card <% end %>
+  <% if card.star %> star-card <% end %>
+  <%= card.rarity %>" id="<%= card.number %>">
   <div class="art">
     <%= image_tag card_path(card.number) %>
   </div>

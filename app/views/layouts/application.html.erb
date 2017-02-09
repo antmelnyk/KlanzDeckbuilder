@@ -3,11 +3,12 @@
   <head>
     <title>KlanzDeckbuilder</title>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
   <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default <% if params[:controller] == 'static_pages' && params[:action] == 'index' %> navbar-fixed-top <% end %>">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">

@@ -9,7 +9,94 @@
 #current-arena-star
   text-align: center
   margin: 20px
+  img
+    border-radius: 5px
+    border: 2px solid $colHighlight
 
 .star-box
   margin-top: 30px
   margin-bottom: 30px
+
+.neon-logo
+  position: absolute
+  left: 0
+  top: 20%
+  width: 100%
+  text-align: center
+  a
+    transition: 0.5s
+    color: $colHighlight
+    text-decoration: none
+    &:hover
+      color: white
+      text-decoration: none
+      -webkit-animation: neon 1.5s ease-in-out infinite alternate
+      -moz-animation: neon 1.5s ease-in-out infinite alternate
+      animation: neon 1.5s ease-in-out infinite alternate
+
+
+.logo-text
+  opacity: 0.95
+  background-color: $bgHighlight
+  color: $colHighlight
+  padding: 50px
+  font-size: 48px
+
+.container-text, .container-show
+  color: whitesmoke
+  background-color: $bgDefault
+  padding: 50px 80px
+
+.container-show
+  cursor: default
+  background-color: $bgHighlight
+
+.glyphicon
+  font-size: 50px
+  color: $colHighlight
+  transition: 0.5s
+  &:hover
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate
+    -moz-animation: neon 1.5s ease-in-out infinite alternate
+    animation: neon 1.5s ease-in-out infinite alternate
+
+.btn-register
+  width: 100%
+  padding: 15px
+  font-size: 30px
+
+.parallax-left, .parallax-right
+  width: 100%
+  min-height: 500px
+  background-attachment: fixed
+  background-repeat: no-repeat
+
+.parallax-left
+  background-image: image_url('main_bg_left.png')
+  background-position: left 0px
+
+.parallax-right
+  background-image: image_url('main_bg_right.png')
+  background-position: right 0px
+
+@-webkit-keyframes neon
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de
+
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de
+
+@-moz-keyframes neon
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de
+
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de
+
+@keyframes neon
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de
+
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de
+

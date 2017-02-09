@@ -1,1 +1,47 @@
-<h1>Добро пожаловать!</h1>
+<div class="parallax-left">
+  <div class="parallax-right">
+    <div class="neon-logo">
+      <span class="logo-text"><%= link_to 'KLANZ Deckbuilder', cards_path %></span>
+    </div>
+  </div>
+</div>
+<div class="v_ln"></div>
+<div class="container-fluid container-text">
+  <p>Этот сайт — фан проект лучшей в Интернете коллекционной карточной игры — <%= link_to 'klanz.ru', 'http://www.klanz.ru' %>. Декострой поможет игрокам Города легко и быстро составлять собственные игровые деки, сохранять их и делиться ими с другими игроками. Расписание коллекционок пригодится старичкам, а оценка деки в модулях и звездах поможет новичкам!</p>
+</div>
+<div class="container-fluid container-show text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-th logo-small"></span>
+      <p>Создавайте и сохраняйте деки — легко и быстро! Используйте фильтры для поиска нужных карт.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class=" 	glyphicon glyphicon-send logo-small"></span>
+      <p>Делитесь деками с другими игроками!</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-search logo-small"></span>
+      <p>База созданных дек поможет найти деку по вкусу на любой формат.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row" style="margin-bottom: 30px;">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <p>Актуальная база всех карт, которую легко обновлять и дополнять.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-star logo-small"></span>
+      <p>Расписание коллекционок подскажет остачу дней до поступления карты с Арены в продажу.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-piggy-bank logo-small"></span>
+      <p>Оценка стоимости деки поможет новичкам планировать развитие своей коллекции.</p>
+    </div>
+  </div>
+  <% unless user_signed_in? %>
+    <div class="container-fluid container-show">
+      <%= link_to 'Зарегистрироваться и создать первую деку!', new_user_registration_path, class: 'btn btn-primary btn-register' %>
+    </div>
+  <% end %>
+</div>

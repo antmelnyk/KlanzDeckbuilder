@@ -14,7 +14,7 @@
     opacity: 1
 
 @for $i from 1 through 100
-  .outdeck-card:nth-child(#{$i})
+  .outdeck-card:nth-child(#{$i}), .simple-card:nth-child(#{$i})
     -webkit-animation: fadeIn 1s forwards
     animation: fadeIn 1s forwards
     -webkit-animation-delay: $i * 35ms - 35ms
@@ -44,11 +44,14 @@
   border-radius: 22px
   transition: 0.3s
   &:hover
-    cursor: pointer
     transition: 0.3s
+    border-color: $colHighlight
+
+.outdeck-card, .simple-card
+  opacity: 0
 
 .outdeck-card
-  opacity: 0
+  cursor: pointer
 
 .art
   img

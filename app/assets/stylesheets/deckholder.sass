@@ -24,6 +24,29 @@
   position: fixed
   bottom: 125px
   right: 6px
+  transition: 0.2s
+  &:hover
+    transition: 0.2s
+
+.btn-primary
+  transition: 0.2s
+  background-color: #B0407D
+  border-color: #AB2F73
+  &:hover, &:disabled
+    transition: 0.2s
+    background-color: #A32469
+    border-color: #8B1E5A
+
+.btn-primary:disabled
+  transition: 0.2s
+  background-color: #b00f65
+  border-color: #b00f65
+  &:hover
+    transition: 0.2s
+    background-color: #b00f65
+    border-color: #b00f65
+
+
 
 #deck-name-label, #deck-info-label
   color: white
@@ -47,7 +70,7 @@
   font-size: 14px
   position: fixed
   bottom: 125px
-  right: 135px
+  right: 125px
   z-index: 1500
 
 .deckholder-roof

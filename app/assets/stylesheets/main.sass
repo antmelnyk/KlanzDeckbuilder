@@ -16,7 +16,7 @@ $bgDefault      : #403f48
 $bgHighlight    : #27262d
 $bgDefaultDark  : #131313
 $colDefault     : white
-$colHighlight   : #F0C250
+$colHighlight   : #ff92d7
 $dropDown       : true
 
 @font-face
@@ -36,20 +36,22 @@ body
   font-family: 'Neuron-DemiBold', sans-serif
   font-size: 20px
   /* Margin bottom by footer height */
-  margin-bottom: 100px
+
+a
+  transition: 0.2s
+  color: white
+  &:hover
+    text-decoration: none
+    transition: 0.2s
+    color: $colHighlight
 
 table
   font-size: 14px
 
 .container
-  color: whitesmoke
+  color: white
   background-color: $bgDefault
-  a
-    transition: 0.2s
-    color: #b7b7b7
-    &:hover
-      transition: 0.2s
-      color: whitesmoke
+
 
 
 .page-container
@@ -76,6 +78,22 @@ a
   background-image: image_url('borders/v_ln.png')
   width: 100%
   height: 5px
+
+.alert
+  position: absolute
+  width: 100%
+  top: 60px
+  border: none
+  border-radius: 0
+
+.alert-success
+  background-color: $bgDefault
+  color: $colHighlight
+
+.alert-danger
+  background-color: $bgDefault
+  color: orangered
+
 
 @import 'navbar'
 @import 'filter'
