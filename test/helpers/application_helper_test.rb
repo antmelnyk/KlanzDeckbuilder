@@ -8,11 +8,6 @@ class ApplicationHelperTest < ActionView::TestCase
     assert_equal '1759.gif', card_path(1759)
   end
 
-  test 'get clans helper' do
-    @deck = decks(:deck1)
-    assert_equal %w[Mafia Circus], get_clans(@deck)
-  end
-
   test 'clan id helper' do
     assert_equal 11, clan_id('Saints')
     assert_equal 26, clan_id('Nemos')

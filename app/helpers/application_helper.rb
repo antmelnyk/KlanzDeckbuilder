@@ -8,18 +8,9 @@ module ApplicationHelper
     "#{id}.gif"
   end
 
-  def get_cards(deck)
-    result = []
-    card_list = []
-    cards = deck.deck.split /_/
-    cards.each { |card| card_list << card.to_i }
-    card_list.each { |card| result << Card.where(number: card).take }
-    result
-  end
-
   def get_clans(deck)
     result = []
-    get_cards(deck).each do |card|
+    deck.cards.each do |card|
       unless result.include? card.clan
         result << card.clan
       end

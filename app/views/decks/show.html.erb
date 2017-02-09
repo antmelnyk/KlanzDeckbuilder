@@ -12,13 +12,13 @@
         <h4><%= @deck.user.username %></h4>
       </div>
       <div class="col-md-3 deck-rating">
-        <%= image_tag "heart.png", class: 'like-heart' %><%= @deck.likes - @deck.dislikes %>
+        <%= image_tag "heart.png", class: 'like-heart' %>
       </div>
     </div>
     <div class="row cards-container deck-container">
       <div id="cards-box">
         <div id="cards">
-          <% get_cards(@deck).each do |card| %>
+          <% @cards.each do |card| %>
             <%= render card, card: card %>
           <% end %>
         </div>
@@ -27,7 +27,7 @@
     <div class="deck-additional-info">
       <div class="row deck-titles">
         <% cards = [] %>
-        <% get_cards(@deck).each { |card| cards << card.name.downcase.mb_chars.titleize.to_s } %>
+        <% @cards.each { |card| cards << card.name.downcase.mb_chars.titleize.to_s } %>
         <%= cards.join(', ') %>
       </div>
       <% if @deck.info.length > 0 %> <div class="row deck-info"><%= @deck.info %></div> <% end %>

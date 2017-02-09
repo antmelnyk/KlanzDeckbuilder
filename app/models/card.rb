@@ -1,4 +1,5 @@
 class Card < ApplicationRecord
+  has_and_belongs_to_many :decks
 
   scope :clan, -> clan { where clan: clan }
   scope :rarity, -> rarity { where rarity: rarity }
