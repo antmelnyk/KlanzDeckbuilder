@@ -1,12 +1,7 @@
 .filter-container
   cursor: default
-  padding: 12px
+  padding: 25px 0
   background-color: $bgHighlight
-  a
-    color: whitesmoke
-    &:hover, &:focus
-      text-decoration: none
-      color: $colHighlight
 
 .rarity-filter, .star-filter, .clan-filter
   img
@@ -26,6 +21,43 @@
   img
     border-radius: 15px
 
+.clear-filter
+  font-size: 16px
+
 .rarity-active, .clan-active, .star-active
   img
     box-shadow: 0px 0px 4px black
+
+.dropdown
+  float: left
+  margin: 0 4px
+
+.btn-filter
+  transition: 0.2s
+  background-color: $bgDefault
+  border-color: $bgDefault
+  &:hover, &:focus, &:active:focus
+    outline: none !important
+    transition: 0.2s
+    background-color: $bgDefault
+    border-color: $bgDefault
+
+.dropdown-menu
+  background-color: $bgHighlight
+  li
+    float: left
+    a
+      color: white
+      font-size: 22px
+      &:hover, &:active, &:focus
+        background-color: $bgHighlight
+        color: $colHighlight
+
+.stats-current
+  color: $colHighlight
+  padding-left: 2px
+
+.dropdown-toggle:active, .open
+  .dropdown-toggle
+    border-color: $bgDefault !important
+    background: $bgDefault !important
