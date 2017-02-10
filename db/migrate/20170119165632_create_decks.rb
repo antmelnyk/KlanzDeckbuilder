@@ -8,6 +8,7 @@ class CreateDecks < ActiveRecord::Migration[5.0]
       t.text :info
       t.integer :module_price
       t.integer :star_price
+      t.string :room
       t.belongs_to :user, index: true
     end
   end

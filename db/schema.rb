@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20170209180202) do
     t.text    "info"
     t.integer "module_price"
     t.integer "star_price"
+    t.string  "room"
     t.integer "user_id"
     t.index ["user_id"], name: "index_decks_on_user_id", using: :btree
   end

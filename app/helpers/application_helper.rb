@@ -18,6 +18,12 @@ module ApplicationHelper
     result
   end
 
+  def get_card_list(cards)
+    card_list = []
+    cards.each { |card| card_list << card.name.downcase.mb_chars.titleize.to_s }
+    card_list.join(', ')
+  end
+
   def clan_id(clan_name)
     clans = {
         1 => 'Micron',

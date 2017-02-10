@@ -16,4 +16,5 @@
 //= require jquery_ujs
 //= require jquery.countdown
 //= require jquery.countdown-ru
+//= require clipboard
 //= require_tree .

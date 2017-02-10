@@ -2,8 +2,9 @@
 <tr>
   <th>Имя деки</th>
   <th>Кланы</th>
+  <th>Формат</th>
   <th>Карты</th>
-  <th>Рейтинг</th>
+  <th>Стоимость</th>
   <th>Автор</th>
 </tr>
 </thead>
@@ -17,11 +18,12 @@
         <% end %>
       </td>
       <td>
-        <% cards = [] %>
-        <% get_cards(deck).each { |card| cards << card.name.downcase.mb_chars.titleize.to_s } %>
-        <%= cards.join(', ') %>
+        <%= deck.room %>
       </td>
-      <td><%= image_tag "heart.png", class: 'like-heart' %><%= deck.likes - deck.dislikes %></td>
+      <td>
+        <%= get_card_list(deck.cards) %>
+      </td>
+      <td><%= image_tag "modules.png", class: 'like-heart' %><%= image_tag "stars.png", class: 'like-heart' %></td>
       <td><%= deck.user.username %></td>
     </tr>
 <% end %>

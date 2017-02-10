@@ -1,4 +1,4 @@
-<div class="container page-container">
+<div class="container header-light-container">
   <div class="row filter-container text-center">
     <%= render 'filter' %>
   </div>
@@ -22,6 +22,7 @@
     <button type="button" id="clear-all" class="btn btn-danger">Очистить деку</button>
     <%= form_for @deck, url: {controller: 'decks', action: 'create'}, html: {id: 'submit-form'} do |f| %>
         <span id="deck-name-label">Имя деки:</span><%= f.text_field :name %>
+        <%= f.select :room, Deck::ROOMS %>
         <span id="deck-info-label">Описание деки</span><%= f.text_area :info %>
         <%= f.hidden_field(:deck, :value => '') %>
         <%= f.submit 'Создать деку', :class => 'btn btn-primary', :id => 'create-deck' %>
