@@ -18,10 +18,17 @@
             <div id="countdown-<%= card.number %>">
               <%= javascript_tag do %>
                   var startime = new Date(<%= get_startime(card) %>);
-                  $("#countdown-<%= card.number %>").countdown({until: startime,
-                  expiryText: '<div class="over">It\'s all over</div>',
-                  significant: 1,
-                  layout: '{d<}{dn} {dl} {d>}{h<}{hn} {hl} {h>}{m<}{mn} {ml} {m>}{s<}{sn} {sl}{s>}'});
+                  var todaysDate = new Date();
+                  if(startime.setHours(0,0,0,0) > todaysDate.setHours(0,0,0,0)) {
+                      $("#countdown-<%= card.number %>").countdown({until: startime,
+                      expiryText: '<div class="over">It\'s all over</div>',
+                      significant: 1,
+                      layout: '{d<}{dn} {dl} {d>}{h<}{hn} {hl} {h>}{m<}{mn} {ml} {m>}{s<}{sn} {sl}{s>}'});
+
+                  } else {
+                      $("#countdown-<%= card.number %>").append('???');
+                  }
+
               <% end %>
             </div>
             <%= render card, card: card %>

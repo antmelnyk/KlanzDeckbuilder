@@ -134,12 +134,14 @@ $(document).ready ->
   $(document).ajaxStart(->
     $('#loader').fadeIn()
     $('.outdeck-card').hide()
+    $('.paginator').hide()
     return
   ).ajaxStop ->
-    $('#loader').fadeOut()
-    $('.bottom-line').fadeIn()
-    if $('#cards').find('.card').length == 0
-      $('#cards').append("<span>Нет карт соответствующих заданному фильтру!</span>").hide().fadeIn()
-    return
+      $('#loader').fadeOut()
+      $('.bottom-line').fadeIn()
+      $('.paginator').fadeIn()
+      if $('#cards').find('.card').length == 0
+        $('#cards').append("<span>Нет карт соответствующих заданному фильтру!</span>").hide().fadeIn()
+      return
 
 

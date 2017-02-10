@@ -2,7 +2,11 @@ class DecksController < ApplicationController
   skip_before_action :authenticate_user!, :only => [:show]
 
   def index
-    @decks = Deck.all.page(params[:page]).per(20)
+    if params[:search]
+      @decks = Deck.search(params[:search]).page(params[:page]).per(7)
+    else
+      @decks = Deck.all.page(params[:page]).per(7)
+    end
   end
 
   def user_index

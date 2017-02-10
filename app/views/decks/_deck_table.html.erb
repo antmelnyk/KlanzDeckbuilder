@@ -23,7 +23,10 @@
       <td>
         <%= get_card_list(deck.cards) %>
       </td>
-      <td><%= image_tag "modules.png", class: 'like-heart' %><%= image_tag "stars.png", class: 'like-heart' %></td>
+      <td>
+        <%= image_tag "modules.png", class: 'price' %><%= deck.module_price %><br>
+        <%= image_tag "stars.png", class: 'price' %><%= deck.star_price %>
+      </td>
       <td><%= deck.user.username %></td>
     </tr>
 <% end %>

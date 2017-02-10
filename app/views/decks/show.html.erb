@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container page-container">
   <div class="deck">
     <div class="r_h"></div>
     <div class="row header-container">
@@ -14,7 +14,10 @@
         <h5 id="author"><%= @deck.user.username %></h5>
       </div>
       <div class="col-md-2 text-center">
-        <p><%= image_tag "heart.png", class: 'like-heart' %></p>
+        <p>
+          <%= image_tag "modules.png", class: 'price' %><%= @deck.module_price %>
+          <%= image_tag "stars.png", class: 'price' %><%= @deck.star_price %>
+        </p>
       </div>
       <div class="col-md-2 text-center">
       </div>
@@ -28,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="deck-additional-info" style="margin-bottom: 70px;">
+    <div class="deck-additional-info">
       <div class="row text-center" id="copy-container">
         <textarea id="deck-link"><%= request.original_url %></textarea>
         <button class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#deck-link">

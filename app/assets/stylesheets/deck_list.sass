@@ -1,10 +1,45 @@
 .deck-row
+  opacity: 0
   cursor: pointer
+  transition: 0.2s
   &:hover
+    transition: 0.2s
     background-color: $bgHighlight
 
-.like-heart
-  margin-right: 3px
-  width: 15px
-  height: 15px
+.table
+  margin: 0 auto
+  width: 90%
+
+table
+  font-size: 14px
+  text-align: left
+
+#search-form
+  margin: 40px
+
+#search-button
+  padding: 0 15px
+  margin-left: 10px
+  font-size: 24px
+  color: $colHighlight
+  background-color: $bgHighlight
+  border-color: $colHighlight
+
+#search
+  all: unset
+  width: 400px
+  text-align: left
+  font-size: 24px
+  font-style: italic
+  border-bottom: 2px solid $colHighlight
+  color: $colHighlight
+  background-color: $bgDefault
+
+
+@for $i from 1 through 100
+  tr:nth-child(#{$i})
+    -webkit-animation: fadeIn 1s forwards
+    animation: fadeIn 1s forwards
+    -webkit-animation-delay: $i * 35ms - 35ms
+    animation-delay: $i * 35ms - 35ms
 
