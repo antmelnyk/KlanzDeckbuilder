@@ -26,15 +26,7 @@
           <li class=<%= "active" if current_page?(cards_path)%>><%= link_to 'Создать деку', cards_path, :class => 'navbar-link'  %></li>
           <li class=<%= "active" if current_page?(decks_path)%>><%= link_to 'База дек', decks_path, :class => 'navbar-link'  %></li>
           <li class=<%= "active" if current_page?(stars_path)%>><%= link_to 'Расписание коллекционок ★', stars_path, :class => 'navbar-link' %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Новенький? <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="http://klanz.ru/">В город!</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="http://klanz.ru/pages/help">Путеводитель для новичка</a></li>
-              <li><a href="http://klanz.ru/pages/help">Стратегия и тактика</a></li>
-            </ul>
-          </li>
+          <li><a href="http://klanz.ru/">В Город!</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>

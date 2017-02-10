@@ -31,6 +31,11 @@
         </div>
       </div>
     </div>
+    <% if @deck.user.username == current_user.username %>
+        <div class="row">
+          <%= button_to "Удалить деку", deck_path(:id => @deck.id), :method => :delete, data: { confirm: 'Точно удалить деку?' }, class: "btn btn-danger" %>
+        </div>
+    <% end %>
     <div class="deck-additional-info">
       <div class="row text-center" id="copy-container">
         <textarea id="deck-link"><%= request.original_url %></textarea>

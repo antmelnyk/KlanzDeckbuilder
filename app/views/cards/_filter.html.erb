@@ -28,10 +28,10 @@
   <% end %>
 </div>
 <div class="col-md-2 stats-dropdown">
-  <div class="dropdown power-dropdown">
+  <div class="dropdown" id="power-dropdown">
     <button class="btn btn-primary btn-filter dropdown-toggle" type="button" data-toggle="dropdown">Cила<span class="stats-current"><%= params[:power] %></span>
       <span class="caret"></span></button>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" id="power-dropdown">
       <% (1..8).each do |power| %>
           <% if request.query_parameters[:power] == power %>
               <li><%= link_to power, safe_params.merge(power: '', page: 0), class: "power-filter", :remote => true %></li>
@@ -41,10 +41,10 @@
       <% end %>
     </ul>
   </div>
-  <div class="dropdown damage-dropdown">
+  <div class="dropdown" id="damage-dropdown">
     <button class="btn btn-primary btn-filter dropdown-toggle" type="button" data-toggle="dropdown">Урон<span class="stats-current"><%= params[:damage] %></span>
       <span class="caret"></span></button>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" id="power-dropdown">
       <% (1..8).each do |damage| %>
           <% if request.query_parameters[:damage] == damage %>
               <li><%= link_to damage, safe_params.merge(damage: '', page: 0), class: "damage-filter", :remote => true %></li>

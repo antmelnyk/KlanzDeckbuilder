@@ -10,7 +10,7 @@ class DecksController < ApplicationController
   end
 
   def user_index
-    @decks = Deck.where user_id: current_user.id
+    @decks = Deck.where(user_id: current_user.id).page(params[:page]).per(7)
   end
 
   def show
@@ -24,6 +24,12 @@ class DecksController < ApplicationController
     if @deck.save
       redirect_to @deck
     end
+  end
+
+  def destroy
+    @deck = Deck.find(params[:id])
+    @deck.destroy
+    redirect_to my_decks_path
   end
 
   private

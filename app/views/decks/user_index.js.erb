@@ -1,0 +1,2 @@
+$('.decks-table').html('<%= escape_javascript render partial: 'deck_table' %>');
+$('.paginator').html('<%= escape_javascript(paginate(@decks, :remote => true).to_s) %>');

@@ -26,6 +26,7 @@ $(document).ready ->
     return
 
   $(document).ajaxStart(->
+    $('#no-results').empty()
     $('#decks-loader').fadeIn()
     $('.decks-table').hide()
     $('#decks-paginator').hide()
@@ -35,6 +36,6 @@ $(document).ready ->
       $('.decks-table').fadeIn()
       $('#decks-paginator').fadeIn()
       if $('.decks-table').find('.deck-row').length == 0
-        $('#no-results').append("<span id='no-result'>Ни одной деки не найдено. Или она еще не создана или у вас неккоректный запрос!</span>")
+        $('#no-results').append("<span>Ни одной деки не найдено. Или она еще не создана или у вас неккоректный запрос!</span>")
         $('#no-results').hide().fadeIn()
       return
