@@ -12,8 +12,8 @@ class User < ApplicationRecord
 
   validates_uniqueness_of :username
   validates_presence_of :username
-  validates :username, length: { in: 4..20 }
-  validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+  validates :username, length: { in: 4..16 }
+  validates_format_of :username, with: /[a-zA-Zа-яА-Я0-9_\.]*/, :multiline => true
 
   def self.find_for_database_authentication(warden_conditions)
     conditions = warden_conditions.dup

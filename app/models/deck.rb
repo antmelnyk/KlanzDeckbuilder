@@ -13,7 +13,7 @@ class Deck < ApplicationRecord
 
   # Search decks
   def self.search(search)
-    where("name ILIKE ? OR room ILIKE ?", "%#{search}%", "%#{search}%")
+    joins(:user).where("name ILIKE ? OR room ILIKE ? OR username ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
   end
 
   protected

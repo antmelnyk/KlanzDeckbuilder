@@ -3,9 +3,9 @@ class DecksController < ApplicationController
 
   def index
     if params[:search]
-      @decks = Deck.search(params[:search]).page(params[:page]).per(7)
+      @decks = Deck.search(params[:search]).page(params[:page]).per(10)
     else
-      @decks = Deck.all.page(params[:page]).per(7)
+      @decks = Deck.all.page(params[:page]).per(10)
     end
   end
 
