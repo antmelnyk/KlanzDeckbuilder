@@ -1,7 +1,5 @@
 <div class="container page-container">
-  <div class="row filter-container text-center">
-    <%= render 'filter' %>
-  </div>
+  <%= render 'filter' %>
   <div class="row cards-container">
     <div id="cards-box">
       <div id="loader"></div>
@@ -23,7 +21,7 @@
     <%= form_for @deck, url: {controller: 'decks', action: 'create'}, html: {id: 'submit-form'} do |f| %>
         <span id="deck-name-label">Имя деки:</span><%= f.text_field :name %>
         <%= f.select :room, Deck::ROOMS %>
-        <span id="deck-info-label">Описание деки</span><%= f.text_area :info %>
+        <span id="deck-info-label">Описание деки (необязательно)</span><%= f.text_area :info %>
         <%= f.hidden_field(:deck, :value => '') %>
         <%= f.submit 'Создать деку', :class => 'btn btn-primary', :id => 'create-deck' %>
     <% end %>
