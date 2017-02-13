@@ -42,7 +42,7 @@
           <ul class="dropdown-menu" id="power-dropdown">
             <% (1..8).each do |power| %>
                 <% if params[:power].to_i == power %>
-                    <li><%= link_to power, safe_params.merge(power: power, page: 0), class: "power-filter", :remote => true %></li>
+                    <li><%= link_to power, safe_params.merge(power: '', page: 0), class: "power-filter", :remote => true %></li>
                 <% else %>
                     <li><%= link_to power, safe_params.merge(power: power, page: 0), class: "power-filter", :remote => true %></li>
                 <% end %>
