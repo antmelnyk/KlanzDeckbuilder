@@ -4,6 +4,7 @@ class CardsController < ApplicationController
   has_scope :star, :type => :boolean
   has_scope :power
   has_scope :damage
+  has_scope :search
 
   def index
     @cards = apply_scopes(Card).all.order(number: :desc).page(params[:page]).per(20)

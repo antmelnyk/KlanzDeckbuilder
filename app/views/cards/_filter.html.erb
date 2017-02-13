@@ -1,60 +1,70 @@
-<div class="col-md-2">
-  <% rarities.each do |rarity| %>
-      <% if request.query_parameters[:rarity] == rarity %>
-          <%= link_to image_tag("back_#{rarity}.png"), cards_path(request.query_parameters.merge(rarity: '', page: 0)),
-                      class: "rarity-filter rarity-active", id: "#{rarity}", :remote => true %>
-      <% else %>
-          <%= link_to image_tag("back_#{rarity}.png"), cards_path(request.query_parameters.merge(rarity: rarity, page: 0)),
-                      class: "rarity-filter", id: "#{rarity}", :remote => true %>
-      <% end %>
-  <% end %>
-  <% if request.query_parameters[:star] == 'true' %>
-      <%= link_to image_tag("back_star.png"), cards_path(request.query_parameters.merge(star: false, page: 0)),
-                  class: "star-filter star-active", id: "star", :remote => true %>
-  <% else %>
-      <%= link_to image_tag("back_star.png"), cards_path(request.query_parameters.merge(star: true, page: 0)),
-                  class: "star-filter", id: "star", :remote => true %>
-  <% end %>
-</div>
-<div class="col-md-7">
-  <% for clan_id in clan_id_range do %>
-      <% if request.query_parameters[:clan] == clan_name(clan_id) %>
-          <%= link_to image_tag("filter_icons/#{clan_id}.png", id: "#{clan_id}"),
-                      safe_params.merge(clan: '', page: 0), class: "clan-filter clan-active", :remote => true %>
-      <% else %>
-          <%= link_to image_tag("filter_icons/#{clan_id}.png", id: "#{clan_id}"),
-                      safe_params.merge(clan: clan_name(clan_id), page: 0), class: "clan-filter", :remote => true %>
-      <% end %>
-  <% end %>
-</div>
-<div class="col-md-2 stats-dropdown">
-  <div class="dropdown" id="power-dropdown">
-    <button class="btn btn-primary btn-filter dropdown-toggle" type="button" data-toggle="dropdown">Cила<span class="stats-current"><%= params[:power] %></span>
-      <span class="caret"></span></button>
-    <ul class="dropdown-menu" id="power-dropdown">
-      <% (1..8).each do |power| %>
-          <% if request.query_parameters[:power] == power %>
-              <li><%= link_to power, safe_params.merge(power: '', page: 0), class: "power-filter", :remote => true %></li>
+<div id="filter-wrapper">
+  <div class="row search-container text-center">
+    <%= form_tag(cards_path, :method => "get", remote: true) do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Например, 'шнобель' или '+ сила'", id: "card-search-form" %>
+        <%= submit_tag "Поиск", :name => nil, id: "card-search-button" %>
+    <% end %>
+  </div>
+  <div class="row filter-container text-center">
+    <div class="col-md-2">
+      <% rarities.each do |rarity| %>
+          <% if request.query_parameters[:rarity] == rarity %>
+              <%= link_to image_tag("back_#{rarity}.png"), cards_path(request.query_parameters.merge(rarity: '', page: 0)),
+                          class: "rarity-filter rarity-active", id: "#{rarity}", :remote => true %>
           <% else %>
-              <li><%= link_to power, safe_params.merge(power: power, page: 0), class: "power-filter", :remote => true %></li>
+              <%= link_to image_tag("back_#{rarity}.png"), cards_path(request.query_parameters.merge(rarity: rarity, page: 0)),
+                          class: "rarity-filter", id: "#{rarity}", :remote => true %>
           <% end %>
       <% end %>
-    </ul>
-  </div>
-  <div class="dropdown" id="damage-dropdown">
-    <button class="btn btn-primary btn-filter dropdown-toggle" type="button" data-toggle="dropdown">Урон<span class="stats-current"><%= params[:damage] %></span>
-      <span class="caret"></span></button>
-    <ul class="dropdown-menu" id="power-dropdown">
-      <% (1..8).each do |damage| %>
-          <% if request.query_parameters[:damage] == damage %>
-              <li><%= link_to damage, safe_params.merge(damage: '', page: 0), class: "damage-filter", :remote => true %></li>
+      <% if request.query_parameters[:star] == 'true' %>
+          <%= link_to image_tag("back_star.png"), cards_path(request.query_parameters.merge(star: false, page: 0)),
+                      class: "star-filter star-active", id: "star", :remote => true %>
+      <% else %>
+          <%= link_to image_tag("back_star.png"), cards_path(request.query_parameters.merge(star: true, page: 0)),
+                      class: "star-filter", id: "star", :remote => true %>
+      <% end %>
+    </div>
+    <div class="col-md-7">
+      <% for clan_id in clan_id_range do %>
+          <% if request.query_parameters[:clan] == clan_name(clan_id) %>
+              <%= link_to image_tag("filter_icons/#{clan_id}.png", id: "#{clan_id}"),
+                          safe_params.merge(clan: '', page: 0), class: "clan-filter clan-active", :remote => true %>
           <% else %>
-              <li><%= link_to damage, safe_params.merge(damage: damage, page: 0), class: "damage-filter", :remote => true %></li>
+              <%= link_to image_tag("filter_icons/#{clan_id}.png", id: "#{clan_id}"),
+                          safe_params.merge(clan: clan_name(clan_id), page: 0), class: "clan-filter", :remote => true %>
           <% end %>
       <% end %>
-    </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="dropdown stats-dropdown">
+        <button class="btn btn-primary btn-filter dropdown-toggle" type="button" data-toggle="dropdown">Cила<span class="stats-current"><%= params[:power] %></span>
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu" id="power-dropdown">
+            <% (1..8).each do |power| %>
+                <% if params[:power].to_i == power %>
+                    <li><%= link_to power, safe_params.merge(power: power, page: 0), class: "power-filter", :remote => true %></li>
+                <% else %>
+                    <li><%= link_to power, safe_params.merge(power: power, page: 0), class: "power-filter", :remote => true %></li>
+                <% end %>
+            <% end %>
+          </ul>
+      </div>
+      <div class="dropdown stats-dropdown">
+        <button class="btn btn-primary btn-filter dropdown-toggle" type="button" data-toggle="dropdown">Урон<span class="stats-current"><%= params[:damage] %></span>
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu" id="damage-dropdown">
+          <% (1..8).each do |damage| %>
+              <% if params[:damage].to_i == damage %>
+                  <li><%= link_to damage, safe_params.merge(damage: '', page: 0), class: "damage-filter", :remote => true %></li>
+              <% else %>
+                  <li><%= link_to damage, safe_params.merge(damage: damage, page: 0), class: "damage-filter", :remote => true %></li>
+              <% end %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <%= link_to ('Очистить'), cards_path, class: "clear-filter", id: "#{clan_name(clan_id)}", :remote => true %>
+    </div>
   </div>
-</div>
-<div class="col-md-1">
-  <%= link_to ('Очистить'), cards_path, class: "clear-filter", id: "#{clan_name(clan_id)}", :remote => true %>
 </div>

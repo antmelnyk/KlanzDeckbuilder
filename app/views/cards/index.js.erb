@@ -1,4 +1,4 @@
-$(".filter-container").html('<%= escape_javascript(render partial: 'filter') %>');
+$("#filter-wrapper").html('<%= escape_javascript(render partial: 'filter') %>');
 $('#cards').html('<%= escape_javascript render(@cards) %>');
 $('.paginator').html('<%= escape_javascript(paginate(@cards, :remote => true).to_s) %>');
 
