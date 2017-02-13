@@ -1,5 +1,5 @@
-[171, 733, 1142, 501, 787].each do |card|
-   c = Card.find(card)
+[1781, 1779, 1771].each do |card|
+   c = Card.find_by(number: card)
    c.marketable = false
    c.save
 end
