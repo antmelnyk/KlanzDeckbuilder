@@ -143,5 +143,3 @@ $(document).ready ->
       if $('#cards').find('.card').length == 0
         $('#cards').append("<span>Нет карт соответствующих заданному фильтру!</span>").hide().fadeIn()
       return
-
-
