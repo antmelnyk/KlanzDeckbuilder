@@ -1,8 +1,8 @@
 <div id="filter-wrapper">
-  <div class="row filter-container text-center">
-    <%= form_tag(cards_path, :method => "get", remote: true, id: "card-search-form") do %>
-        <%= text_field_tag :search, params[:search], placeholder: "Например, 'шнобель' или '+ сила'" %>
-        <%= submit_tag "Поиск", :name => nil, id: "search-button" %>
+  <div class="row search-container text-center">
+    <%= form_tag(cards_path, :method => "get", remote: true) do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Например, 'шнобель' или '+ сила'", id: "card-search-form" %>
+        <%= submit_tag "Поиск", :name => nil, id: "card-search-button" %>
     <% end %>
   </div>
   <div class="row filter-container text-center">

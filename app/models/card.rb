@@ -7,34 +7,33 @@ class Card < ApplicationRecord
   scope :power, -> power { where power: power }
   scope :damage, -> damage { where damage: damage}
 
-  # Handling search queries
-  MODIFIER = [/\A(эхо)|\A(гнев)|\A(крах)/]
-
-
-  def correct_query(search)
-    case search
-      when '+ атака'
-        /\+[0-9]* (атак)/
-      when '- атака'
-        /-[0-9]* (атак)/
-      when '+ сила'
-        /\+[0-9]* (сил)/
-      when '- сила'
-        /-[0-9]* (сил)/
-      when '+ жизнь'
-        /\+[0-9]* (жизн)/
-      when '- жизнь'
-        /-[0-9]* (сил)/
-
-      else
-        search
-    end
-  end
-
+  # Lord, have mercy
   scope :search, -> search do
-    search = Card.correct_query(search)
-    where("ability ~* ?", "(first|last)\s+(last|first)")
-    where "ability ILIKE ? OR name ILIKE ?", "%#{search}%", "%#{search}%"
+    if search.match /\A(-|\+)\s*(спо(.*)|бон(.*))/
+      regexp = "-" + search.scan(/(спо(.*)|бон(.*))/).first[0]
+    elsif search.match /\A(-|\+)\s*((\d)*)?\s*(сил|атак|эн|урон|жиз|жзн|жзн за урон|жизни за урон|)[а-я]*/
+      mod = search.scan(/\A(-|\+)\s*/).first[0]
+      mod = "\\+" if mod =~ /\+\s*/
+
+      value = search.scan(/\d+/).first
+      value == nil ? value = "(\\d)*" : value = value[0]
+
+      effect = search.scan(/(сил|атак|эн|урон|жиз|жзн)/).first[0]
+      effect = "(жзн|жизн)" if effect =~ /(жиз|жзн)/
+
+      regexp = "#{mod}#{value} #{effect}"
+      puts regexp
+    elsif search.match /жизн(ь|ей|и|)? за урон/
+      regexp = "жзн за урон"
+    elsif search.match /эн(.*) за урон/
+      regexp = "эн за урон"
+    elsif search.match /(имб(.*))/ # Easter egg
+      regexp = "(эхо: 2 яд(.*)|эхо: благо 2)"
+    else
+      regexp = search
+    end
+
+    where "ability ILIKE ? OR name ILIKE ? OR ability ~* ?", "%#{search}%", "%#{search}%", "#{regexp}"
   end
 
 end
