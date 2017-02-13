@@ -1,5 +1,38 @@
 [
   {
+    "number": "1653",
+    "name": "КУПЕРХЭД",
+    "clan": "Micron",
+    "rarity": "rare",
+    "star": false,
+    "power": "8",
+    "damage": "3",
+    "ability": "гнев: +1 эн за урон",
+    "bonus": "+2 урона"
+  },
+  {
+    "number": "1701",
+    "name": "ДЮВАЛЬ",
+    "clan": "Micron",
+    "rarity": "uniq",
+    "star": false,
+    "power": "8",
+    "damage": "2",
+    "ability": "-2 жизни; +3 эн",
+    "bonus": "+2 урона"
+  },
+  {
+    "number": "1780",
+    "name": "БИЛЕТ УДАЧИ",
+    "clan": "Micron",
+    "rarity": "common",
+    "star": false,
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
+    "bonus": "+2 урона"
+  },
+  {
     "number": "1726",
     "name": "ШТОЛЬЦ И ЗОХТ",
     "clan": "Micron",
@@ -22,39 +55,6 @@
     "bonus": "+2 урона"
   },
   {
-    "number": "1653",
-    "name": "КУПЕРХЭД",
-    "clan": "Micron",
-    "rarity": "rare",
-    "star": false,
-    "power": "8",
-    "damage": "3",
-    "ability": "гнев: +1 эн за урон",
-    "bonus": "+2 урона"
-  },
-  {
-    "number": "1701",
-    "name": "ДЮВАЛЬ",
-    "clan": "Micron",
-    "rarity": "uniq",
-    "star": false,
-    "power": "8",
-    "damage": "2",
-    "ability": "-2 жизни; +3 эн",
-    "bonus": "+2 урона"
-  },
-  {
-    "number": "48",
-    "name": "СТИЛЕТТО",
-    "clan": "Micron",
-    "rarity": "common",
-    "star": false,
-    "power": "5",
-    "damage": "3",
-    "ability": "-4 урона, до 2",
-    "bonus": "+2 урона"
-  },
-  {
     "number": "49",
     "name": "OZ-3000",
     "clan": "Micron",
@@ -63,6 +63,17 @@
     "power": "7",
     "damage": "1",
     "ability": "-2 урона, до 1",
+    "bonus": "+2 урона"
+  },
+  {
+    "number": "59",
+    "name": "ВИКТОРИЯ",
+    "clan": "Micron",
+    "rarity": "common",
+    "star": false,
+    "power": "4",
+    "damage": "3",
+    "ability": "+15 атаки",
     "bonus": "+2 урона"
   },
   {
@@ -84,18 +95,7 @@
     "star": true,
     "power": "8",
     "damage": "2",
-    "ability": "крах: -2 эн себе НБ",
-    "bonus": "+2 урона"
-  },
-  {
-    "number": "247",
-    "name": "КУКК-И",
-    "clan": "Micron",
-    "rarity": "common",
-    "star": false,
-    "power": "7",
-    "damage": "2",
-    "ability": "гнев: -1 жзн за урон",
+    "ability": "крах: -2 эн себе НБ",
     "bonus": "+2 урона"
   },
   {
@@ -110,14 +110,14 @@
     "bonus": "+2 урона"
   },
   {
-    "number": "359",
-    "name": "ШРОБОТ",
+    "number": "247",
+    "name": "КУКК-И",
     "clan": "Micron",
     "rarity": "common",
     "star": false,
     "power": "7",
-    "damage": "4",
-    "ability": "+6 атаки соп.",
+    "damage": "2",
+    "ability": "гнев: -1 жзн за урон",
     "bonus": "+2 урона"
   },
   {
@@ -128,7 +128,7 @@
     "star": false,
     "power": "7",
     "damage": "1",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 урона"
   },
   {
@@ -154,14 +154,14 @@
     "bonus": "+2 урона"
   },
   {
-    "number": "1583",
-    "name": "КИККЕР",
+    "number": "359",
+    "name": "ШРОБОТ",
     "clan": "Micron",
-    "rarity": "rare",
+    "rarity": "common",
     "star": false,
-    "power": "8",
-    "damage": "2",
-    "ability": "-1 жзн за урон",
+    "power": "7",
+    "damage": "4",
+    "ability": "+6 атаки соп.",
     "bonus": "+2 урона"
   },
   {
@@ -187,25 +187,36 @@
     "bonus": "+2 урона"
   },
   {
-    "number": "59",
-    "name": "ВИКТОРИЯ",
+    "number": "48",
+    "name": "СТИЛЕТТО",
     "clan": "Micron",
     "rarity": "common",
     "star": false,
-    "power": "4",
+    "power": "5",
     "damage": "3",
-    "ability": "+15 атаки",
+    "ability": "-4 урона, до 2",
     "bonus": "+2 урона"
   },
   {
-    "number": "50",
-    "name": "КЭРРИ",
+    "number": "1583",
+    "name": "КИККЕР",
     "clan": "Micron",
-    "rarity": "common",
+    "rarity": "rare",
     "star": false,
-    "power": "7",
+    "power": "8",
     "damage": "2",
-    "ability": "+2 силы",
+    "ability": "-1 жзн за урон",
+    "bonus": "+2 урона"
+  },
+  {
+    "number": "555",
+    "name": "ИГОР 16",
+    "clan": "Micron",
+    "rarity": "rare",
+    "star": false,
+    "power": "8",
+    "damage": "3",
+    "ability": "+1 жизни",
     "bonus": "+2 урона"
   },
   {
@@ -249,7 +260,7 @@
     "star": false,
     "power": "6",
     "damage": "2",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "+2 урона"
   },
   {
@@ -260,7 +271,7 @@
     "star": false,
     "power": "6",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 урона"
   },
   {
@@ -271,7 +282,7 @@
     "star": false,
     "power": "4",
     "damage": "5",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "+2 урона"
   },
   {
@@ -319,14 +330,14 @@
     "bonus": "+2 урона"
   },
   {
-    "number": "555",
-    "name": "ИГОР 16",
+    "number": "50",
+    "name": "КЭРРИ",
     "clan": "Micron",
-    "rarity": "rare",
+    "rarity": "common",
     "star": false,
-    "power": "8",
-    "damage": "3",
-    "ability": "+1 жизни",
+    "power": "7",
+    "damage": "2",
+    "ability": "+2 силы",
     "bonus": "+2 урона"
   },
   {
@@ -374,17 +385,6 @@
     "bonus": "+2 урона"
   },
   {
-    "number": "616",
-    "name": "КРОК",
-    "clan": "Micron",
-    "rarity": "common",
-    "star": false,
-    "power": "8",
-    "damage": "1",
-    "ability": "-1 жизни; +1 эн",
-    "bonus": "+2 урона"
-  },
-  {
     "number": "1391",
     "name": "МДИЭН",
     "clan": "Micron",
@@ -393,6 +393,17 @@
     "power": "7",
     "damage": "3",
     "ability": "+1 жзн за урон",
+    "bonus": "+2 урона"
+  },
+  {
+    "number": "616",
+    "name": "КРОК",
+    "clan": "Micron",
+    "rarity": "common",
+    "star": false,
+    "power": "8",
+    "damage": "1",
+    "ability": "-1 жизни; +1 эн",
     "bonus": "+2 урона"
   },
   {
@@ -414,7 +425,7 @@
     "star": true,
     "power": "8",
     "damage": "3",
-    "ability": "-2 урона, до 1 НБ",
+    "ability": "-2 урона, до 1 НБ",
     "bonus": "+2 урона"
   },
   {
@@ -425,7 +436,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 урона"
   },
   {
@@ -436,7 +447,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: +14 атаки НБ",
+    "ability": "гнев: +14 атаки НБ",
     "bonus": "+2 урона"
   },
   {
@@ -447,7 +458,7 @@
     "star": false,
     "power": "8",
     "damage": "7",
-    "ability": "эхо: +4 жзн соп.",
+    "ability": "эхо: +4 жзн соп.",
     "bonus": "+2 урона"
   },
   {
@@ -557,7 +568,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "- бонус НБ",
+    "ability": "−бонус НБ",
     "bonus": "+2 урона"
   },
   {
@@ -568,7 +579,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "гнев: благо 2 НБ",
+    "ability": "гнев: благо 2 НБ",
     "bonus": "+2 урона"
   },
   {
@@ -579,7 +590,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "крах: -1 эн себе",
+    "ability": "крах: -1 эн себе",
     "bonus": "+2 урона"
   },
   {
@@ -601,7 +612,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "крах: +3 жизни НБ",
+    "ability": "крах: +3 жизни НБ",
     "bonus": "+2 урона"
   },
   {
@@ -624,7 +635,7 @@
     "power": "6",
     "damage": "3",
     "ability": "+1 жзн за урон",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1692",
@@ -634,8 +645,8 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "эхо: 1 яда, до 1",
-    "bonus": "- бонус"
+    "ability": "эхо: 1 яда, до 1",
+    "bonus": "−бонус"
   },
   {
     "number": "1744",
@@ -645,8 +656,8 @@
     "star": false,
     "power": "8",
     "damage": "6",
-    "ability": "гнев: урон = урону соп.",
-    "bonus": "- бонус"
+    "ability": "гнев: урон = урону соп.",
+    "bonus": "−бонус"
   },
   {
     "number": "1679",
@@ -657,7 +668,7 @@
     "power": "6",
     "damage": "4",
     "ability": "+3 силы",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1689",
@@ -668,7 +679,7 @@
     "power": "8",
     "damage": "3",
     "ability": "-2 энергии",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1759",
@@ -679,7 +690,7 @@
     "power": "6",
     "damage": "8",
     "ability": "гнев: +3 силы",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1717",
@@ -689,8 +700,8 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "эхо: -3 жзн, до 8",
-    "bonus": "- бонус"
+    "ability": "эхо: -3 жзн, до 8",
+    "bonus": "−бонус"
   },
   {
     "number": "348",
@@ -701,7 +712,7 @@
     "power": "6",
     "damage": "2",
     "ability": "-2 урона, до 1",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "226",
@@ -712,7 +723,7 @@
     "power": "7",
     "damage": "2",
     "ability": "-1 силы, до 1",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "587",
@@ -723,7 +734,7 @@
     "power": "7",
     "damage": "2",
     "ability": "эхо: +1 эн",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "807",
@@ -734,7 +745,7 @@
     "power": "5",
     "damage": "3",
     "ability": "крах: +3 жизни",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1450",
@@ -745,7 +756,7 @@
     "power": "8",
     "damage": "2",
     "ability": "эхо: +1 жизнь",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1539",
@@ -755,8 +766,8 @@
     "star": false,
     "power": "6",
     "damage": "2",
-    "ability": "гнев: 3 яда, до 1",
-    "bonus": "- бонус"
+    "ability": "гнев: 3 яда, до 1",
+    "bonus": "−бонус"
   },
   {
     "number": "55",
@@ -767,7 +778,7 @@
     "power": "6",
     "damage": "2",
     "ability": "+4 атаки",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1491",
@@ -778,7 +789,7 @@
     "power": "7",
     "damage": "5",
     "ability": "+7 атаки",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "893",
@@ -788,8 +799,8 @@
     "star": true,
     "power": "2",
     "damage": "6",
-    "ability": "гнев: -5 силы, до 2",
-    "bonus": "- бонус"
+    "ability": "гнев: -5 силы, до 2",
+    "bonus": "−бонус"
   },
   {
     "number": "1468",
@@ -799,8 +810,8 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: +3 силы соп.",
-    "bonus": "- бонус"
+    "ability": "гнев: +3 силы соп.",
+    "bonus": "−бонус"
   },
   {
     "number": "56",
@@ -811,7 +822,7 @@
     "power": "3",
     "damage": "4",
     "ability": "-1 силы, до 1",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1167",
@@ -821,8 +832,8 @@
     "star": true,
     "power": "7",
     "damage": "3",
-    "ability": "гнев: +4 силы НБ",
-    "bonus": "- бонус"
+    "ability": "гнев: +4 силы НБ",
+    "bonus": "−бонус"
   },
   {
     "number": "82",
@@ -833,7 +844,7 @@
     "power": "4",
     "damage": "4",
     "ability": "+1 силы",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "726",
@@ -844,7 +855,7 @@
     "power": "7",
     "damage": "4",
     "ability": "-2 жизни; +2 эн",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "84",
@@ -855,7 +866,7 @@
     "power": "5",
     "damage": "3",
     "ability": "-1 энергия",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "223",
@@ -866,7 +877,7 @@
     "power": "5",
     "damage": "5",
     "ability": "-2 силы, до 4",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "459",
@@ -877,7 +888,7 @@
     "power": "6",
     "damage": "3",
     "ability": "благо 2",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "174",
@@ -888,7 +899,7 @@
     "power": "6",
     "damage": "4",
     "ability": "-3 урона, до 1",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1388",
@@ -898,8 +909,8 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "гнев: +8 атаки соп.",
-    "bonus": "- бонус"
+    "ability": "гнев: +8 атаки соп.",
+    "bonus": "−бонус"
   },
   {
     "number": "1551",
@@ -910,7 +921,7 @@
     "power": "7",
     "damage": "4",
     "ability": "благо 1",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "85",
@@ -921,7 +932,7 @@
     "power": "4",
     "damage": "7",
     "ability": "-5 атаки, до 2",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "57",
@@ -932,7 +943,7 @@
     "power": "6",
     "damage": "5",
     "ability": "+2 силы",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "492",
@@ -943,7 +954,7 @@
     "power": "6",
     "damage": "4",
     "ability": "гнев: +2 силы",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "255",
@@ -954,7 +965,7 @@
     "power": "8",
     "damage": "2",
     "ability": "1 яда, до 3",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1097",
@@ -965,7 +976,7 @@
     "power": "7",
     "damage": "2",
     "ability": "-11 атаки, до 8",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "844",
@@ -976,7 +987,7 @@
     "power": "6",
     "damage": "2",
     "ability": "+1 эн за урон",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "83",
@@ -987,7 +998,7 @@
     "power": "3",
     "damage": "8",
     "ability": "+1 силы",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1573",
@@ -998,7 +1009,7 @@
     "power": "8",
     "damage": "3",
     "ability": "гнев: -5 энергии",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1560",
@@ -1009,7 +1020,7 @@
     "power": "6",
     "damage": "5",
     "ability": "+3 энергии",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "86",
@@ -1020,7 +1031,7 @@
     "power": "6",
     "damage": "7",
     "ability": "-8 атаки, до 3",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1399",
@@ -1031,7 +1042,7 @@
     "power": "8",
     "damage": "3",
     "ability": "благо 2 НБ",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "323",
@@ -1042,7 +1053,7 @@
     "power": "7",
     "damage": "4",
     "ability": "-2 жизни",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "288",
@@ -1053,7 +1064,7 @@
     "power": "6",
     "damage": "4",
     "ability": "-1 жизни; +1 эн",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "713",
@@ -1063,8 +1074,8 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "- бонус",
-    "bonus": "- бонус"
+    "ability": "−бонус",
+    "bonus": "−бонус"
   },
   {
     "number": "87",
@@ -1075,7 +1086,7 @@
     "power": "8",
     "damage": "4",
     "ability": "+1 урона",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "467",
@@ -1086,7 +1097,7 @@
     "power": "5",
     "damage": "6",
     "ability": "-7 силы, до 4",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "886",
@@ -1097,7 +1108,7 @@
     "power": "8",
     "damage": "3",
     "ability": "-1 жзн за урон",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1013",
@@ -1107,8 +1118,8 @@
     "star": false,
     "power": "3",
     "damage": "7",
-    "ability": "сила = силе соп.",
-    "bonus": "- бонус"
+    "ability": "сила = силе соп.",
+    "bonus": "−бонус"
   },
   {
     "number": "707",
@@ -1118,8 +1129,8 @@
     "star": false,
     "power": "6",
     "damage": "4",
-    "ability": "-15 атаки, до 19",
-    "bonus": "- бонус"
+    "ability": "-15 атаки, до 19",
+    "bonus": "−бонус"
   },
   {
     "number": "793",
@@ -1129,8 +1140,8 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "эхо: -2 жзн, до 1",
-    "bonus": "- бонус"
+    "ability": "эхо: -2 жзн, до 1",
+    "bonus": "−бонус"
   },
   {
     "number": "58",
@@ -1141,7 +1152,7 @@
     "power": "7",
     "damage": "5",
     "ability": "-1 урона, до 1",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "678",
@@ -1152,7 +1163,7 @@
     "power": "8",
     "damage": "3",
     "ability": "крах: -2 эн",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "908",
@@ -1163,7 +1174,7 @@
     "power": "8",
     "damage": "3",
     "ability": "2 яда, до 1",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "828",
@@ -1174,7 +1185,7 @@
     "power": "7",
     "damage": "6",
     "ability": "-4 урона, до 2",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "88",
@@ -1185,7 +1196,7 @@
     "power": "8",
     "damage": "5",
     "ability": "+5 атаки клану",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "1188",
@@ -1195,8 +1206,8 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "+3 жзн за урон НБ",
-    "bonus": "- бонус"
+    "ability": "+3 жзн за урон НБ",
+    "bonus": "−бонус"
   },
   {
     "number": "187",
@@ -1207,7 +1218,7 @@
     "power": "6",
     "damage": "6",
     "ability": "+6 атаки",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "862",
@@ -1218,7 +1229,7 @@
     "power": "8",
     "damage": "4",
     "ability": "гнев: +2 жизни",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "610",
@@ -1229,7 +1240,7 @@
     "power": "6",
     "damage": "7",
     "ability": "крах: +2 эн",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "598",
@@ -1240,7 +1251,7 @@
     "power": "5",
     "damage": "8",
     "ability": "+3 жизни",
-    "bonus": "- бонус"
+    "bonus": "−бонус"
   },
   {
     "number": "392",
@@ -1250,8 +1261,8 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "-способность",
-    "bonus": "- бонус"
+    "ability": "−способность",
+    "bonus": "−бонус"
   },
   {
     "number": "1690",
@@ -1283,7 +1294,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "гнев: крах: -1 эн себе",
+    "ability": "гнев: крах: -1 эн себе",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1305,7 +1316,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1327,7 +1338,7 @@
     "star": false,
     "power": "4",
     "damage": "4",
-    "ability": "-2 урона, до 1 НБ",
+    "ability": "-2 урона, до 1 НБ",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1349,7 +1360,7 @@
     "star": false,
     "power": "2",
     "damage": "6",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1404,7 +1415,7 @@
     "star": false,
     "power": "5",
     "damage": "5",
-    "ability": "-10 атаки, до 16",
+    "ability": "-10 атаки, до 16",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1426,7 +1437,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "гнев: +15 атаки соп. НБ",
+    "ability": "гнев: +15 атаки соп. НБ",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1459,7 +1470,7 @@
     "star": false,
     "power": "7",
     "damage": "1",
-    "ability": "гнев: +3 жзн за урон",
+    "ability": "гнев: +3 жзн за урон",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1514,7 +1525,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "-1 силы, до 2 НБ",
+    "ability": "-1 силы, до 2 НБ",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1547,7 +1558,7 @@
     "star": true,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: +1 жзн за урон",
+    "ability": "гнев: +1 жзн за урон",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1569,7 +1580,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "эхо: -2 жзн, до 1",
+    "ability": "эхо: -2 жзн, до 1",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1613,7 +1624,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1734,7 +1745,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "-2 жизни; +2 эн НБ",
+    "ability": "-2 жизни; +2 эн НБ",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1767,7 +1778,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1778,7 +1789,7 @@
     "star": true,
     "power": "7",
     "damage": "7",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1811,7 +1822,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: -2 силы, до 1",
+    "ability": "гнев: -2 силы, до 1",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1822,7 +1833,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1844,7 +1855,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "-3 урона, до 1 НБ",
+    "ability": "-3 урона, до 1 НБ",
     "bonus": "-2 урона, до 2"
   },
   {
@@ -1910,7 +1921,7 @@
     "star": false,
     "power": "6",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "2 яда, до 1"
   },
   {
@@ -1954,7 +1965,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "2 яда, до 1"
   },
   {
@@ -1976,7 +1987,7 @@
     "star": false,
     "power": "5",
     "damage": "3",
-    "ability": "гнев: крах: +3 жизни",
+    "ability": "гнев: крах: +3 жизни",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2152,7 +2163,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "гнев: - бонус",
+    "ability": "гнев: −бонус",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2207,7 +2218,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2218,7 +2229,7 @@
     "star": false,
     "power": "2",
     "damage": "5",
-    "ability": "гнев: +30 атаки НБ",
+    "ability": "гнев: +30 атаки НБ",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2262,7 +2273,7 @@
     "star": true,
     "power": "8",
     "damage": "4",
-    "ability": "-2 жизни; +2 эн НБ",
+    "ability": "-2 жизни; +2 эн НБ",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2284,7 +2295,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "эхо: -1 жзн, до 1",
+    "ability": "эхо: -1 жзн, до 1",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2317,7 +2328,7 @@
     "star": false,
     "power": "5",
     "damage": "4",
-    "ability": "-18 атаки, до 16",
+    "ability": "-18 атаки, до 16",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2416,7 +2427,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2460,7 +2471,7 @@
     "star": true,
     "power": "7",
     "damage": "6",
-    "ability": "гнев: +9 жзн соп.",
+    "ability": "гнев: +9 жзн соп.",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2482,7 +2493,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: -4 энергии НБ",
+    "ability": "гнев: -4 энергии НБ",
     "bonus": "2 яда, до 1"
   },
   {
@@ -2497,14 +2508,25 @@
     "bonus": "2 яда, до 1"
   },
   {
-    "number": "1700",
-    "name": "НЕЙТРИНА",
+    "number": "1790",
+    "name": "АВАТАРКА ГЕРБ",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
-    "power": "8",
-    "damage": "2",
-    "ability": "-10 атаки, до 10",
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1791",
+    "name": "АВАТАРКА СЭНДИ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2519,124 +2541,135 @@
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "1413",
-    "name": "ЩИПАЧZ",
+    "number": "1792",
+    "name": "АВАТАРКА БИЛЛИ",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
-    "power": "8",
-    "damage": "3",
-    "ability": "+1 жизни",
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "91",
-    "name": "ШНОБЕЛЬ ★",
-    "clan": "Circus",
-    "rarity": "common",
-    "star": true,
-    "power": "3",
-    "damage": "5",
-    "ability": "+16 атаки",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "366",
-    "name": "ЧОНГ",
+    "number": "1794",
+    "name": "АВАТАРКА МРАК",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
-    "power": "3",
-    "damage": "3",
-    "ability": "+5 силы",
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "92",
-    "name": "БЕЛЛА",
+    "number": "1786",
+    "name": "ЖЁЛТЫЙ",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
     "power": "6",
-    "damage": "1",
-    "ability": "-2 силы, до 4",
-    "bonus": "-8 атаки, до 3"
+    "damage": "3",
+    "ability": "-2 урона, до 5 всем",
+    "bonus": "эхо: -1 жзн себе, до 1"
   },
   {
-    "number": "1765",
-    "name": "ПРОСПЕРО ★",
-    "clan": "Circus",
-    "rarity": "rare",
-    "star": true,
-    "power": "8",
-    "damage": "4",
-    "ability": "+1 силы",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "709",
-    "name": "ОЗОРНАЯ",
+    "number": "1782",
+    "name": "СИНИЙ",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
     "power": "8",
-    "damage": "1",
-    "ability": "крах: -1 эн себе",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "89",
-    "name": "МОПЕД",
-    "clan": "Circus",
-    "rarity": "common",
-    "star": false,
-    "power": "5",
-    "damage": "4",
-    "ability": "+2 силы",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "219",
-    "name": "ДЕМИЭЛЬ",
-    "clan": "Circus",
-    "rarity": "common",
-    "star": false,
-    "power": "7",
     "damage": "2",
-    "ability": "+2 энергии",
-    "bonus": "-8 атаки, до 3"
+    "ability": "Все бонусы",
+    "bonus": "хамелеон"
   },
   {
-    "number": "1026",
-    "name": "ЧУЧИКИ",
+    "number": "1788",
+    "name": "АВАТАРКА ГАМ",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
-    "power": "6",
-    "damage": "8",
-    "ability": "эхо: +4 жзн соп.",
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "270",
-    "name": "ЗЕЛЁНКА",
+    "number": "1785",
+    "name": "ЗЕЛЁНЫЙ",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
-    "power": "5",
+    "power": "2",
     "damage": "3",
-    "ability": "-4 атаки, до 3",
+    "ability": "+10 атаки всем",
+    "bonus": "эхо: благо 1"
+  },
+  {
+    "number": "1789",
+    "name": "АВАТАРКА БРИТТАНИ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "180",
-    "name": "ПАДДИ ★",
+    "number": "1783",
+    "name": "ЛИЛОВЫЙ",
     "clan": "Circus",
     "rarity": "common",
-    "star": true,
-    "power": "5",
-    "damage": "4",
-    "ability": "-3 силы, до 3",
+    "star": false,
+    "power": "4",
+    "damage": "1",
+    "ability": "+2 силы всем при пр.",
+    "bonus": "крах: -1 эн себе"
+  },
+  {
+    "number": "1793",
+    "name": "АВАТАРКА КЛАРЕНС",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "1",
+    "damage": "1",
+    "ability": "нет способности",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1784",
+    "name": "АЛЫЙ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "4",
+    "damage": "8",
+    "ability": "гнев: +3 урона всем",
+    "bonus": "+5 урона"
+  },
+  {
+    "number": "1787",
+    "name": "ХАО ЮНЬ",
+    "clan": "Circus",
+    "rarity": "legend",
+    "star": false,
+    "power": "8",
+    "damage": "7",
+    "ability": "+3 атаки",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1700",
+    "name": "НЕЙТРИНА",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "8",
+    "damage": "2",
+    "ability": "-10 атаки, до 10",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2651,14 +2684,135 @@
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "93",
-    "name": "БАРОН",
+    "number": "219",
+    "name": "ДЕМИЭЛЬ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "7",
+    "damage": "2",
+    "ability": "+2 энергии",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "270",
+    "name": "ЗЕЛЁНКА",
     "clan": "Circus",
     "rarity": "common",
     "star": false,
     "power": "5",
-    "damage": "6",
-    "ability": "+5 атаки",
+    "damage": "3",
+    "ability": "-4 атаки, до 3",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "89",
+    "name": "МОПЕД",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "5",
+    "damage": "4",
+    "ability": "+2 силы",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "91",
+    "name": "ШНОБЕЛЬ ★",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": true,
+    "power": "3",
+    "damage": "5",
+    "ability": "+16 атаки",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1413",
+    "name": "ЩИПАЧZ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "8",
+    "damage": "3",
+    "ability": "+1 жизни",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "366",
+    "name": "ЧОНГ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "3",
+    "damage": "3",
+    "ability": "+5 силы",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1765",
+    "name": "ПРОСПЕРО ★",
+    "clan": "Circus",
+    "rarity": "rare",
+    "star": true,
+    "power": "8",
+    "damage": "4",
+    "ability": "+1 силы",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1026",
+    "name": "ЧУЧИКИ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "6",
+    "damage": "8",
+    "ability": "эхо: +4 жзн соп.",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "709",
+    "name": "ОЗОРНАЯ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "8",
+    "damage": "1",
+    "ability": "крах: -1 эн себе",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "180",
+    "name": "ПАДДИ ★",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": true,
+    "power": "5",
+    "damage": "4",
+    "ability": "-3 силы, до 3",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "92",
+    "name": "БЕЛЛА",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "6",
+    "damage": "1",
+    "ability": "-2 силы, до 4",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1556",
+    "name": "ДЖАСТИН",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "7",
+    "damage": "1",
+    "ability": "+3 урона",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2713,7 +2867,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "эхо: -1 жзн себе, до 1",
+    "ability": "эхо: -1 жзн себе, до 1",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2725,6 +2879,17 @@
     "power": "6",
     "damage": "3",
     "ability": "1 яда, до 1",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "93",
+    "name": "БАРОН",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "5",
+    "damage": "6",
+    "ability": "+5 атаки",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2768,7 +2933,7 @@
     "star": true,
     "power": "8",
     "damage": "4",
-    "ability": "-2 урона, до 1 НБ",
+    "ability": "-2 урона, до 1 НБ",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2783,25 +2948,14 @@
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "1556",
-    "name": "ДЖАСТИН",
+    "number": "859",
+    "name": "ТАИС",
     "clan": "Circus",
-    "rarity": "common",
-    "star": false,
-    "power": "7",
-    "damage": "1",
-    "ability": "+3 урона",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "97",
-    "name": "АДОЛЬФ",
-    "clan": "Circus",
-    "rarity": "uniq",
+    "rarity": "rare",
     "star": false,
     "power": "8",
-    "damage": "4",
-    "ability": "+10 атаки",
+    "damage": "3",
+    "ability": "2 яда, до 4",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2838,50 +2992,6 @@
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "1787",
-    "name": "ХАО ЮНЬ",
-    "clan": "Circus",
-    "rarity": "legend",
-    "star": false,
-    "power": "8",
-    "damage": "7",
-    "ability": "+3 атаки",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "1442",
-    "name": "БЕННИ И ТОНЧО",
-    "clan": "Circus",
-    "rarity": "uniq",
-    "star": false,
-    "power": "7",
-    "damage": "5",
-    "ability": "гнев: -4 энергии",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "535",
-    "name": "КЕВИН ★",
-    "clan": "Circus",
-    "rarity": "uniq",
-    "star": true,
-    "power": "7",
-    "damage": "4",
-    "ability": "-4 урона, до 2",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "569",
-    "name": "ЗИК",
-    "clan": "Circus",
-    "rarity": "rare",
-    "star": false,
-    "power": "6",
-    "damage": "6",
-    "ability": "крах: -2 эн",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
     "number": "700",
     "name": "АМАДЕУС",
     "clan": "Circus",
@@ -2890,6 +3000,17 @@
     "power": "8",
     "damage": "4",
     "ability": "-2 жизни",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "182",
+    "name": "ДЖОКЕР",
+    "clan": "Circus",
+    "rarity": "uniq",
+    "star": false,
+    "power": "7",
+    "damage": "6",
+    "ability": "−бонус",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2904,28 +3025,6 @@
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "182",
-    "name": "ДЖОКЕР",
-    "clan": "Circus",
-    "rarity": "uniq",
-    "star": false,
-    "power": "7",
-    "damage": "6",
-    "ability": "- бонус",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "99",
-    "name": "МИСТЕР ВУУ",
-    "clan": "Circus",
-    "rarity": "common",
-    "star": false,
-    "power": "6",
-    "damage": "5",
-    "ability": "-5 атаки, до 2",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
     "number": "1395",
     "name": "РЕДЖИК",
     "clan": "Circus",
@@ -2933,7 +3032,7 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2948,6 +3047,17 @@
     "bonus": "-8 атаки, до 3"
   },
   {
+    "number": "535",
+    "name": "КЕВИН ★",
+    "clan": "Circus",
+    "rarity": "uniq",
+    "star": true,
+    "power": "7",
+    "damage": "4",
+    "ability": "-4 урона, до 2",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
     "number": "974",
     "name": "АДОЛЬФ +",
     "clan": "Circus",
@@ -2959,14 +3069,80 @@
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "859",
-    "name": "ТАИС",
+    "number": "97",
+    "name": "АДОЛЬФ",
+    "clan": "Circus",
+    "rarity": "uniq",
+    "star": false,
+    "power": "8",
+    "damage": "4",
+    "ability": "+10 атаки",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "569",
+    "name": "ЗИК",
     "clan": "Circus",
     "rarity": "rare",
     "star": false,
-    "power": "8",
+    "power": "6",
+    "damage": "6",
+    "ability": "крах: -2 эн",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "99",
+    "name": "МИСТЕР ВУУ",
+    "clan": "Circus",
+    "rarity": "common",
+    "star": false,
+    "power": "6",
+    "damage": "5",
+    "ability": "-5 атаки, до 2",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "1442",
+    "name": "БЕННИ И ТОНЧО",
+    "clan": "Circus",
+    "rarity": "uniq",
+    "star": false,
+    "power": "7",
+    "damage": "5",
+    "ability": "гнев: -4 энергии",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "484",
+    "name": "КЛЭПС",
+    "clan": "Circus",
+    "rarity": "rare",
+    "star": false,
+    "power": "7",
     "damage": "3",
-    "ability": "2 яда, до 4",
+    "ability": "благо 2",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "458",
+    "name": "ЯНУС",
+    "clan": "Circus",
+    "rarity": "rare",
+    "star": false,
+    "power": "7",
+    "damage": "5",
+    "ability": "гнев: +2 энергии",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "943",
+    "name": "РАНЧО",
+    "clan": "Circus",
+    "rarity": "legend",
+    "star": false,
+    "power": "8",
+    "damage": "4",
+    "ability": "благо 2 НБ",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -2978,6 +3154,17 @@
     "power": "8",
     "damage": "4",
     "ability": "+1 жзн за урон",
+    "bonus": "-8 атаки, до 3"
+  },
+  {
+    "number": "94",
+    "name": "БАМБУЛА",
+    "clan": "Circus",
+    "rarity": "uniq",
+    "star": false,
+    "power": "6",
+    "damage": "7",
+    "ability": "−способность",
     "bonus": "-8 атаки, до 3"
   },
   {
@@ -3014,50 +3201,6 @@
     "bonus": "-8 атаки, до 3"
   },
   {
-    "number": "458",
-    "name": "ЯНУС",
-    "clan": "Circus",
-    "rarity": "rare",
-    "star": false,
-    "power": "7",
-    "damage": "5",
-    "ability": "гнев: +2 энергии",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "943",
-    "name": "РАНЧО",
-    "clan": "Circus",
-    "rarity": "legend",
-    "star": false,
-    "power": "8",
-    "damage": "4",
-    "ability": "благо 2 НБ",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "484",
-    "name": "КЛЭПС",
-    "clan": "Circus",
-    "rarity": "rare",
-    "star": false,
-    "power": "7",
-    "damage": "3",
-    "ability": "благо 2",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
-    "number": "94",
-    "name": "БАМБУЛА",
-    "clan": "Circus",
-    "rarity": "uniq",
-    "star": false,
-    "power": "6",
-    "damage": "7",
-    "ability": "-способность",
-    "bonus": "-8 атаки, до 3"
-  },
-  {
     "number": "1711",
     "name": "ВИРГИЛЛА ★",
     "clan": "[Da:Hack]",
@@ -3066,7 +3209,7 @@
     "power": "6",
     "damage": "6",
     "ability": "гнев: +3 силы",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1741",
@@ -3077,7 +3220,7 @@
     "power": "6",
     "damage": "7",
     "ability": "+3 урона соп.",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1727",
@@ -3088,7 +3231,7 @@
     "power": "6",
     "damage": "8",
     "ability": "-1 силы, до 1",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1675",
@@ -3099,7 +3242,7 @@
     "power": "6",
     "damage": "6",
     "ability": "эхо: -1 эн",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "100",
@@ -3110,7 +3253,7 @@
     "power": "4",
     "damage": "5",
     "ability": "-2 урона, до 1",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "186",
@@ -3121,7 +3264,7 @@
     "power": "7",
     "damage": "3",
     "ability": "-2 силы, до 5",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "221",
@@ -3132,7 +3275,7 @@
     "power": "8",
     "damage": "1",
     "ability": "-1 силы, до 6",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "102",
@@ -3143,7 +3286,7 @@
     "power": "5",
     "damage": "2",
     "ability": "-2 силы, до 5",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "819",
@@ -3153,8 +3296,8 @@
     "star": false,
     "power": "6",
     "damage": "2",
-    "ability": "- бонус",
-    "bonus": "-способность"
+    "ability": "−бонус",
+    "bonus": "−способность"
   },
   {
     "number": "310",
@@ -3165,7 +3308,7 @@
     "power": "6",
     "damage": "2",
     "ability": "+2 жизни",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "101",
@@ -3176,7 +3319,7 @@
     "power": "3",
     "damage": "5",
     "ability": "-3 энергии",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "609",
@@ -3187,7 +3330,7 @@
     "power": "7",
     "damage": "3",
     "ability": "крах: +1 эн",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1156",
@@ -3198,7 +3341,7 @@
     "power": "8",
     "damage": "4",
     "ability": "+2 силы соп.",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "889",
@@ -3208,8 +3351,8 @@
     "star": false,
     "power": "2",
     "damage": "6",
-    "ability": "сила = силе соп.",
-    "bonus": "-способность"
+    "ability": "сила = силе соп.",
+    "bonus": "−способность"
   },
   {
     "number": "841",
@@ -3220,7 +3363,7 @@
     "power": "8",
     "damage": "3",
     "ability": "-1 жизни",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1574",
@@ -3231,7 +3374,7 @@
     "power": "6",
     "damage": "4",
     "ability": "благо 1",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "157",
@@ -3242,7 +3385,7 @@
     "power": "6",
     "damage": "4",
     "ability": "-6 атаки, до 2",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "158",
@@ -3253,7 +3396,7 @@
     "power": "5",
     "damage": "4",
     "ability": "-5 урона, до 4",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1419",
@@ -3263,8 +3406,8 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "крах: -1 эн себе",
-    "bonus": "-способность"
+    "ability": "крах: -1 эн себе",
+    "bonus": "−способность"
   },
   {
     "number": "104",
@@ -3275,7 +3418,7 @@
     "power": "6",
     "damage": "4",
     "ability": "крах: +1 жизнь",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "103",
@@ -3286,7 +3429,7 @@
     "power": "3",
     "damage": "7",
     "ability": "+1 силы",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "105",
@@ -3296,8 +3439,8 @@
     "star": false,
     "power": "8",
     "damage": "1",
-    "ability": "- бонус",
-    "bonus": "-способность"
+    "ability": "−бонус",
+    "bonus": "−способность"
   },
   {
     "number": "349",
@@ -3308,7 +3451,7 @@
     "power": "7",
     "damage": "3",
     "ability": "-1 жизни; +1 эн",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "564",
@@ -3319,7 +3462,7 @@
     "power": "7",
     "damage": "5",
     "ability": "гнев: -2 жизни",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "106",
@@ -3330,7 +3473,7 @@
     "power": "4",
     "damage": "6",
     "ability": "+9 атаки",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1432",
@@ -3341,7 +3484,7 @@
     "power": "7",
     "damage": "4",
     "ability": "эхо: +2 эн",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "468",
@@ -3352,7 +3495,7 @@
     "power": "7",
     "damage": "3",
     "ability": "-4 урона, до 3",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "708",
@@ -3363,7 +3506,7 @@
     "power": "7",
     "damage": "1",
     "ability": "2 яда, до 1",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "804",
@@ -3374,7 +3517,7 @@
     "power": "6",
     "damage": "5",
     "ability": "-10 атаки, до 2",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "363",
@@ -3385,7 +3528,7 @@
     "power": "8",
     "damage": "3",
     "ability": "благо 2",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "658",
@@ -3396,7 +3539,7 @@
     "power": "8",
     "damage": "4",
     "ability": "+2 энергии",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "107",
@@ -3407,7 +3550,7 @@
     "power": "5",
     "damage": "7",
     "ability": "-6 атаки, до 3",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "332",
@@ -3417,8 +3560,8 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "урон = урону соп.",
-    "bonus": "-способность"
+    "ability": "урон = урону соп.",
+    "bonus": "−способность"
   },
   {
     "number": "474",
@@ -3428,8 +3571,8 @@
     "star": false,
     "power": "5",
     "damage": "4",
-    "ability": "сила = силе соп.",
-    "bonus": "-способность"
+    "ability": "сила = силе соп.",
+    "bonus": "−способность"
   },
   {
     "number": "1383",
@@ -3440,7 +3583,7 @@
     "power": "8",
     "damage": "3",
     "ability": "благо 2 НБ",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "905",
@@ -3451,7 +3594,7 @@
     "power": "7",
     "damage": "6",
     "ability": "+6 атаки соп.",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "457",
@@ -3462,7 +3605,7 @@
     "power": "8",
     "damage": "3",
     "ability": "крах: -2 эн",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1530",
@@ -3473,7 +3616,7 @@
     "power": "6",
     "damage": "6",
     "ability": "+5 атаки",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "108",
@@ -3483,8 +3626,8 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "эхо: 1 яда, до 1",
-    "bonus": "-способность"
+    "ability": "эхо: 1 яда, до 1",
+    "bonus": "−способность"
   },
   {
     "number": "109",
@@ -3495,7 +3638,7 @@
     "power": "5",
     "damage": "6",
     "ability": "+1 силы",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1463",
@@ -3505,8 +3648,8 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "+1 эн за урон НБ",
-    "bonus": "-способность"
+    "ability": "+1 эн за урон НБ",
+    "bonus": "−способность"
   },
   {
     "number": "795",
@@ -3516,8 +3659,8 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: -2 жизни; +2 эн",
-    "bonus": "-способность"
+    "ability": "гнев: -2 жизни; +2 эн",
+    "bonus": "−способность"
   },
   {
     "number": "820",
@@ -3528,7 +3671,7 @@
     "power": "7",
     "damage": "7",
     "ability": "эхо: +2 жизни",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1645",
@@ -3539,7 +3682,7 @@
     "power": "7",
     "damage": "5",
     "ability": "+1 жзн за урон",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "688",
@@ -3550,7 +3693,7 @@
     "power": "7",
     "damage": "4",
     "ability": "+2 урона",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1575",
@@ -3561,7 +3704,7 @@
     "power": "8",
     "damage": "4",
     "ability": "+2 силы",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "194",
@@ -3572,7 +3715,7 @@
     "power": "7",
     "damage": "5",
     "ability": "+1 силы",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "110",
@@ -3583,7 +3726,7 @@
     "power": "8",
     "damage": "5",
     "ability": "+8 атаки",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "167",
@@ -3594,7 +3737,7 @@
     "power": "6",
     "damage": "7",
     "ability": "-10 атаки, до 8",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "606",
@@ -3605,7 +3748,7 @@
     "power": "6",
     "damage": "8",
     "ability": "-1 энергия",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "885",
@@ -3616,7 +3759,7 @@
     "power": "8",
     "damage": "3",
     "ability": "-1 урона, до 1",
-    "bonus": "-способность"
+    "bonus": "−способность"
   },
   {
     "number": "1691",
@@ -3648,7 +3791,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "эхо: -2 жзн себе, до 7",
+    "ability": "эхо: -2 жзн себе, до 7",
     "bonus": "+2 силы"
   },
   {
@@ -3659,7 +3802,7 @@
     "star": false,
     "power": "6",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 силы"
   },
   {
@@ -3769,7 +3912,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: +2 эн соп.",
+    "ability": "гнев: +2 эн соп.",
     "bonus": "+2 силы"
   },
   {
@@ -3802,7 +3945,7 @@
     "star": true,
     "power": "5",
     "damage": "6",
-    "ability": "эхо: +2 жзн соп.",
+    "ability": "эхо: +2 жзн соп.",
     "bonus": "+2 силы"
   },
   {
@@ -3923,7 +4066,7 @@
     "star": false,
     "power": "3",
     "damage": "3",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "+2 силы"
   },
   {
@@ -4011,7 +4154,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "крах: -2 эн себе",
+    "ability": "крах: -2 эн себе",
     "bonus": "+2 силы"
   },
   {
@@ -4022,7 +4165,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 силы"
   },
   {
@@ -4055,7 +4198,7 @@
     "star": false,
     "power": "6",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 силы"
   },
   {
@@ -4088,7 +4231,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "эхо: -2 жзн, до 1",
+    "ability": "эхо: -2 жзн, до 1",
     "bonus": "+2 силы"
   },
   {
@@ -4198,7 +4341,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "+2 силы"
   },
   {
@@ -4209,7 +4352,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "гнев: эхо: +5 жзн соп.",
+    "ability": "гнев: эхо: +5 жзн соп.",
     "bonus": "+2 силы"
   },
   {
@@ -4319,7 +4462,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+8 атаки"
   },
   {
@@ -4374,7 +4517,7 @@
     "star": true,
     "power": "7",
     "damage": "1",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "+8 атаки"
   },
   {
@@ -4396,7 +4539,7 @@
     "star": false,
     "power": "7",
     "damage": "1",
-    "ability": "гнев: -3 жизни; +3 эн",
+    "ability": "гнев: -3 жизни; +3 эн",
     "bonus": "+8 атаки"
   },
   {
@@ -4429,7 +4572,7 @@
     "star": false,
     "power": "2",
     "damage": "6",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "+8 атаки"
   },
   {
@@ -4440,7 +4583,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "крах: -2 эн себе",
+    "ability": "крах: -2 эн себе",
     "bonus": "+8 атаки"
   },
   {
@@ -4484,7 +4627,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "гнев: +17 атаки НБ",
+    "ability": "гнев: +17 атаки НБ",
     "bonus": "+8 атаки"
   },
   {
@@ -4528,7 +4671,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+8 атаки"
   },
   {
@@ -4561,7 +4704,7 @@
     "star": true,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: +4 силы НБ",
+    "ability": "гнев: +4 силы НБ",
     "bonus": "+8 атаки"
   },
   {
@@ -4660,7 +4803,7 @@
     "star": false,
     "power": "5",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+8 атаки"
   },
   {
@@ -4704,7 +4847,7 @@
     "star": false,
     "power": "7",
     "damage": "8",
-    "ability": "эхо: +1 жзн соп.",
+    "ability": "эхо: +1 жзн соп.",
     "bonus": "+8 атаки"
   },
   {
@@ -4715,7 +4858,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "крах: -2 жзн, до 1",
+    "ability": "крах: -2 жзн, до 1",
     "bonus": "+8 атаки"
   },
   {
@@ -4759,7 +4902,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "гнев: -2 силы, до 1",
+    "ability": "гнев: -2 силы, до 1",
     "bonus": "+8 атаки"
   },
   {
@@ -4803,7 +4946,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "крах: +4 жизни НБ",
+    "ability": "крах: +4 жизни НБ",
     "bonus": "+8 атаки"
   },
   {
@@ -4814,7 +4957,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+8 атаки"
   },
   {
@@ -4825,7 +4968,7 @@
     "star": false,
     "power": "6",
     "damage": "6",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "+8 атаки"
   },
   {
@@ -4869,7 +5012,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "эхо: -1 жзн, до 1",
+    "ability": "эхо: -1 жзн, до 1",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -4902,7 +5045,7 @@
     "star": false,
     "power": "6",
     "damage": "2",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -4968,7 +5111,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5056,7 +5199,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "крах: -2 жзн, до 1",
+    "ability": "крах: -2 жзн, до 1",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5188,7 +5331,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: +1 жзн за урон",
+    "ability": "гнев: +1 жзн за урон",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5199,7 +5342,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: -4 урона, до 2",
+    "ability": "гнев: -4 урона, до 2",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5254,7 +5397,7 @@
     "star": false,
     "power": "5",
     "damage": "5",
-    "ability": "-2 силы, до 1 НБ",
+    "ability": "-2 силы, до 1 НБ",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5287,7 +5430,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5298,7 +5441,7 @@
     "star": false,
     "power": "6",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5353,7 +5496,7 @@
     "star": true,
     "power": "8",
     "damage": "4",
-    "ability": "эхо: +2 жизни НБ",
+    "ability": "эхо: +2 жизни НБ",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5364,7 +5507,7 @@
     "star": false,
     "power": "6",
     "damage": "6",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5419,7 +5562,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "+1 жзн за урон НБ",
+    "ability": "+1 жзн за урон НБ",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5463,7 +5606,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "- бонус НБ",
+    "ability": "−бонус НБ",
     "bonus": "-2 силы, до 1"
   },
   {
@@ -5485,7 +5628,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: благо 2 НБ",
+    "ability": "гнев: благо 2 НБ",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5507,7 +5650,7 @@
     "star": true,
     "power": "8",
     "damage": "6",
-    "ability": "-1 урона, до 1 всем",
+    "ability": "-1 урона, до 1 всем",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5551,7 +5694,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "эхо: -1 жзн, до 1 НБ",
+    "ability": "эхо: -1 жзн, до 1 НБ",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5562,7 +5705,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "эхо: -1 жзн себе, до 1",
+    "ability": "эхо: -1 жзн себе, до 1",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5595,7 +5738,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5683,7 +5826,7 @@
     "star": false,
     "power": "4",
     "damage": "6",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5694,7 +5837,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: - бонус",
+    "ability": "гнев: −бонус",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5727,7 +5870,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5760,7 +5903,7 @@
     "star": false,
     "power": "5",
     "damage": "4",
-    "ability": "-20 атаки, до 18",
+    "ability": "-20 атаки, до 18",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5782,7 +5925,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "гнев: +2 силы соп.",
+    "ability": "гнев: +2 силы соп.",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5936,7 +6079,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5958,7 +6101,7 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "-13 атаки, до 2 НБ",
+    "ability": "-13 атаки, до 2 НБ",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -5991,7 +6134,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -6057,7 +6200,7 @@
     "star": false,
     "power": "8",
     "damage": "6",
-    "ability": "крах: -1 эн себе",
+    "ability": "крах: -1 эн себе",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -6090,7 +6233,7 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -6123,7 +6266,7 @@
     "star": false,
     "power": "6",
     "damage": "7",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-1 жизни; +1 эн"
   },
   {
@@ -6178,7 +6321,7 @@
     "star": true,
     "power": "7",
     "damage": "6",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "благо 2"
   },
   {
@@ -6211,7 +6354,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: +2 силы соп.",
+    "ability": "гнев: +2 силы соп.",
     "bonus": "благо 2"
   },
   {
@@ -6376,7 +6519,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "эхо: -1 жзн, до 1",
+    "ability": "эхо: -1 жзн, до 1",
     "bonus": "благо 2"
   },
   {
@@ -6398,7 +6541,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "гнев: -2 жизни; +2 эн",
+    "ability": "гнев: -2 жизни; +2 эн",
     "bonus": "благо 2"
   },
   {
@@ -6442,7 +6585,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "благо 2"
   },
   {
@@ -6475,7 +6618,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "эхо: -2 жзн, до 1",
+    "ability": "эхо: -2 жзн, до 1",
     "bonus": "благо 2"
   },
   {
@@ -6497,7 +6640,7 @@
     "star": true,
     "power": "8",
     "damage": "2",
-    "ability": "гнев: 3 яда, до 1 НБ",
+    "ability": "гнев: 3 яда, до 1 НБ",
     "bonus": "благо 2"
   },
   {
@@ -6563,7 +6706,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "благо 2"
   },
   {
@@ -6585,7 +6728,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: 1 яда, до 4",
+    "ability": "гнев: 1 яда, до 4",
     "bonus": "благо 2"
   },
   {
@@ -6662,7 +6805,7 @@
     "star": false,
     "power": "8",
     "damage": "6",
-    "ability": "гнев: урон = урону соп.",
+    "ability": "гнев: урон = урону соп.",
     "bonus": "благо 2"
   },
   {
@@ -6684,7 +6827,7 @@
     "star": true,
     "power": "8",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "благо 2"
   },
   {
@@ -6695,7 +6838,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: -3 силы, до 4 НБ",
+    "ability": "гнев: -3 силы, до 4 НБ",
     "bonus": "благо 2"
   },
   {
@@ -6750,7 +6893,7 @@
     "star": false,
     "power": "8",
     "damage": "1",
-    "ability": "гнев: 3 яда, до 3",
+    "ability": "гнев: 3 яда, до 3",
     "bonus": "-2 энергии"
   },
   {
@@ -6761,7 +6904,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "гнев: +2 эн соп.",
+    "ability": "гнев: +2 эн соп.",
     "bonus": "-2 энергии"
   },
   {
@@ -6827,7 +6970,7 @@
     "star": true,
     "power": "7",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-2 энергии"
   },
   {
@@ -6871,7 +7014,7 @@
     "star": true,
     "power": "6",
     "damage": "5",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "-2 энергии"
   },
   {
@@ -6893,7 +7036,7 @@
     "star": false,
     "power": "6",
     "damage": "1",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-2 энергии"
   },
   {
@@ -6992,7 +7135,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: +6 жзн соп.",
+    "ability": "гнев: +6 жзн соп.",
     "bonus": "-2 энергии"
   },
   {
@@ -7025,7 +7168,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "эхо: -1 жзн себе, до 1",
+    "ability": "эхо: -1 жзн себе, до 1",
     "bonus": "-2 энергии"
   },
   {
@@ -7036,7 +7179,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "эхо: -1 жзн, до 1",
+    "ability": "эхо: -1 жзн, до 1",
     "bonus": "-2 энергии"
   },
   {
@@ -7080,7 +7223,7 @@
     "star": false,
     "power": "6",
     "damage": "7",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-2 энергии"
   },
   {
@@ -7113,7 +7256,7 @@
     "star": true,
     "power": "8",
     "damage": "3",
-    "ability": "гнев: +4 урона НБ",
+    "ability": "гнев: +4 урона НБ",
     "bonus": "-2 энергии"
   },
   {
@@ -7124,7 +7267,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "-22 атаки, до 20",
+    "ability": "-22 атаки, до 20",
     "bonus": "-2 энергии"
   },
   {
@@ -7157,7 +7300,7 @@
     "star": false,
     "power": "6",
     "damage": "8",
-    "ability": "-3 урона, до 1 НБ",
+    "ability": "-3 урона, до 1 НБ",
     "bonus": "-2 энергии"
   },
   {
@@ -7201,7 +7344,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "- бонус НБ",
+    "ability": "−бонус НБ",
     "bonus": "-2 энергии"
   },
   {
@@ -7267,7 +7410,7 @@
     "star": false,
     "power": "8",
     "damage": "6",
-    "ability": "крах: -2 эн себе",
+    "ability": "крах: -2 эн себе",
     "bonus": "-2 энергии"
   },
   {
@@ -7289,7 +7432,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "гнев: эхо: +2 эн",
+    "ability": "гнев: эхо: +2 эн",
     "bonus": "-2 энергии"
   },
   {
@@ -7344,7 +7487,7 @@
     "star": true,
     "power": "8",
     "damage": "5",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "-2 энергии"
   },
   {
@@ -7410,7 +7553,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: +1 жзн за урон",
+    "ability": "гнев: +1 жзн за урон",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7443,7 +7586,7 @@
     "star": true,
     "power": "6",
     "damage": "1",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7542,7 +7685,7 @@
     "star": false,
     "power": "6",
     "damage": "1",
-    "ability": "-1 жзн за урон НБ",
+    "ability": "-1 жзн за урон НБ",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7630,7 +7773,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: урон = урону соп.",
+    "ability": "гнев: урон = урону соп.",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7641,7 +7784,7 @@
     "star": false,
     "power": "5",
     "damage": "4",
-    "ability": "-14 атаки, до 10",
+    "ability": "-14 атаки, до 10",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7685,7 +7828,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7707,7 +7850,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "гнев: -3 силы, до 3",
+    "ability": "гнев: -3 силы, до 3",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7718,7 +7861,7 @@
     "star": false,
     "power": "5",
     "damage": "5",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7773,7 +7916,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7828,7 +7971,7 @@
     "star": false,
     "power": "6",
     "damage": "4",
-    "ability": "-3 силы, до 1 НБ",
+    "ability": "-3 силы, до 1 НБ",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7872,7 +8015,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "+1 эн за урон НБ",
+    "ability": "+1 эн за урон НБ",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7905,7 +8048,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "-20 атаки, до 10",
+    "ability": "-20 атаки, до 10",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -7993,7 +8136,7 @@
     "star": false,
     "power": "6",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "гнев: +3 урона"
   },
   {
@@ -8103,7 +8246,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8125,7 +8268,7 @@
     "star": false,
     "power": "8",
     "damage": "1",
-    "ability": "гнев: +3 урона соп.",
+    "ability": "гнев: +3 урона соп.",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8136,7 +8279,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "гнев: -2 силы, до 1",
+    "ability": "гнев: -2 силы, до 1",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8169,7 +8312,7 @@
     "star": false,
     "power": "6",
     "damage": "2",
-    "ability": "- бонус НБ",
+    "ability": "−бонус НБ",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8257,7 +8400,7 @@
     "star": false,
     "power": "3",
     "damage": "5",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8268,7 +8411,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8290,7 +8433,7 @@
     "star": false,
     "power": "6",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8301,7 +8444,7 @@
     "star": false,
     "power": "7",
     "damage": "1",
-    "ability": "эхо: -3 жзн, до 1",
+    "ability": "эхо: -3 жзн, до 1",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8367,7 +8510,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: +11 атаки соп.",
+    "ability": "гнев: +11 атаки соп.",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8466,7 +8609,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "гнев: +3 силы НБ",
+    "ability": "гнев: +3 силы НБ",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8532,7 +8675,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8554,7 +8697,7 @@
     "star": false,
     "power": "7",
     "damage": "1",
-    "ability": "-3 жизни; +3 эн НБ",
+    "ability": "-3 жизни; +3 эн НБ",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8587,7 +8730,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8620,7 +8763,7 @@
     "star": false,
     "power": "5",
     "damage": "7",
-    "ability": "гнев: +2 силы НБ",
+    "ability": "гнев: +2 силы НБ",
     "bonus": "+2 жизни НБ"
   },
   {
@@ -8642,7 +8785,7 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "эхо: -1 жзн, до 5",
+    "ability": "эхо: -1 жзн, до 5",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -8664,7 +8807,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "гнев: +1 жзн за урон",
+    "ability": "гнев: +1 жзн за урон",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -8686,7 +8829,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: атака за жзн 1",
+    "ability": "гнев: атака за жзн 1",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -8774,7 +8917,7 @@
     "star": false,
     "power": "6",
     "damage": "2",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -8785,7 +8928,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -8796,7 +8939,7 @@
     "star": false,
     "power": "8",
     "damage": "1",
-    "ability": "эхо: -1 жзн, до 1",
+    "ability": "эхо: -1 жзн, до 1",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -8884,7 +9027,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: +3 силы соп. НБ",
+    "ability": "гнев: +3 силы соп. НБ",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -9038,7 +9181,7 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -9060,7 +9203,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "гнев: -3 жизни; +3 эн НБ",
+    "ability": "гнев: -3 жизни; +3 эн НБ",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -9082,7 +9225,7 @@
     "star": true,
     "power": "8",
     "damage": "6",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -9148,7 +9291,7 @@
     "star": true,
     "power": "6",
     "damage": "7",
-    "ability": "-2 силы, до 1 НБ",
+    "ability": "-2 силы, до 1 НБ",
     "bonus": "эхо: +1 эн"
   },
   {
@@ -9236,7 +9379,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "крах: -2 жзн, до 2",
+    "ability": "крах: -2 жзн, до 2",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9247,7 +9390,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "эхо: -2 жзн, до 1",
+    "ability": "эхо: -2 жзн, до 1",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9280,7 +9423,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9324,7 +9467,7 @@
     "star": false,
     "power": "6",
     "damage": "4",
-    "ability": "гнев: - бонус",
+    "ability": "гнев: −бонус",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9346,7 +9489,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "-3 силы, до 3 НБ",
+    "ability": "-3 силы, до 3 НБ",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9357,7 +9500,7 @@
     "star": false,
     "power": "5",
     "damage": "5",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9368,7 +9511,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "эхо: -1 жзн себе, до 1",
+    "ability": "эхо: -1 жзн себе, до 1",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9390,7 +9533,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "гнев: эхо: +2 эн",
+    "ability": "гнев: эхо: +2 эн",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9456,7 +9599,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "эхо: +1 жзн соп.",
+    "ability": "эхо: +1 жзн соп.",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9467,7 +9610,7 @@
     "star": true,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: +21 атаки НБ",
+    "ability": "гнев: +21 атаки НБ",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9522,7 +9665,7 @@
     "star": false,
     "power": "4",
     "damage": "6",
-    "ability": "-18 атаки, до 10",
+    "ability": "-18 атаки, до 10",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9577,7 +9720,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: -2 силы, до 3 НБ",
+    "ability": "гнев: -2 силы, до 3 НБ",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9588,7 +9731,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "гнев: +20 атаки соп.",
+    "ability": "гнев: +20 атаки соп.",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9621,7 +9764,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9720,7 +9863,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "гнев: -2 жизни НБ",
+    "ability": "гнев: -2 жизни НБ",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9775,7 +9918,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "крах: -2 жзн, до 2"
   },
   {
@@ -9918,7 +10061,7 @@
     "star": false,
     "power": "7",
     "damage": "1",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 энергии"
   },
   {
@@ -9962,7 +10105,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "эхо: +3 жзн соп.",
+    "ability": "эхо: +3 жзн соп.",
     "bonus": "+2 энергии"
   },
   {
@@ -9995,7 +10138,7 @@
     "star": true,
     "power": "2",
     "damage": "7",
-    "ability": "гнев: -5 силы, до 3",
+    "ability": "гнев: -5 силы, до 3",
     "bonus": "+2 энергии"
   },
   {
@@ -10017,7 +10160,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "+2 энергии"
   },
   {
@@ -10028,7 +10171,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "+2 энергии"
   },
   {
@@ -10061,7 +10204,7 @@
     "star": false,
     "power": "3",
     "damage": "6",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "+2 энергии"
   },
   {
@@ -10149,7 +10292,7 @@
     "star": false,
     "power": "7",
     "damage": "8",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "+2 энергии"
   },
   {
@@ -10171,7 +10314,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "гнев: крах: -1 эн себе",
+    "ability": "гнев: крах: -1 эн себе",
     "bonus": "+2 энергии"
   },
   {
@@ -10226,7 +10369,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "-4 силы, до 6 НБ",
+    "ability": "-4 силы, до 6 НБ",
     "bonus": "+2 энергии"
   },
   {
@@ -10248,7 +10391,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "-способность",
+    "ability": "−способность",
     "bonus": "+2 энергии"
   },
   {
@@ -10259,7 +10402,7 @@
     "star": false,
     "power": "8",
     "damage": "2",
-    "ability": "-13 атаки, до 9 НБ",
+    "ability": "-13 атаки, до 9 НБ",
     "bonus": "+2 энергии"
   },
   {
@@ -10281,7 +10424,7 @@
     "star": true,
     "power": "7",
     "damage": "4",
-    "ability": "-2 силы, до 2 НБ",
+    "ability": "-2 силы, до 2 НБ",
     "bonus": "+2 энергии"
   },
   {
@@ -10369,7 +10512,7 @@
     "star": false,
     "power": "8",
     "damage": "6",
-    "ability": "гнев: +3 урона соп.",
+    "ability": "гнев: +3 урона соп.",
     "bonus": "+2 энергии"
   },
   {
@@ -11568,7 +11711,7 @@
     "star": false,
     "power": "8",
     "damage": "6",
-    "ability": "гнев: Бонус Fury",
+    "ability": "гнев: Бонус Fury",
     "bonus": "Бонус Kingpin"
   },
   {
@@ -11689,7 +11832,7 @@
     "star": false,
     "power": "7",
     "damage": "6",
-    "ability": "гнев: +3 жзн соп.",
+    "ability": "гнев: +3 жзн соп.",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -11766,7 +11909,7 @@
     "star": false,
     "power": "6",
     "damage": "3",
-    "ability": "гнев: - бонус",
+    "ability": "гнев: −бонус",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -11821,7 +11964,7 @@
     "star": false,
     "power": "6",
     "damage": "3",
-    "ability": "гнев: 3 яда, до 1",
+    "ability": "гнев: 3 яда, до 1",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -11854,7 +11997,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "сила = силе соп.",
+    "ability": "сила = силе соп.",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -11876,7 +12019,7 @@
     "star": true,
     "power": "6",
     "damage": "5",
-    "ability": "эхо: 1 яда, до 1",
+    "ability": "эхо: 1 яда, до 1",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -11942,7 +12085,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -11964,7 +12107,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -12074,7 +12217,7 @@
     "star": false,
     "power": "7",
     "damage": "5",
-    "ability": "эхо: -2 жзн, до 1 НБ",
+    "ability": "эхо: -2 жзн, до 1 НБ",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -12085,7 +12228,7 @@
     "star": true,
     "power": "8",
     "damage": "5",
-    "ability": "крах: +3 жизни НБ",
+    "ability": "крах: +3 жизни НБ",
     "bonus": "-13 атаки, до 17"
   },
   {
@@ -12140,7 +12283,7 @@
     "star": false,
     "power": "4",
     "damage": "6",
-    "ability": "сила = силе соп. НБ",
+    "ability": "сила = силе соп. НБ",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12162,7 +12305,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "гнев: атака за жзн 1",
+    "ability": "гнев: атака за жзн 1",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12239,7 +12382,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "урон = урону соп.",
+    "ability": "урон = урону соп.",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12250,7 +12393,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "гнев: крах: -1 эн себе",
+    "ability": "гнев: крах: -1 эн себе",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12305,7 +12448,7 @@
     "star": false,
     "power": "8",
     "damage": "4",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12338,7 +12481,7 @@
     "star": false,
     "power": "7",
     "damage": "3",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12382,7 +12525,7 @@
     "star": true,
     "power": "8",
     "damage": "2",
-    "ability": "-3 урона, до 1 НБ",
+    "ability": "-3 урона, до 1 НБ",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12415,7 +12558,7 @@
     "star": false,
     "power": "7",
     "damage": "4",
-    "ability": "+1 эн за урон НБ",
+    "ability": "+1 эн за урон НБ",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12459,7 +12602,7 @@
     "star": false,
     "power": "6",
     "damage": "5",
-    "ability": "гнев: +5 силы НБ",
+    "ability": "гнев: +5 силы НБ",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12514,7 +12657,7 @@
     "star": true,
     "power": "8",
     "damage": "3",
-    "ability": "эхо: -1 жзн, до 1",
+    "ability": "эхо: -1 жзн, до 1",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12525,7 +12668,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "-4 урона, до 2 НБ",
+    "ability": "-4 урона, до 2 НБ",
     "bonus": "эхо: +1 жизнь НБ"
   },
   {
@@ -12602,7 +12745,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "гнев: +2016 атаки соп.",
+    "ability": "гнев: +2016 атаки соп.",
     "bonus": "-3 силы, до 6"
   },
   {
@@ -12657,7 +12800,7 @@
     "star": false,
     "power": "7",
     "damage": "1",
-    "ability": "гнев: эхо: +3 жизни",
+    "ability": "гнев: эхо: +3 жизни",
     "bonus": "-3 силы, до 6"
   },
   {
@@ -12723,7 +12866,7 @@
     "star": false,
     "power": "7",
     "damage": "2",
-    "ability": "крах: -2 жзн, до 1",
+    "ability": "крах: -2 жзн, до 1",
     "bonus": "-3 силы, до 6"
   },
   {
@@ -12844,7 +12987,7 @@
     "star": false,
     "power": "6",
     "damage": "6",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-3 силы, до 6"
   },
   {
@@ -12866,7 +13009,7 @@
     "star": false,
     "power": "8",
     "damage": "6",
-    "ability": "гнев: эхо: -2 эн себе",
+    "ability": "гнев: эхо: -2 эн себе",
     "bonus": "-3 силы, до 6"
   },
   {
@@ -12877,7 +13020,7 @@
     "star": false,
     "power": "8",
     "damage": "3",
-    "ability": "эхо: 2 яда, до 1",
+    "ability": "эхо: 2 яда, до 1",
     "bonus": "-3 силы, до 6"
   },
   {
@@ -12888,7 +13031,7 @@
     "star": false,
     "power": "8",
     "damage": "5",
-    "ability": "- бонус",
+    "ability": "−бонус",
     "bonus": "-3 силы, до 6"
   },
   {
@@ -12899,7 +13042,7 @@
     "star": false,
     "power": "7",
     "damage": "7",
-    "ability": "гнев: -2 жизни; +2 эн",
+    "ability": "гнев: -2 жизни; +2 эн",
     "bonus": "-3 силы, до 6"
   },
   {
