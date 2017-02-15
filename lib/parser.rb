@@ -102,6 +102,7 @@ urls.each_with_index do |clan_page, index|
     # art_link = card.at_css('.avatar-wrap').at_css('img').attributes['src']
     # download_art art_link, id
     puts "#{name} is downloaded!"
+
   end
 end
 

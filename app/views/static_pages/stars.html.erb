@@ -1,16 +1,17 @@
 <div class="container page-container">
-    <div class="row filter-container">
+    <div class="row">
       <h3>Текущая коллекционка на Арене - спешите взять!</h3>
     </div>
-    <div class="row">
+    <div class="row filter-container">
       <div id="current-arena-star">
-        <%= link_to (image_tag 'niff.png'), 'http://klanz.ru/rooms/5' %>
+        <%= link_to (image_tag 'mm.png'), 'http://klanz.ru/rooms/5' %><br>
+        <%= link_to (image_tag 'mm2.png'), 'http://klanz.ru/rooms/5' %>
       </div>
     </div>
-    <div class="row filter-container">
+    <div class="row">
       <h3>Скоро поступят в продажу</h3>
     </div>
-    <div class="row cards-container deck-container" style="margin-bottom: 100px;">
+    <div class="row darken-container">
       <div class="col-md-1"></div>
       <% @cards.each do |card| %>
           <div class="col-md-2 star-box">
