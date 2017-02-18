@@ -1,39 +1,42 @@
-<div class="container page-container">
-    <div class="row">
-      <h3>Текущая коллекционка на Арене - спешите взять!</h3>
-    </div>
-    <div class="row filter-container">
-      <div id="current-arena-star">
-        <%= link_to (image_tag 'mm.png'), 'http://klanz.ru/rooms/5' %><br>
-        <%= link_to (image_tag 'mm2.png'), 'http://klanz.ru/rooms/5' %>
-      </div>
-    </div>
-    <div class="row">
-      <h3>Скоро поступят в продажу</h3>
-    </div>
-    <div class="row darken-container">
-      <div class="col-md-1"></div>
-      <% @cards.each do |card| %>
-          <div class="col-md-2 star-box">
-            <div id="countdown-<%= card.number %>">
+<div class="container page-container star-container">
+  <table class="table stars-table">
+    <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @cards.each do |card| %>
+        <tr>
+          <td>
+            <% index = clan_id(card.clan) %>
+            <%= link_to image_tag("filter_icons/#{index}.png", id: "star-clan") %>
+          </td>
+          <td>
+            <%= card.name %>
+          </td>
+          <td>
+            <div id="countdown-<%= card.number %>" class="countdown-numbers">
               <%= javascript_tag do %>
                   var startime = new Date(<%= get_startime(card) %>);
                   var todaysDate = new Date();
                   if(startime.setHours(0,0,0,0) > todaysDate.setHours(0,0,0,0)) {
-                      $("#countdown-<%= card.number %>").countdown({until: startime,
-                      expiryText: '<div class="over">It\'s all over</div>',
-                      significant: 1,
-                      layout: '{d<}{dn} {dl} {d>}{h<}{hn} {hl} {h>}{m<}{mn} {ml} {m>}{s<}{sn} {sl}{s>}'});
+                  $("#countdown-<%= card.number %>").countdown({until: startime,
+                  expiryText: '<div class="over">It\'s all over</div>',
+                  significant: 1,
+                  layout: '{d<}{dn} {dl} {d>}{h<}{hn} {hl} {h>}{m<}{mn} {ml} {m>}{s<}{sn} {sl}{s>}'});
 
                   } else {
-                      $("#countdown-<%= card.number %>").append('???');
+                  $("#countdown-<%= card.number %>").append('???');
                   }
-
               <% end %>
             </div>
-            <%= render card, card: card %>
-          </div>
-      <% end %>
-      <div class="col-md-1"></div>
-    </div>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <%= link_to (image_tag 'mm2.png'), 'https://klanz.ru/clans/9/original_cards/1805', id: "current-star" %>
 </div>

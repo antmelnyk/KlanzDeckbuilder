@@ -13,7 +13,7 @@
   margin-top: 10px
   font-size: 14px
 
-#deck-titles
+#deck-titles, #deck-info
   font-size: 14px
   padding: 10px
   background-color: $bgHighlight
@@ -41,14 +41,33 @@
 #copy-deck-link
   font-size: 20px
 
-.clipboard-btn
+#sample-icon
+  font-size: 20px
+  cursor: default
+
+#sample-deck-link
+  padding: 2px
+  margin: 20px 0 5px 0
+
+#sample-hand
+  width: 80%
+  margin: 0 auto
+
+.clipboard-btn, #sample-deck-link
   all: unset
   cursor: pointer
   border-bottom: 2px dashed white
+  transition: 0.2s
+  &:hover
+    transition: 0.2s
+    color: $colHighlight
 
 .deck-additional-info
   cursor: default
   text-align: center
   padding: 20px
   margin: 0 auto
-  margin-bottom: 70px
+  margin-bottom: 10px
+
+.delete-deck
+  margin: 10px

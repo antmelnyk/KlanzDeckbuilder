@@ -6,16 +6,24 @@
   border: none
   background: none
 
-#current-arena-star
-  text-align: center
-  margin: 20px
+.countdown-numbers
+  display: inline-block
+  width: $card-width
 
-.darken-container
-  background-color: $bgHighlight
+.stars-table
+  display: inline-block
+  width: auto !important
+  margin-top: 40px
 
-.star-box
-  margin-top: 30px
-  margin-bottom: 60px
+.stars-table td, .stars-table th
+  border: none !important
+  min-width: 50px
+  font-weight: 100
+  font-size: 24px
+  text-align: left
+
+#star-clan
+  margin-right: 15px
 
 .neon-logo
   position: absolute
@@ -53,11 +61,6 @@
 .glyphicon
   font-size: 50px
   color: $colHighlight
-  transition: 0.5s
-  &:hover
-    -webkit-animation: neon 1.5s ease-in-out infinite alternate
-    -moz-animation: neon 1.5s ease-in-out infinite alternate
-    animation: neon 1.5s ease-in-out infinite alternate
 
 .btn-register
   width: 100%

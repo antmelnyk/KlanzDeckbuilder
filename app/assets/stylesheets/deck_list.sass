@@ -6,11 +6,11 @@
     transition: 0.2s
     background-color: $bgHighlight
 
-.table
+.decks-table
   margin: 0 auto
   width: 90%
 
-table
+.decks-table
   font-size: 14px
   text-align: left
 
@@ -40,7 +40,7 @@ table
 
 
 @for $i from 1 through 100
-  tr:nth-child(#{$i})
+  .decks-table tr:nth-child(#{$i})
     -webkit-animation: fadeIn 1s forwards
     animation: fadeIn 1s forwards
     -webkit-animation-delay: $i * 35ms - 35ms
