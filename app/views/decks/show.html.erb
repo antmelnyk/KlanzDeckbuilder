@@ -33,7 +33,7 @@
     </div>
     <div class="row cards-container deck-container sample-container">
       <span class="glyphicon glyphicon-refresh" id="sample-icon"></span>
-      <%= link_to 'Случайная рука', deck_path, :remote => true, :id => "sample-deck-link" %>
+      <%= link_to 'Случайный расклад', deck_path, :remote => true, :id => "sample-deck-link" %>
       <div id="sample-hand">
         <%= render @cards.sample(5) %>
       </div>
