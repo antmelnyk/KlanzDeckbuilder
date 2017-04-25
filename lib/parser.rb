@@ -50,7 +50,7 @@ def clan_name(clan_id)
       17 => 'Kingpin',
       18 => 'Chasers',
       19 => 'Халифат',
-      20 => 'C.O.R.R',
+      #20 => 'C.O.R.R',
       21 => 'Toyz',
       26 => 'Nemos',
       27 => 'SymBio'
@@ -58,8 +58,8 @@ def clan_name(clan_id)
   clans.invert.key(clan_id) # Whatever
 end
 
-# 12 - enigma, 14 - gamblers, 22-25 - no clans
-clan_id = [*1..11, 13, *15..21, 26, 27]
+# 12 - enigma, 14 - gamblers, 20 - C.O.R.R., 22-25 - no clans
+clan_id = [*1..11, 13, *15..19, 21, 26, 27]
 urls = []
 cards = []
 
