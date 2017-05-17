@@ -1,3 +1,5 @@
+## Klanz Deckbuilder
+
 [Card database and deck builder](https://klanz-deckbuilder.herokuapp.com/) for online CCG [http://klanz.ru](klanz.ru)
 
 ![alt tag](http://s010.radikal.ru/i312/1702/85/9d06cb6c9496.png)
@@ -10,13 +12,13 @@
 * Star cards sale schedule
 * Cards parser
 
-##### How to parse all cards?
+#### How to parse all cards?
 1. In the lib directory there is a parser.rb
 2. Run it as usual ruby script
 3. Wait until all cards are parsed
 4. You can find the result cards data in the cards.json in the same folder
 
-### What about images?
+#### What about images?
     art_link = card.at_css('.avatar-wrap').at_css('img').attributes['src']
     download_art art_link, id
     
