@@ -22,21 +22,24 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'figaro'
 gem 'kaminari'
-gem 'devise'
+gem 'devise', '~> 4.4.0'
 gem 'devise-i18n'
 gem 'has_scope'
 gem 'clipboard-rails'
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '~> 3.0.5'
+  gem 'web-console'
+  gem 'listen'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pg', '~> 0.18'
+
+  gem 'watir'
+  gem 'selenium-webdriver'
 end
 
 group :test do
