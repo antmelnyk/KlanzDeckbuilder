@@ -1,35 +1,10 @@
-require 'nokogiri'
-require 'action_controller'
-require 'json'
+# Due to login and collection mechanics rework in order to extract collection data a new approach is required!
+
+require 'watir'
+require 'selenium-webdriver'
+require 'chromedriver/helper'
 require 'open-uri'
-
-# Downloads all arts in .jpg, however there are some .png cards and even .gif one
-# Can be really improved
-def download_art(art_link, id)
-  sleep(0.3)
-  art = open "http://www.klanz.ru#{art_link}"
-
-  bytes_expected = art.meta['content-length'].to_i
-  bytes_copied = IO.copy_stream art, "arts/#{id}.jpg" #png starts with 0x89 0x50
-
-  if bytes_expected == bytes_copied
-    puts "Art #{id} downloaded! Yay!"
-  else
-    puts 'Megatron joke or connection problem?..'
-    raise 'ERROR'
-  end
-
-  rescue
-    retry
-
-end
-
-# Downloads all clans background logo for clans
-def download_clan_background_logo(id)
-  logo = open "http://klanz.ru/images/clans/#{id}/background_logo.png"
-  IO.copy_stream logo, "logos/#{id}.png"
-  puts "Logo #{id} downloaded, yay!"
-end
+require 'fileutils'
 
 def clan_name(clan_id)
   clans = {
@@ -50,62 +25,90 @@ def clan_name(clan_id)
       17 => 'Kingpin',
       18 => 'Chasers',
       19 => 'Халифат',
-      #20 => 'C.O.R.R',
       21 => 'Toyz',
       26 => 'Nemos',
       27 => 'SymBio'
   }
-  clans.invert.key(clan_id) # Whatever
+
+  clans[clan_id]
 end
 
-# 12 - enigma, 14 - gamblers, 20 - C.O.R.R., 22-25 - no clans
-clan_id = [*1..11, 13, *15..19, 21, 26, 27]
-urls = []
-cards = []
+def parse_page(browser, cards)
 
-# For every clan visit page, take all cards data and push to cards array,
-# then write array in JSON format into cards.json
+  browser.div(:id, 'collection_cards').divs(:class, 'card').each do |card|
+    id = card.attribute_value('data-id')
+    name = card.div(:class, 'name').span.inner_html
+    clan = clan_name card.div(:class, 'bg-clan-icon-wrap').img.attribute_value('src')[/(\d+)/].to_i
+    rarity = card.attribute_value('class')[/common|rare|uniq|legend/]
+    star = name[/★/].nil? ? false : true
+    power = card.div(:class, 'name').div(:class, 'power').inner_html
+    damage = card.div(:class, 'name').div(:class, 'damage').inner_html
+    ability = card.div(:class, 'ability-wrap').div(:class, 'value').inner_html
+    bonus = card.div(:class, 'bonus-wrap').div(:class, 'value').inner_html
+    # art_link = card.a(:class, 'avatar-wrap').img.attribute_value('src')
 
-clan_id.each_with_index do |digit, index|
-  urls[index] = "http://www.klanz.ru/clans/#{digit}/original_cards"
-  # download_clan_background_logo(digit)
-end
-
-urls.each_with_index do |clan_page, index|
-  clan_page = open urls[index]
-  doc = Nokogiri::HTML(clan_page)
-  doc.css('.card').each do |card|
-    id = card.at_css('.avatar-wrap').attributes['href'].value[/(\d*$)/]
-    name = card.at_css('.name').inner_html.strip
-    clan = clan_name(clan_id[index])
-    rarity = card.attributes['class'].value[/common|rare|uniq|legend/]
-    if name[/★/].nil?
-      star = false
-    else
-      star = true
-    end
-    power = card.at_css('.power').inner_html
-    damage = card.at_css('.damage').inner_html
-    ability = card.at_css('.ability-wrap').at_css('div').inner_html.strip
-    bonus = card.at_css('.bonus-wrap').at_css('div').inner_html.strip
     cards.push(
-             number: id,
-             name: name,
-             clan: clan,
-             rarity: rarity,
-             star: star,
-             power: power,
-             damage: damage,
-             ability: ability,
-             bonus: bonus
+        number: id,
+        name: name,
+        clan: clan,
+        rarity: rarity,
+        star: star,
+        power: power,
+        damage: damage,
+        ability: ability,
+        bonus: bonus
     )
-    # art_link = card.at_css('.avatar-wrap').at_css('img').attributes['src']
-    # download_art art_link, id
-    puts "#{name} is downloaded!"
 
+    p name + ' parsed'
+
+    # Download Art
+    # ======================================================================================================
+    #
+    # art = open art_link
+    # bytes_expected = art.meta['content-length'].to_i
+    # place = Dir.pwd + '/temp'
+    #
+    # bytes_copied = IO.copy_stream art, place
+    #
+    # puts "Art #{id} downloaded! Yay!" if bytes_expected == bytes_copied
+    #
+    # File.open('temp', 'rb').read.include?('PNG') ?
+    #     FileUtils.mv('temp', File.expand_path("..", Dir.pwd) + "/app/assets/images/cards_png/#{id}.png")
+    #     : FileUtils.mv('temp', File.expand_path("..", Dir.pwd) + "/app/assets/images/cards_jpg/#{id}.jpg")
+    # puts "Art calibrated! Moving on!"
+  end
+
+  current_page = browser.div(:class, 'page current')
+
+  p 'Page #' + current_page.a.inner_html + ' parsed. Moving to the next!'
+
+  next_page = browser.div(:class => 'page', :text => "#{current_page.a.inner_html.to_i + 1}")
+
+  if next_page.present?
+    next_page.click
+    while browser.div(:class, 'page current').a.inner_html != next_page.a.inner_html do
+      sleep 1
+    end
+    parse_page browser, cards
+  else
+    p 'Card parsing is complete'
+
+    File.open('cards.json','w') do |f|
+      f.write(JSON.pretty_generate(cards))
+    end
   end
 end
 
-File.open('cards.json','w') do |f|
-  f.write(JSON.pretty_generate(cards))
-end
+# Go to Klanz, log in, go to Collection, parse every card on the page, do that for every page
+browser = Watir::Browser.new
+browser.goto 'https://www.klanz.ru/'
+browser.div(:class, 'link-to-step-registered').a.click
+browser.text_field(:id, 'registered_user_login').set('')
+browser.text_field(:id, 'registered_user_password').set('')
+browser.div(:id, 'step-registered').input(:type, 'button').click
+
+browser.li(:id, 'menu_item_collection').a.click
+
+cards = []
+
+parse_page browser, cards
