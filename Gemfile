@@ -27,6 +27,7 @@ gem 'devise-i18n'
 gem 'has_scope'
 gem 'clipboard-rails'
 gem 'image_size'
+gem 'webpacker', '~> 3.0'
 
 group :development do
   gem 'web-console'
