@@ -26,6 +26,7 @@ gem 'devise', '~> 4.4.0'
 gem 'devise-i18n'
 gem 'has_scope'
 gem 'clipboard-rails'
+gem 'image_size'
 
 group :development do
   gem 'web-console'
@@ -40,6 +41,7 @@ group :development, :test do
 
   gem 'watir'
   gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :test do

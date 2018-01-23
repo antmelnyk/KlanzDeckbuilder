@@ -1,11 +1,18 @@
 module ApplicationHelper
 
-  def card_path(id)
-    return "cards_jpg/#{id}.jpg" if File.file? (Rails.root +
-        "app/assets/images/cards_jpg/#{id}.jpg")
-    return "cards_png/#{id}.png" if File.file? (Rails.root +
-        "app/assets/images/cards_png/#{id}.png")
+  def card_art_path(id)
+    return "cards_jpg/#{id}.jpg" if File.file? (Rails.root + "app/assets/images/cards_jpg/#{id}.jpg")
+    return "cards_png/#{id}.png" if File.file? (Rails.root + "app/assets/images/cards_png/#{id}.png")
     "#{id}.gif"
+  end
+
+  def art_is_cover?(id)
+    if File.file? (Rails.root + "app/assets/images/cards_jpg/#{id}.jpg")
+      image = ImageSize.path((Rails.root + "app/assets/images/cards_jpg/#{id}.jpg"))
+    elsif File.file? (Rails.root + "app/assets/images/cards_png/#{id}.png")
+      image = ImageSize.path((Rails.root + "app/assets/images/cards_png/#{id}.png"))
+    end
+    image.width > 151 ? 'cover' : ''
   end
 
   def get_clans(deck)

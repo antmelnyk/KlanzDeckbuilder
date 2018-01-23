@@ -39,6 +39,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ansi (1.5.0)
+    archive-zip (0.7.0)
+      io-like (~> 0.3.0)
     arel (7.1.4)
     autoprefixer-rails (6.7.2)
       execjs
@@ -53,6 +55,9 @@ GEM
     byebug (9.0.6)
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
+    chromedriver-helper (1.1.0)
+      archive-zip (~> 0.7.0)
+      nokogiri (~> 1.6)
     clipboard-rails (1.6.0)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -81,6 +86,8 @@ GEM
       actionpack (>= 4.1, < 5.1)
       activesupport (>= 4.1, < 5.1)
     i18n (0.8.0)
+    image_size (1.5.0)
+    io-like (0.3.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -217,12 +224,14 @@ DEPENDENCIES
   bh (~> 1.2)
   bootstrap-sass (= 3.3.6)
   byebug
+  chromedriver-helper
   clipboard-rails
   coffee-rails (~> 4.2)
   devise (~> 4.4.0)
   devise-i18n
   figaro
   has_scope
+  image_size
   jbuilder (~> 2.5)
   jquery-countdown-rails
   jquery-rails

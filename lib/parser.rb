@@ -45,7 +45,7 @@ def parse_page(browser, cards)
     damage = card.div(:class, 'name').div(:class, 'damage').inner_html
     ability = card.div(:class, 'ability-wrap').div(:class, 'value').inner_html
     bonus = card.div(:class, 'bonus-wrap').div(:class, 'value').inner_html
-    # art_link = card.a(:class, 'avatar-wrap').img.attribute_value('src')
+    art_link = card.a(:class, 'avatar-wrap').img.attribute_value('src')
 
     cards.push(
         number: id,
@@ -63,19 +63,19 @@ def parse_page(browser, cards)
 
     # Download Art
     # ======================================================================================================
-    #
-    # art = open art_link
-    # bytes_expected = art.meta['content-length'].to_i
-    # place = Dir.pwd + '/temp'
-    #
-    # bytes_copied = IO.copy_stream art, place
-    #
-    # puts "Art #{id} downloaded! Yay!" if bytes_expected == bytes_copied
-    #
-    # File.open('temp', 'rb').read.include?('PNG') ?
-    #     FileUtils.mv('temp', File.expand_path("..", Dir.pwd) + "/app/assets/images/cards_png/#{id}.png")
-    #     : FileUtils.mv('temp', File.expand_path("..", Dir.pwd) + "/app/assets/images/cards_jpg/#{id}.jpg")
-    # puts "Art calibrated! Moving on!"
+
+    art = open art_link
+    bytes_expected = art.meta['content-length'].to_i
+    place = Dir.pwd + '/temp'
+
+    bytes_copied = IO.copy_stream art, place
+
+    puts "Art #{id} downloaded! Yay!" if bytes_expected == bytes_copied
+
+    File.open('temp', 'rb').read.include?('PNG') ?
+        FileUtils.mv('temp', File.expand_path("..", Dir.pwd) + "/app/assets/images/cards_png/#{id}.png")
+        : FileUtils.mv('temp', File.expand_path("..", Dir.pwd) + "/app/assets/images/cards_jpg/#{id}.jpg")
+    puts "Art calibrated! Moving on!"
   end
 
   current_page = browser.div(:class, 'page current')
@@ -103,8 +103,8 @@ end
 browser = Watir::Browser.new
 browser.goto 'https://www.klanz.ru/'
 browser.div(:class, 'link-to-step-registered').a.click
-browser.text_field(:id, 'registered_user_login').set('')
-browser.text_field(:id, 'registered_user_password').set('')
+browser.text_field(:id, 'registered_user_login').set('Insomniaс')
+browser.text_field(:id, 'registered_user_password').set('delikates')
 browser.div(:id, 'step-registered').input(:type, 'button').click
 
 browser.li(:id, 'menu_item_collection').a.click

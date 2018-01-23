@@ -4,7 +4,7 @@
   <% if card.star %> star-card <% end %>
   <%= card.rarity %>" id="<%= card.number %>">
   <div class="art">
-    <%= image_tag card_path(card.number) %>
+    <%= image_tag card_art_path(card.number), :class => art_is_cover?(card.number) %>
   </div>
   <div class="main-line main-line-<%= card.rarity %>">
     <div class="power-bg">
