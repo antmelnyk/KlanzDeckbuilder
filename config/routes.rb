@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/stars', to: 'static_pages#stars'
   get '/my_decks', to: 'decks#user_index'
   devise_for :users, controllers: { registrations: "users/registrations" }, :has_many => [:decks]
-  resources :cards, param: :number, only: [:index, :show]
+  resources :cards, param: :number, except: [:edit, :update]
   resources :decks, except: [:edit, :update]
 end

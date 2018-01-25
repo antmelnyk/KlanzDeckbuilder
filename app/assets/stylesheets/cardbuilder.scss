@@ -1,0 +1,255 @@
+$fonts_path: '/fonts/';
+$color-card-common: #867562;
+$color-card-rare: #307e24;
+$color-card-uniq: #006da0;
+$color-card-legend: #eac900;
+
+#KlanzCardbuilder {
+  .cardbuilder-app {
+    height: 100%;
+    width: 100%;
+    background: image_url("cardbuilder/city.jpg") center no-repeat;
+    background-size: cover;
+
+    .cardbuilder-title {
+      width: 100%;
+      color: white;
+      text-align: center;
+      font-size: 28px;
+      line-height: 100px;
+      font-family: supermolot_bold;
+    }
+
+    .cardbuilder-cardWrapper {
+      display: flex;
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cardbuilder-card {
+      position: relative;
+      margin: 0 10px 8px 8px;
+      width: 160px;
+      height: 229px;
+      box-sizing: border-box;
+      font-family: supermolot_bold;
+      text-transform: uppercase;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+
+      > div {
+        color: white;
+      }
+
+      &.common {
+        background: image-url("cardbuilder/back_common.png") center no-repeat;
+        background-size: contain;
+        background-position-x: -1px;
+
+        .cardbuilder-name {
+          background: image-url("cardbuilder/name_back_common.png") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &.rare {
+        background: image-url("cardbuilder/back_rare.png") center no-repeat;
+        background-size: contain;
+        background-position-x: -1px;
+
+        .cardbuilder-name {
+          background: image-url("cardbuilder/name_back_rare.png") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &.uniq {
+        background: image-url("cardbuilder/back_uniq.png") center no-repeat;
+        background-size: contain;
+        background-position-x: -1px;
+
+        .cardbuilder-name {
+          background: image-url("cardbuilder/name_back_uniq.png") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &.legend {
+        background: image-url("cardbuilder/back_legend.png") center no-repeat;
+        background-size: contain;
+        background-position-x: -1px;
+
+        .cardbuilder-name {
+          background: image-url("cardbuilder/name_back_legend.png") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+    .cardbuilder-cover, .cardbuilder-coverOverlay {
+      position: absolute;
+      width: 200px;
+      left: -20px;
+      top: -12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-top: 23px;
+      }
+    }
+
+    .cardbuilder-cover {
+      img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+
+    .cardbuilder-coverOverlay {
+      img {
+        margin-top: 0;
+      }
+    }
+
+    .cardbuilder-name {
+      position: relative;
+      height: 65px;
+      text-align: center;
+      white-space: nowrap;
+      border-radius: 44px;
+      font-size: 14px;
+      line-height: 47px;
+      top: 117px;
+    }
+
+    .cardbuilder-power, .cardbuilder-damage {
+      z-index: 2;
+      position: absolute;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .cardbuilder-power {
+      background: image-url("cardbuilder/power.png") center no-repeat;
+      top: 120px;
+      left: -20px;
+      width: 55px;
+      height: 44px;
+      line-height: 43px;
+      font-size: 15px;
+      background-position-x: 8px;
+
+      .cardbuilder-power_input {
+        top: -3px;
+      }
+    }
+
+    .cardbuilder-damage {
+      background: image-url("cardbuilder/damage.png") center no-repeat;
+      top: 115px;
+      right: -20px;
+      width: 55px;
+      height: 44px;
+      line-height: 56px;
+      font-size: 15px;
+      background-position-x: 8px;
+
+      .cardbuilder-damage_input {
+        top: 2px;
+      }
+    }
+
+    .cardbuilder-power_input, .cardbuilder-damage_input {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 0;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 4px;
+      top: 2px;
+      text-align: center;
+      color: white;
+      font-family: supermolot_bold;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .cardbuilder-ability {
+      position: absolute;
+      width: 87%;
+      margin: 0 auto;
+      text-align: center;
+      height: 35px;
+      top: 160px;
+      left: 0;
+      right: 0;
+      font-size: 13px;
+      text-transform: lowercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cardbuilder-bonus {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      top: 201px;
+      font-size: 12px;
+      width: 159px;
+      text-align: center;
+      box-sizing: border-box;
+      text-transform: lowercase;
+    }
+
+    .cardbuilder-long-bonus {
+
+    }
+
+    .cardFrame_common, .cardFrame_rare, .cardFrame_uniq, .cardFrame_legend {
+      top: 7px;
+      left: 1px;
+      position: absolute;
+      width: 156px;
+      height: 214px;
+      border-radius: 12px;
+      opacity: 1;
+    }
+
+    .cardFrame_legend {
+      box-shadow: 0 0 48px $color-card-legend;
+    }
+    .cardFrame_uniq {
+      box-shadow: 0 0 48px $color-card-uniq;
+    }
+    .cardFrame_rare {
+      box-shadow: 0 0 48px $color-card-rare;
+    }
+    .cardFrame_common {
+      box-shadow: 0 0 48px $color-card-common;
+    }
+
+    .cardbuilder-clan {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      bottom: 9px;
+      left: 5px;
+    }
+
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

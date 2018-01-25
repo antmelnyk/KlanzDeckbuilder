@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'hello_react' %>
   </head>
   <body>
   <nav class="navbar navbar-default <% if params[:controller] == 'static_pages' && params[:action] == 'index' %> navbar-fixed-top <% end %>">
@@ -61,6 +60,11 @@
       <p class="alert alert-danger"><%= alert %></p>
   <% end %>
   <%= yield %>
+
   <%= render 'layouts/footer' %>
+
+  <% if current_page?('/cards/new') && user_signed_in? %>
+    <%= javascript_pack_tag 'cardbuilder' %>
+  <% end %>
   </body>
 </html>
